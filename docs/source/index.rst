@@ -6,18 +6,8 @@ The purpose of this project is to document everything of my technical notes acro
 
 .. toctree::
       :maxdepth: 2
-      :caption: Contents:
 
 .. include:: ../source/README.rst
-
-Puppet
-------
-
-.. toctree::
-         :maxdepth: 2
-
-Puppet documentation
- 
 
 
 Indices and tables
