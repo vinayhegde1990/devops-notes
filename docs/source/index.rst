@@ -6,6 +6,13 @@ The purpose of this project is to document everything of my technical notes acro
 
 .. include:: ../source/README.rst
 
+.. toctree::
+      :maxdepth: 2
+      :caption: Configuration Management
+
+      Puppet
+      Chef
+      Ansible
 
 Indices and tables
 ==================
