@@ -4,9 +4,6 @@ DevOps-Notes - Vinay Hegde
 
 The purpose of this project is to document everything of my technical notes across various DevOps topics.
 
-.. toctree::
-      :maxdepth: 2
-
 .. include:: ../source/README.rst
 
 
