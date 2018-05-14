@@ -1,8 +1,8 @@
-==========
+**********
 Ansible
-==========
+**********
 
-*This section should cover the basics of how Ansible works. Make such notes & diagrams below.*
+*This section covers the basics of how Ansible works (include diagrams/images if needed)**
 
 ==========
 → Concepts

@@ -1,28 +1,28 @@
-======
+**********
 Puppet
-======
+**********
 
-*This section should cover the basics of how puppet works (include diagrams/images if needed)*
+*This section covers the basics of how Puppet works (include diagrams/images if needed)*
 
 .. toctree::
       :maxdepth: 2
 
-================
-→ Concepts
-================
+################
+Concepts
+################
 - http://logz.io/blog/chef-vs-puppet/
 - https://www.linkedin.com/learning/mastering-puppet-for-large-infrastructures/the-course-overview
 
-============================
-→ Official Documentation: 
-============================
+##########################
+Official Documentation
+##########################
 - https://docs.puppet.com/puppet/
    
 - https://docs.puppet.com/guides/style_guide.html
    
-=============
-→ Others:
-=============
+###########
+Others
+###########
 - http://www.harker.com/puppet/BayLISA100715.html
 
 - http://www.slashroot.in/puppet-tutorial-introduction-puppet-configuration-management-tool
