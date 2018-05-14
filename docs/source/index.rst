@@ -11,3 +11,14 @@ Notes - Vinay Hegde
    Puppet
    Chef
    Ansible
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Databases
+   :hidden:
+
+   MySQL
+   PostgreSQL
+   NoSQL
+
