@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MySQL &mdash; DevOps-Notes 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Ansible" href="Ansible.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> DevOps-Notes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Configuration Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Puppet.html">Puppet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Chef.html">Chef</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ansible.html">Ansible</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Databases</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MySQL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#difference-between-myisam-and-innodb-storage-engines">Difference between MyISAM and InnoDB Storage engines</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#backing-up-restore-databases-via-command-line">Backing Up | Restore Databases via Command Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuring-mariadb-for-remote-access">Configuring MariaDB for remote access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removing-a-mysql-user-with-his-privileges">Removing a MySQL user with his privileges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#information-on-mysql-bin-logs">Information on MySQL Bin logs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#replication-master-master">Replication (Master-Master)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#replication-master-slave">Replication (Master-Slave)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reset-forgotten-mysql-password">Reset forgotten MySQL password</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-hardening">Tuning &amp; Hardening</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#to-change-the-value-of-expire-log-days-without-mysql-restart">To change the value of expire_log_days without MySQL restart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#to-enable-various-logs-via-my-cnf-or-on-the-fly-without-restart">To enable various logs via my.cnf or on the fly without restart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#perl-script-to-analyses-system-mysql-variables-optimize-accordingly">Perl script to analyses system MySQL variables &amp; optimize accordingly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tool-to-convert-xls-files-into-sql">Tool to convert xls files into SQL</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#checking-for-replication-lags">Checking for replication Lags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#various-mysql-error-codes">Various MySQL error codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fix-for-the-error-1396">Fix for the ERROR 1396</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DevOps-Notes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>MySQL</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/MySQL.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mysql">
+<h1>MySQL<a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basics of how MySQL works</em></p>
+<div class="section" id="concepts">
+<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://etutorials.org/SQL/MySQL/">http://etutorials.org/SQL/MySQL/</a></li>
+<li><a class="reference external" href="https://serversforhackers.com/series/mysql">https://serversforhackers.com/series/mysql</a></li>
+<li><a class="reference external" href="http://www.rathishkumar.in/2016/04/understanding-mysql-architecture.html">http://www.rathishkumar.in/2016/04/understanding-mysql-architecture.html</a>?</li>
+</ul>
+<div class="section" id="difference-between-myisam-and-innodb-storage-engines">
+<h3>Difference between MyISAM and InnoDB Storage engines<a class="headerlink" href="#difference-between-myisam-and-innodb-storage-engines" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.danyll.com/myisam-vs-innodb/">http://blog.danyll.com/myisam-vs-innodb/</a></li>
+<li><a class="reference external" href="http://www.rapidprogramming.com/questions-answers/differences-between-innodb-and-myisam-in-mysql-innodb-vs-myisam-1533">http://www.rapidprogramming.com/questions-answers/differences-between-innodb-and-myisam-in-mysql-innodb-vs-myisam-1533</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.mysqltutorial.org/">http://www.mysqltutorial.org/</a></li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.percona.com/blog/2014/11/12/log-rotate-and-the-deleted-mysql-log-file-mystery/">https://www.percona.com/blog/2014/11/12/log-rotate-and-the-deleted-mysql-log-file-mystery/</a></li>
+<li><a class="reference external" href="http://blog.oneiroi.co.uk/mysql/mysql-slow-query-log-rotation/">http://blog.oneiroi.co.uk/mysql/mysql-slow-query-log-rotation/</a></li>
+<li><a class="reference external" href="http://mysql.az/2015/05/12/mysql-logrotate-script/">http://mysql.az/2015/05/12/mysql-logrotate-script/</a></li>
+<li><a class="reference external" href="https://www.question-defense.com/2009/12/20/configure-logrotate-to-rotate-and-flush-mysql-logs-without-a-password">https://www.question-defense.com/2009/12/20/configure-logrotate-to-rotate-and-flush-mysql-logs-without-a-password</a></li>
+<li><a class="reference external" href="http://etutorials.org/SQL/MySQL/Part+III+MySQL+Administration/Chapter+11.+General+MySQL+Administration/Maintaining+Log+Files/">http://etutorials.org/SQL/MySQL/Part+III+MySQL+Administration/Chapter+11.+General+MySQL+Administration/Maintaining+Log+Files/</a></li>
+<li><a class="reference external" href="https://opensourcedbms.com/dbms/how-to-upgrade-mysql-5-5-to-mysql-5-6-on-centos-6-3-red-hat-fedora/">https://opensourcedbms.com/dbms/how-to-upgrade-mysql-5-5-to-mysql-5-6-on-centos-6-3-red-hat-fedora/</a></li>
+</ul>
+<div class="section" id="backing-up-restore-databases-via-command-line">
+<h3>Backing Up | Restore Databases via Command Line<a class="headerlink" href="#backing-up-restore-databases-via-command-line" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://in.godaddy.com/help/backup-mysql-databases-on-your-server-linux-17547">https://in.godaddy.com/help/backup-mysql-databases-on-your-server-linux-17547</a></li>
+<li><a class="reference external" href="http://www.mysqltutorial.org/how-to-backup-database-using-mysqldump.aspx">http://www.mysqltutorial.org/how-to-backup-database-using-mysqldump.aspx</a></li>
+<li><a class="reference external" href="https://www.liquidweb.com/kb/how-to-back-up-mysql-databases-from-the-command-line/">https://www.liquidweb.com/kb/how-to-back-up-mysql-databases-from-the-command-line/</a></li>
+<li><a class="reference external" href="https://www.tecmint.com/mysql-backup-and-restore-commands-for-database-administration/">https://www.tecmint.com/mysql-backup-and-restore-commands-for-database-administration/</a></li>
+</ul>
+</div>
+<div class="section" id="configuring-mariadb-for-remote-access">
+<h3>Configuring MariaDB for remote access<a class="headerlink" href="#configuring-mariadb-for-remote-access" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://mariadb.com/kb/en/library/configuring-mariadb-for-remote-client-access/">https://mariadb.com/kb/en/library/configuring-mariadb-for-remote-client-access/</a></li>
+</ul>
+</div>
+<div class="section" id="removing-a-mysql-user-with-his-privileges">
+<h3>Removing a MySQL user with his privileges<a class="headerlink" href="#removing-a-mysql-user-with-his-privileges" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://nsaunders.wordpress.com/2007/04/30/removing-a-mysql-user/">https://nsaunders.wordpress.com/2007/04/30/removing-a-mysql-user/</a></li>
+<li><a class="reference external" href="https://www.a2hosting.in/kb/developer-corner/mysql/managing-mysql-databases-and-users-from-the-command-line">https://www.a2hosting.in/kb/developer-corner/mysql/managing-mysql-databases-and-users-from-the-command-line</a></li>
+</ul>
+</div>
+<div class="section" id="information-on-mysql-bin-logs">
+<h3>Information on MySQL Bin logs<a class="headerlink" href="#information-on-mysql-bin-logs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/what-is-mysql-binary-log/">http://www.cyberciti.biz/faq/what-is-mysql-binary-log/</a></li>
+</ul>
+</div>
+<div class="section" id="replication-master-master">
+<h3>Replication (Master-Master)<a class="headerlink" href="#replication-master-master" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-set-up-mysql-master-master-replication">https://www.digitalocean.com/community/tutorials/how-to-set-up-mysql-master-master-replication</a></li>
+</ul>
+</div>
+<div class="section" id="replication-master-slave">
+<h3>Replication (Master-Slave)<a class="headerlink" href="#replication-master-slave" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.tecmint.com/how-to-setup-mysql-master-slave-replication-in-rhel-centos-fedora/">http://www.tecmint.com/how-to-setup-mysql-master-slave-replication-in-rhel-centos-fedora/</a></li>
+<li><a class="reference external" href="https://www.rackspace.com/knowledge_center/article/mysql-master-slave-replication">https://www.rackspace.com/knowledge_center/article/mysql-master-slave-replication</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-set-up-master-slave-replication-in-mysql">https://www.digitalocean.com/community/tutorials/how-to-set-up-master-slave-replication-in-mysql</a></li>
+<li><a class="reference external" href="http://sharadchhetri.com/2013/11/21/setup-mysql-master-slave-replication-in-centos-6/">http://sharadchhetri.com/2013/11/21/setup-mysql-master-slave-replication-in-centos-6/</a></li>
+<li><a class="reference external" href="http://aarvik.dk/how-to-set-up-master-slave-replication-in-mysql/">http://aarvik.dk/how-to-set-up-master-slave-replication-in-mysql/</a></li>
+<li><a class="reference external" href="http://plusbryan.com/mysql-replication-without-downtime">http://plusbryan.com/mysql-replication-without-downtime</a></li>
+<li><a class="reference external" href="https://blog.marceloaltmann.com/en-how-does-mysql-replication-works-pt-como-funciona-a-replicacao-no-mysq/">https://blog.marceloaltmann.com/en-how-does-mysql-replication-works-pt-como-funciona-a-replicacao-no-mysq/</a></li>
+</ul>
+</div>
+<div class="section" id="reset-forgotten-mysql-password">
+<h3>Reset forgotten MySQL password<a class="headerlink" href="#reset-forgotten-mysql-password" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-reset-your-mysql-or-mariadb-root-password">https://www.digitalocean.com/community/tutorials/how-to-reset-your-mysql-or-mariadb-root-password</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/mysql-change-root-password/">http://www.cyberciti.biz/faq/mysql-change-root-password/</a></li>
+<li><a class="reference external" href="https://www.liquidweb.com/kb/change-a-password-for-mysql-on-linux-via-command-line/">https://www.liquidweb.com/kb/change-a-password-for-mysql-on-linux-via-command-line/</a></li>
+<li><a class="reference external" href="https://www.codeenigma.com/community/blog/restoring-mysql-root-user">https://www.codeenigma.com/community/blog/restoring-mysql-root-user</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tuning-hardening">
+<h2>Tuning &amp; Hardening<a class="headerlink" href="#tuning-hardening" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.webyog.com/2012/11/20/how-to-monitor-mysql-replication/">http://blog.webyog.com/2012/11/20/how-to-monitor-mysql-replication/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-secure-mysql-and-mariadb-databases-in-a-linux-vps">https://www.digitalocean.com/community/tutorials/how-to-secure-mysql-and-mariadb-databases-in-a-linux-vps</a></li>
+<li><a class="reference external" href="https://www.percona.com/blog/2013/04/18/rotating-mysql-slow-logs-safely/">https://www.percona.com/blog/2013/04/18/rotating-mysql-slow-logs-safely/</a></li>
+<li><a class="reference external" href="http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs">http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs</a></li>
+<li><a class="reference external" href="https://serversforhackers.com/c/mysql-network-security">https://serversforhackers.com/c/mysql-network-security</a></li>
+<li><a class="reference external" href="http://www.proxysql.com">http://www.proxysql.com</a></li>
+</ul>
+<div class="section" id="to-change-the-value-of-expire-log-days-without-mysql-restart">
+<h3>To change the value of expire_log_days without MySQL restart<a class="headerlink" href="#to-change-the-value-of-expire-log-days-without-mysql-restart" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.sebastien-han.fr/blog/2013/02/15/purge-mysql-binary-logs/">https://www.sebastien-han.fr/blog/2013/02/15/purge-mysql-binary-logs/</a></li>
+</ul>
+</div>
+<div class="section" id="to-enable-various-logs-via-my-cnf-or-on-the-fly-without-restart">
+<h3>To enable various logs via my.cnf or on the fly without restart<a class="headerlink" href="#to-enable-various-logs-via-my-cnf-or-on-the-fly-without-restart" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs">http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs</a></li>
+</ul>
+</div>
+<div class="section" id="perl-script-to-analyses-system-mysql-variables-optimize-accordingly">
+<h3>Perl script to analyses system MySQL variables &amp; optimize accordingly<a class="headerlink" href="#perl-script-to-analyses-system-mysql-variables-optimize-accordingly" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://major.io/mysqltuner/">https://major.io/mysqltuner/</a></li>
+</ul>
+</div>
+<div class="section" id="tool-to-convert-xls-files-into-sql">
+<h3>Tool to convert xls files into SQL<a class="headerlink" href="#tool-to-convert-xls-files-into-sql" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://sqlizer.io/">https://sqlizer.io/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://alvinalexander.com/blog/post/mysql/how-show-open-database-connections-mysql">https://alvinalexander.com/blog/post/mysql/how-show-open-database-connections-mysql</a></li>
+<li><a class="reference external" href="https://www.tecmint.com/mysqladmin-commands-for-database-administration-in-linux/">https://www.tecmint.com/mysqladmin-commands-for-database-administration-in-linux/</a></li>
+<li><a class="reference external" href="http://www.plugged.in/databases/mysql-server-wont-start-pid-file-errors.html">http://www.plugged.in/databases/mysql-server-wont-start-pid-file-errors.html</a></li>
+<li><a class="reference external" href="https://major.io/2008/06/24/mysql-error-1040-too-many-connections/">https://major.io/2008/06/24/mysql-error-1040-too-many-connections/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-mytop-to-monitor-mysql-performance">https://www.digitalocean.com/community/tutorials/how-to-use-mytop-to-monitor-mysql-performance</a></li>
+</ul>
+<div class="section" id="checking-for-replication-lags">
+<h3>Checking for replication Lags<a class="headerlink" href="#checking-for-replication-lags" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.percona.com/blog/2007/10/12/managing-slave-lag-with-mysql-replication/">https://www.percona.com/blog/2007/10/12/managing-slave-lag-with-mysql-replication/</a></li>
+<li><a class="reference external" href="https://www.percona.com/blog/2014/05/02/how-to-identify-and-cure-mysql-replication-slave-lag/">https://www.percona.com/blog/2014/05/02/how-to-identify-and-cure-mysql-replication-slave-lag/</a></li>
+</ul>
+</div>
+<div class="section" id="various-mysql-error-codes">
+<h3>Various MySQL error codes<a class="headerlink" href="#various-mysql-error-codes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.fromdual.com/mysql-error-codes-and-messages">http://www.fromdual.com/mysql-error-codes-and-messages</a></li>
+<li><a class="reference external" href="https://major.io/2007/08/09/mysql-error-codes/">https://major.io/2007/08/09/mysql-error-codes/</a></li>
+</ul>
+</div>
+<div class="section" id="fix-for-the-error-1396">
+<h3>Fix for the ERROR 1396<a class="headerlink" href="#fix-for-the-error-1396" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://stackoverflow.com/questions/5555328/error-1396-hy000-operation-create-user-failed-for-jacklocalhost">https://stackoverflow.com/questions/5555328/error-1396-hy000-operation-create-user-failed-for-jacklocalhost</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/mysql-error-1396.png"><img alt="alternate text" class="align-center" src="_images/mysql-error-1396.png" style="width: 769px; height: 291px;" /></a>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Ansible.html" class="btn btn-neutral" title="Ansible" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vinay Hegde.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
