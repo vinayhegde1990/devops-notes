@@ -11,6 +11,6 @@ Welcome to my notes on various topics related to the DevOps terminology such as
 • Configuration Management Tools
 • Programming (Python, Shell Scripting)
 
-        ..and many more as I shall keep updating periodically.
+..and many more.
 
-You can read the full documentation on `our website <http://ipython.org/documentation.html>`
+You can read the full documentation on here - `http://devops-notes.rtfd.io/`

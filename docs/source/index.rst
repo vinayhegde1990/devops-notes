@@ -1,22 +1,13 @@
-==========================
-DevOps-Notes - Vinay Hegde
-==========================
-
-The purpose of this project is to document everything of my technical notes across various DevOps topics.
+Notes - Vinay Hegde
+=====================
 
 .. include:: ../source/README.rst
 
 .. toctree::
-      :maxdepth: 2
+      :maxdepth: 4
       :caption: Configuration Management
-
+      :hidden:
+	    
       Puppet
       Chef
       Ansible
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
