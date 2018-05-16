@@ -114,7 +114,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#anycasting-in-dns">AnyCasting in DNS</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#bind-configuration-tweaks">Bind Configuration / Tweaks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#powerdns-configuration-tweaks">PowerDNS Configuration / Tweaks</a></li>
@@ -288,39 +287,87 @@
 <div class="section" id="resource-records">
 <h3>Resource Records<a class="headerlink" href="#resource-records" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>A record
-* map a host to an IP address</li>
+<li><dl class="first docutils">
+<dt>A record</dt>
+<dd><ul class="first last">
+<li>map a host to an IP address</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">host</span>&#160;&#160;&#160;&#160; <span class="pre">IN</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">A</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">IPv4_address</span></code> <code class="docutils literal notranslate"><span class="pre">host</span>&#160;&#160;&#160;&#160; <span class="pre">IN</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">AAAA</span>&#160;&#160;&#160; <span class="pre">IPv6_address</span></code></p>
 <ul class="simple">
-<li>MX Record
-* map a mail exchange used for the domain</li>
+<li><dl class="first docutils">
+<dt>MX Record</dt>
+<dd><ul class="first last">
+<li>map a mail exchange used for the domain</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">IN</span>&#160; <span class="pre">MX</span>&#160; <span class="pre">10</span>&#160;&#160; <span class="pre">mail.domain.com.</span> <span class="pre">(where</span> <span class="pre">10</span> <span class="pre">is</span> <span class="pre">priority</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">record.</span> <span class="pre">Lower</span> <span class="pre">value,</span> <span class="pre">higher</span> <span class="pre">priority</span> <span class="pre">will</span> <span class="pre">be</span> <span class="pre">given</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">MX</span> <span class="pre">in</span> <span class="pre">a</span> <span class="pre">DNS</span> <span class="pre">lookup)</span></code></p>
 <ul class="simple">
-<li>PTR
-* maps an IP address to a reverse name</li>
+<li><dl class="first docutils">
+<dt>PTR</dt>
+<dd><ul class="first last">
+<li>maps an IP address to a reverse name</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 <div class="section" id="how-do-resolvers-work">
 <h3>How do resolvers work<a class="headerlink" href="#how-do-resolvers-work" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>What happens when you set resolvers in PC (Windows) And / Or Router
-* <cite>A browser 1st checks its internal cache of recent queries which it checks initially otherwise it asks the system resolver for DNS queries (/etc/hosts) else it forwards requests to another resolver.</cite></li>
+<li><dl class="first docutils">
+<dt>What happens when you set resolvers in PC (Windows) And / Or Router</dt>
+<dd><ul class="first last">
+<li><cite>A browser 1st checks its internal cache of recent queries which it checks initially otherwise it asks the system resolver for DNS queries (/etc/hosts) else it forwards requests to another resolver.</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 <a class="reference internal image-reference" href="_images/dns-resolver.png"><img alt="alternate text" class="align-center" src="_images/dns-resolver.png" style="width: 661px; height: 582px;" /></a>
 </div>
 <div class="section" id="types-of-dns-servers">
 <h3>Types of DNS Servers<a class="headerlink" href="#types-of-dns-servers" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><strong>Recursive:</strong>
-* <cite>A DNS server which queries other servers until it finds answer to the queried domain. They maintain a cache which is initially checked before sending the app’s query to another NS.</cite></li>
-<li><strong>Iterative:</strong>
-* <cite>To be explained</cite></li>
-<li><strong>Authoritative-Only :</strong>
-* <cite>Only answers those queries for which it stores the zones. Does not respond to recursive queries &amp; cache query results.</cite></li>
-<li><strong>Caching</strong> :
-* <cite>It handles recursive queries from clients which handles queries received from the OS stub resolver (/etc/hosts).</cite></li>
+<li><dl class="first docutils">
+<dt><strong>Recursive:</strong></dt>
+<dd><ul class="first last">
+<li><cite>A DNS server which queries other servers until it finds answer to the queried domain. They maintain a cache which is initially checked before sending the app’s query to another NS.</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Iterative:</strong></dt>
+<dd><ul class="first last">
+<li><cite>To be explained</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Authoritative-Only :</strong></dt>
+<dd><ul class="first last">
+<li><cite>Only answers those queries for which it stores the zones. Does not respond to recursive queries &amp; cache query results.</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Caching</strong> :</dt>
+<dd><ul class="first last">
+<li><cite>It handles recursive queries from clients which handles queries received from the OS stub resolver (/etc/hosts).</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><a class="reference external" href="https://muchbits.com/soa-dns-records.html">https://muchbits.com/soa-dns-records.html</a></li>
 <li><a class="reference external" href="https://gitlearning.wordpress.com/2015/06/23/dns-server/">https://gitlearning.wordpress.com/2015/06/23/dns-server/</a></li>
 <li><a class="reference external" href="https://danielmiessler.com/study/dns">https://danielmiessler.com/study/dns</a></li>
@@ -361,9 +408,6 @@
 <li><a class="reference external" href="http://ddiguru.com/blog/45/121">http://ddiguru.com/blog/45/121</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>

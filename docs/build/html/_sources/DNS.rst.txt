@@ -64,23 +64,23 @@ Why DNS uses TCP for Zone files transfer over port 53
 Resource Records
 **********************
 * A record
-  * map a host to an IP address
+                * map a host to an IP address
 
 ``host     IN      A          IPv4_address`` \
 ``host     IN      AAAA    IPv6_address``
 
 * MX Record
-  * map a mail exchange used for the domain
+                * map a mail exchange used for the domain
 
 ``IN  MX  10   mail.domain.com. (where 10 is priority for the record. Lower value, higher priority will be given to the MX in a DNS lookup)``
 
 * PTR 
-  * maps an IP address to a reverse name 
+                * maps an IP address to a reverse name 
 
 How do resolvers work
 ********************************************
 * What happens when you set resolvers in PC (Windows) And / Or Router
-  * `A browser 1st checks its internal cache of recent queries which it checks initially otherwise it asks the system resolver for DNS queries (/etc/hosts) else it forwards requests to another resolver.`
+                * `A browser 1st checks its internal cache of recent queries which it checks initially otherwise it asks the system resolver for DNS queries (/etc/hosts) else it forwards requests to another resolver.`
 
 .. image::  ../source/images/dns-resolver.png
     :width: 661px
@@ -92,16 +92,16 @@ How do resolvers work
 Types of DNS Servers
 **************************
 - **Recursive:** 
-  * `A DNS server which queries other servers until it finds answer to the queried domain. They maintain a cache which is initially checked before sending the app's query to another NS.`
+                * `A DNS server which queries other servers until it finds answer to the queried domain. They maintain a cache which is initially checked before sending the app's query to another NS.`
 
 - **Iterative:** 
-  * `To be explained`
+                * `To be explained`
 
 - **Authoritative-Only :** 
-  * `Only answers those queries for which it stores the zones. Does not respond to recursive queries & cache query results.`
+                * `Only answers those queries for which it stores the zones. Does not respond to recursive queries & cache query results.`
 
 - **Caching** : 
-  * `It handles recursive queries from clients which handles queries received from the OS stub resolver (/etc/hosts).`
+                * `It handles recursive queries from clients which handles queries received from the OS stub resolver (/etc/hosts).`
                 
                 
 - https://muchbits.com/soa-dns-records.html
@@ -167,11 +167,6 @@ AnyCasting in DNS
 - http://ddiguru.com/blog/45/121
 
 
-##########
-Commands
-##########
-
-
 ################
 Configuration
 ################
@@ -192,9 +187,9 @@ PowerDNS Configuration / Tweaks
 - https://blog.powerdns.com/2015/03/11/introducing-dnsdist-dns-abuse-and-dos-aware-query-distribution-for-optimal-performance/
 
 
-################################   
+##################################   
 Troubleshooting & Log Parsing
-################################   
+##################################   
 
 - http://www.tecmint.com/10-linux-dig-domain-information-groper-commands-to-query-dns/
    
