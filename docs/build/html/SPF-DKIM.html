@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>SPF &amp; DKIM &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -28,8 +27,9 @@
   
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Milters" href="Milters.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,13 +91,21 @@
 <li class="toctree-l1"><a class="reference internal" href="NoSQL.html">NoSQL</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Mail Servers</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Email.html">Email</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Postfix.html">Postfix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exim.html">Exim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Dovecot.html">Dovecot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Milters.html">Milters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SPF-DKIM.html">SPF &amp; DKIM</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SPF &amp; DKIM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#spf-records">SPF Records</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -143,12 +151,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Index</li>
+      <li>SPF &amp; DKIM</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/SPF-DKIM.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -160,11 +170,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="spf-dkim">
+<h1>SPF &amp; DKIM<a class="headerlink" href="#spf-dkim" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basics of how SPF &amp; DKIM works</em></p>
+<div class="section" id="concepts">
+<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spf-records">
+<h3>SPF Records<a class="headerlink" href="#spf-records" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.postmarkapp.com/post/86506131503/explaining-spf">http://blog.postmarkapp.com/post/86506131503/explaining-spf</a></li>
+<li><a class="reference external" href="http://blog.hyperfive.com/2011/05/spf-records-explained.html">http://blog.hyperfive.com/2011/05/spf-records-explained.html</a></li>
+<li><a class="reference external" href="http://www.openspf.org/SPF_Record_Syntax">http://www.openspf.org/SPF_Record_Syntax</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability">https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability</a></li>
+<li><a class="reference external" href="https://cheriches.com/linux/mail-server-series/2014-09-07-dedicated-mail-server-hosting-multiple-domains-step-5-antispam.html">https://cheriches.com/linux/mail-server-series/2014-09-07-dedicated-mail-server-hosting-multiple-domains-step-5-antispam.html</a></li>
+<li><a class="reference external" href="https://kura.io/2015/01/03/debian-wheezy-tls-mailserver-with-mysql-clamav-domainkeys-dkim-spf-solr-imap-search/#ssl">https://kura.io/2015/01/03/debian-wheezy-tls-mailserver-with-mysql-clamav-domainkeys-dkim-spf-solr-imap-search/#ssl</a></li>
+<li><a class="reference external" href="http://www.stevejenkins.com/blog/2010/09/how-to-get-dkim-domainkeys-identified-mail-working-on-centos-5-5-and-postfix-using-opendkim/">http://www.stevejenkins.com/blog/2010/09/how-to-get-dkim-domainkeys-identified-mail-working-on-centos-5-5-and-postfix-using-opendkim/</a></li>
+</ul>
+</div>
+<div class="section" id="troubleshooting-log-parsing">
+<h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -172,6 +203,13 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Milters.html" class="btn btn-neutral" title="Milters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
