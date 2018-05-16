@@ -4,7 +4,7 @@ Notes - Vinay Hegde
 .. include:: ../source/README.rst
 
 .. toctree::
-      :maxdepth: 2
+   :maxdepth: 2
    :caption: Configuration Management
    :hidden:
 
@@ -13,7 +13,7 @@ Notes - Vinay Hegde
    Ansible
    
 .. toctree::
-      :maxdepth: 2
+   :maxdepth: 2
    :caption: Databases
    :hidden:
    
@@ -22,7 +22,7 @@ Notes - Vinay Hegde
    NoSQL
 
 .. toctree::
-      :maxdepth: 4
+   :maxdepth: 4
    :caption: Mail Servers
    :hidden:
    
