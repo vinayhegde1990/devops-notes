@@ -196,18 +196,54 @@
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Authoritative NS
-* <cite>When a DNS query is made to a server which has the domain’s data, it is an authoritative NS, otherwise it will point to other NS or serve cached copies of other NS</cite></li>
-<li>Zone file
-* <cite>simple text file containing the mapping between domain names and IP addresses, e.g : www.google.com</cite></li>
-<li>Root Servers
-* <cite>13 servers - a to h, routed to the nearest mirror of the server</cite></li>
-<li>TLD servers :
-* <cite>.com [others are : .org, .net, .edu etc]</cite></li>
-<li>Domain Level NS
-* <cite>the server containing the actual records of the requested domain (ns1.google.com, ns2.google.com etc)</cite></li>
-<li>TTL - Time to live
-* <cite>A timer. Caching name servers can use this until the TTL runs out</cite></li>
+<li><dl class="first docutils">
+<dt>Authoritative NS</dt>
+<dd><ul class="first last">
+<li><cite>When a DNS query is made to a server which has the domain’s data, it is an authoritative NS, otherwise it will point to other NS or serve cached copies of other NS</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Zone file</dt>
+<dd><ul class="first last">
+<li><cite>simple text file containing the mapping between domain names and IP addresses, e.g : www.google.com</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Root Servers</dt>
+<dd><ul class="first last">
+<li><cite>13 servers - a to h, routed to the nearest mirror of the server</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>TLD servers :</dt>
+<dd><ul class="first last">
+<li><cite>.com [others are : .org, .net, .edu etc]</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Domain Level NS</dt>
+<dd><ul class="first last">
+<li><cite>the server containing the actual records of the requested domain (ns1.google.com, ns2.google.com etc)</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>TTL - Time to live</dt>
+<dd><ul class="first last">
+<li><cite>A timer. Caching name servers can use this until the TTL runs out</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li>Records</li>
 </ul>
 <div class="highlight-ruby notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1

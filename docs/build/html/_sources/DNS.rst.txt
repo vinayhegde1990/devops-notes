@@ -9,22 +9,22 @@ Concepts
 ########
 
 * Authoritative NS
-  * `When a DNS query is made to a server which has the domain's data, it is an authoritative NS, otherwise it will point to other NS or serve cached copies of other NS`
+                * `When a DNS query is made to a server which has the domain's data, it is an authoritative NS, otherwise it will point to other NS or serve cached copies of other NS`
                 
 * Zone file
-  * `simple text file containing the mapping between domain names and IP addresses, e.g : www.google.com`
+                * `simple text file containing the mapping between domain names and IP addresses, e.g : www.google.com`
 
 * Root Servers 
-  * `13 servers - a to h, routed to the nearest mirror of the server`
+                * `13 servers - a to h, routed to the nearest mirror of the server`
 
 * TLD servers : 
-  * `.com [others are : .org, .net, .edu etc]`
+                * `.com [others are : .org, .net, .edu etc]`
                 
 * Domain Level NS
-  * `the server containing the actual records of the requested domain (ns1.google.com, ns2.google.com etc)`
+                * `the server containing the actual records of the requested domain (ns1.google.com, ns2.google.com etc)`
 
 * TTL - Time to live 
-  * `A timer. Caching name servers can use this until the TTL runs out`
+                * `A timer. Caching name servers can use this until the TTL runs out`
                 
 * Records 
 
