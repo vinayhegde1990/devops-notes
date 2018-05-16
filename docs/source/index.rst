@@ -33,4 +33,10 @@ Notes - Vinay Hegde
    Milters
    SPF-DKIM
    ClamAV
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Domain Name Servers
+   :hidden:
    
+   DNS 
