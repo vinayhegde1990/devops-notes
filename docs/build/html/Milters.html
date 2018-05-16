@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Notes - Vinay Hegde &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>Milters &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Puppet" href="Puppet.html" /> 
+    <link rel="prev" title="Dovecot" href="Dovecot.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -48,7 +48,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> DevOps-Notes
+            <a href="index.html" class="icon icon-home"> DevOps-Notes
           
 
           
@@ -91,12 +91,23 @@
 <li class="toctree-l1"><a class="reference internal" href="NoSQL.html">NoSQL</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Mail Servers</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Email.html">Email</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Postfix.html">Postfix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Exim.html">Exim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Dovecot.html">Dovecot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Milters.html">Milters</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Milters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#email-rbls-real-time-block-hole-lists-primer">Email RBLs (real-time block-hole lists) Primer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#check-multiple-global-rbls-online">Check multiple global RBLs online</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -111,7 +122,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">DevOps-Notes</a>
+          <a href="index.html">DevOps-Notes</a>
         
       </nav>
 
@@ -140,15 +151,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Notes - Vinay Hegde</li>
+      <li>Milters</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Milters.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -161,27 +172,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="notes-vinay-hegde">
-<h1>Notes - Vinay Hegde<a class="headerlink" href="#notes-vinay-hegde" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>Welcome to my notes on various topics related to the DevOps terminology such as</p>
+  <div class="section" id="milters">
+<h1>Milters<a class="headerlink" href="#milters" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basics of how Milters works</em></p>
+<div class="section" id="concepts">
+<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="email-rbls-real-time-block-hole-lists-primer">
+<h3>Email RBLs (real-time block-hole lists) Primer<a class="headerlink" href="#email-rbls-real-time-block-hole-lists-primer" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Linux Operating Systems</li>
-<li>Networking</li>
-<li>Web / Email / DNS / Database Servers</li>
-<li>GIT</li>
-<li>Configuration Management Tools</li>
-<li>Programming (Python, Shell Scripting)</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/DNSBL">https://en.wikipedia.org/wiki/DNSBL</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_DNS_blacklists">https://en.wikipedia.org/wiki/Comparison_of_DNS_blacklists</a></li>
+<li><a class="reference external" href="https://www.spamhaus.org/whitepapers/dnsbl_function/">https://www.spamhaus.org/whitepapers/dnsbl_function/</a></li>
+<li><a class="reference external" href="https://kb.mailchimp.com/delivery/spam-filters/how-blacklists-work">https://kb.mailchimp.com/delivery/spam-filters/how-blacklists-work</a></li>
+<li><a class="reference external" href="https://www.pinpointe.com/blog/how-do-i-know-if-im-on-a-spam-blacklist">https://www.pinpointe.com/blog/how-do-i-know-if-im-on-a-spam-blacklist</a></li>
+<li><a class="reference external" href="https://rbltracker.com/blog/2015/07/what-are-rbls-and-how-do-they-work-part-1/">https://rbltracker.com/blog/2015/07/what-are-rbls-and-how-do-they-work-part-1/</a></li>
+<li><a class="reference external" href="https://blog.returnpath.com/blacklist-basics-the-top-email-blacklists-you-need-to-know-v2/">https://blog.returnpath.com/blacklist-basics-the-top-email-blacklists-you-need-to-know-v2/</a></li>
+<li><a class="reference external" href="https://techtalk.gfi.com/dns-blacklists-work/">https://techtalk.gfi.com/dns-blacklists-work/</a></li>
+<li><a class="reference external" href="https://sendgrid.com/blog/email-blacklist/">https://sendgrid.com/blog/email-blacklist/</a></li>
 </ul>
-<p>..and many more.</p>
-<p>You can read the full documentation on here - <cite>http://devops-notes.rtfd.io/</cite></p>
-<div class="toctree-wrapper compound">
+<a class="reference internal image-reference" href="_images/postfix-rbl-flow.png"><img alt="alternate text" class="align-center" src="_images/postfix-rbl-flow.png" style="width: 913px; height: 575px;" /></a>
 </div>
-<div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="check-multiple-global-rbls-online">
+<h3>Check multiple global RBLs online<a class="headerlink" href="#check-multiple-global-rbls-online" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://multirbl.valli.org/lookup/">http://multirbl.valli.org/lookup/</a></li>
+<li><a class="reference external" href="http://mxtoolbox.com/">http://mxtoolbox.com/</a></li>
+<li><a class="reference external" href="http://www.dnsbl.info/">http://www.dnsbl.info/</a></li>
+</ul>
 </div>
+</div>
+<div class="section" id="troubleshooting-log-parsing">
+<h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -193,8 +217,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Puppet.html" class="btn btn-neutral float-right" title="Puppet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+        <a href="Dovecot.html" class="btn btn-neutral" title="Dovecot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
