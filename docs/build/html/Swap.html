@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Topic &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>Swap &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="SSH.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Memory.html" /> 
+    <link rel="next" title="Topic" href="SSH.html" />
+    <link rel="prev" title="Memory" href="Memory.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,15 +83,22 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Linux-Basics.html">Linux Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Boot-Process.html">Boot Process</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CPU.html">Topic</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Topic</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="CPU.html">CPU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Memory.html">Memory</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Swap</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="SSH.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utilities.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Editors.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hardware.html">Topic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Provisioning.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Storage.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Package-Management.html">Topic</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Configuration Management</span></p>
 <ul>
@@ -163,7 +170,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Topic</li>
+      <li>Swap</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,20 +189,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="topic">
-<h1>Topic<a class="headerlink" href="#topic" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how Topic works</em></p>
+  <div class="section" id="swap">
+<h1>Swap<a class="headerlink" href="#swap" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basics of how Swap works</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.linux.com/news/all-about-linux-swap-space">https://www.linux.com/news/all-about-linux-swap-space</a></li>
+<li><a class="reference external" href="http://www.linux-tutorial.info/modules.php?name=MContent&amp;pageid=311">http://www.linux-tutorial.info/modules.php?name=MContent&amp;pageid=311</a></li>
+<li><a class="reference external" href="http://aarvik.dk/what-is-swap-memory-and-how-to-use-it/">http://aarvik.dk/what-is-swap-memory-and-how-to-use-it/</a></li>
+<li><a class="reference external" href="http://blog.scoutapp.com/articles/2015/04/10/understanding-page-faults-and-memory-swap-in-outs-when-should-you-worry">http://blog.scoutapp.com/articles/2015/04/10/understanding-page-faults-and-memory-swap-in-outs-when-should-you-worry</a></li>
+</ul>
 </div>
 <div class="section" id="commands">
 <h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Check total swap space used &amp; sort it descending</strong></li>
+</ul>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">for</span> file in /proc/*/status <span class="p">;</span> <span class="k">do</span> awk <span class="s1">&#39;/VmSwap|Name/{printf $2 &quot; &quot; $3}END{ print &quot;&quot;}&#39;</span> <span class="nv">$file</span><span class="p">;</span> <span class="k">done</span> <span class="p">|</span> sort -k <span class="m">2</span> -nr <span class="p">|</span> head -10
+<span class="k">for</span> file in /proc/*/status <span class="p">;</span> <span class="k">do</span> awk <span class="s1">&#39;/VmSwap|Name/{printf $2 &quot; &quot; $3}END{ print &quot;&quot;}&#39;</span> <span class="nv">$file</span><span class="p">;</span> <span class="k">done</span> <span class="p">|</span> awk  <span class="s1">&#39;{print $1 &quot; &quot; $2/1024 &quot; MB&quot; }&#39;</span><span class="p">|</span>sort -k <span class="m">2</span> -n -r <span class="p">|</span> head -10
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li><strong>Alternatively - run below command</strong></li>
+</ul>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>sudo nice top <span class="o">(</span>Press Shift+o → p <span class="o">(</span>To sort processes by swap usage<span class="o">)</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/linux-add-a-swap-file-howto/">http://www.cyberciti.biz/faq/linux-add-a-swap-file-howto/</a></li>
+<li><a class="reference external" href="http://bencane.com/2016/05/18/creating-a-swap-file-for-tiny-cloud-servers/">http://bencane.com/2016/05/18/creating-a-swap-file-for-tiny-cloud-servers/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7">https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7</a></li>
+</ul>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://northernmost.org/blog/find-out-what-is-using-your-swap/">http://northernmost.org/blog/find-out-what-is-using-your-swap/</a></li>
+<li><a class="reference external" href="http://www.digitalinternals.com/unix/linux-swap-usage-per-process/379/">http://www.digitalinternals.com/unix/linux-swap-usage-per-process/379/</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/linux-which-process-is-using-swap/">http://www.cyberciti.biz/faq/linux-which-process-is-using-swap/</a></li>
+<li><a class="reference external" href="https://unix.stackexchange.com/questions/294600/i-cant-enable-swap-space-on-centos-7">https://unix.stackexchange.com/questions/294600/i-cant-enable-swap-space-on-centos-7</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/swap-fallocate-centos7.png"><img alt="_images/swap-fallocate-centos7.png" class="align-center" src="_images/swap-fallocate-centos7.png" style="width: 763px; height: 228px;" /></a>
 </div>
 </div>
 
@@ -207,10 +246,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="SSH.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="SSH.html" class="btn btn-neutral float-right" title="Topic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Memory.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Memory.html" class="btn btn-neutral" title="Memory" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
