@@ -11,8 +11,20 @@ Welcome to my notes on various topics related to the DevOps / SysAdmin terminolo
 
 ..and many more.
 
-You can read the full documentation on here - https://devops-notes.readthedocs.io
+You can read the complete documentation [here](https://devops-notes.readthedocs.io)
 
+<h2> Tools Used: </h2>
+<h3> reStructuredText (RST): </h3>
+
+- For writing the .rst files which render the formatting. You can start off by learning via [this](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+
+<h3> Sphinx: </h3> 
+
+- The engine that generates content in formats like HTML, LaTeX, ePub. A beginner’s guide can be found on their [page](http://www.sphinx-doc.org/en/master/index.html)
+
+<h3> ReadTheDocs: </h3> 
+
+- The home of my documentation along with many others. They’ve an excellent [document](http://docs.readthedocs.io/en/latest/getting_started.html) to help you get up and running in no time.
 
 <h2> Please note: </h2>
 
