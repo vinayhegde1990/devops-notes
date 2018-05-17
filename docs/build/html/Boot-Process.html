@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Boot Process &mdash; DevOps-Notes 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Topic" href="CPU.html" />
+    <link rel="prev" title="Linux Basics" href="Linux-Basics.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> DevOps-Notes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Basic-Concepts</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Linux-Basics.html">Linux Basics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Boot Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview-of-the-linux-boot-process">Overview of the Linux Boot process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#difference-between-commands-for-bringing-down-a-linux-server">Difference between commands for bringing down a linux server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#difference-between-grub-lilo">Difference between GRUB / LILO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#do-we-need-a-separate-boot-partition-in-linux-os">Do we need a separate boot partition in Linux OS?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CPU.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Memory.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Swap.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSH.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utilities.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Editors.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hardware.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Provisioning.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Storage.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Package-Management.html">Topic</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Puppet.html">Puppet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Chef.html">Chef</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ansible.html">Ansible</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Databases</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="MySQL.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PostgreSQL.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NoSQL.html">NoSQL</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Mail Servers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Email.html">Email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Postfix.html">Postfix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exim.html">Exim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dovecot.html">Dovecot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Milters.html">Milters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SPF-DKIM.html">SPF &amp; DKIM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ClamAV.html">ClamAV</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Domain Name Servers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="DNS.html">DNS</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DevOps-Notes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Boot Process</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Boot-Process.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="boot-process">
+<h1>Boot Process<a class="headerlink" href="#boot-process" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers how Boot Process works</em></p>
+<div class="section" id="concepts">
+<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="overview-of-the-linux-boot-process">
+<h3>Overview of the Linux Boot process<a class="headerlink" href="#overview-of-the-linux-boot-process" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.ibm.com/developerworks/library/l-linuxboot/">https://www.ibm.com/developerworks/library/l-linuxboot/</a></li>
+<li><a class="reference external" href="https://0xax.gitbooks.io/linux-insides/content/Booting/linux-bootstrap-1.html">https://0xax.gitbooks.io/linux-insides/content/Booting/linux-bootstrap-1.html</a></li>
+<li><a class="reference external" href="http://www.slashroot.in/linux-booting-process-step-step-tutorial-understanding-linux-boot-sequence">http://www.slashroot.in/linux-booting-process-step-step-tutorial-understanding-linux-boot-sequence</a></li>
+<li><a class="reference external" href="http://www.golinuxhub.com/2014/03/step-by-step-linux-boot-process.html">http://www.golinuxhub.com/2014/03/step-by-step-linux-boot-process.html</a>?</li>
+<li><a class="reference external" href="http://www.tecmint.com/linux-boot-process/">http://www.tecmint.com/linux-boot-process/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/the-upstart-event-system-what-it-is-and-how-to-use-it">https://www.digitalocean.com/community/tutorials/the-upstart-event-system-what-it-is-and-how-to-use-it</a></li>
+<li><a class="reference external" href="http://linoxide.com/booting/boot-process-of-linux-in-detail/">http://linoxide.com/booting/boot-process-of-linux-in-detail/</a></li>
+<li><a class="reference external" href="http://bencane.com/2013/09/16/understanding-a-little-more-about-etcprofile-and-etcbashrc/">http://bencane.com/2013/09/16/understanding-a-little-more-about-etcprofile-and-etcbashrc/</a></li>
+</ul>
+</div>
+<div class="section" id="difference-between-commands-for-bringing-down-a-linux-server">
+<h3>Difference between commands for bringing down a linux server<a class="headerlink" href="#difference-between-commands-for-bringing-down-a-linux-server" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://unix.stackexchange.com/questions/195898/what-is-the-difference-between-these-commands-for-bringing-down-a-linux-server/">http://unix.stackexchange.com/questions/195898/what-is-the-difference-between-these-commands-for-bringing-down-a-linux-server/</a></li>
+</ul>
+</div>
+<div class="section" id="difference-between-grub-lilo">
+<h3>Difference between GRUB / LILO<a class="headerlink" href="#difference-between-grub-lilo" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.ibm.com/developerworks/library/l-bootload/index.html">https://www.ibm.com/developerworks/library/l-bootload/index.html</a></li>
+</ul>
+</div>
+<div class="section" id="do-we-need-a-separate-boot-partition-in-linux-os">
+<h3>Do we need a separate boot partition in Linux OS?<a class="headerlink" href="#do-we-need-a-separate-boot-partition-in-linux-os" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://superuser.com/questions/522971/is-a-boot-partition-always-necessary">http://superuser.com/questions/522971/is-a-boot-partition-always-necessary</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/boot-process-separate-partition.png"><img alt="_images/boot-process-separate-partition.png" class="align-center" src="_images/boot-process-separate-partition.png" style="width: 762px; height: 878px;" /></a>
+</div>
+</div>
+<div class="section" id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.if-not-true-then-false.com/2012/delete-remove-old-kernels-on-fedora-centos-red-hat-rhel/">http://www.if-not-true-then-false.com/2012/delete-remove-old-kernels-on-fedora-centos-red-hat-rhel/</a></li>
+<li><a class="reference external" href="https://linuxconfig.org/how-to-remove-unused-kernel-images-from-centos-linux-system">https://linuxconfig.org/how-to-remove-unused-kernel-images-from-centos-linux-system</a></li>
+<li><a class="reference external" href="https://markmcb.com/2013/02/04/cleanup-unused-linux-kernels-in-ubuntu/">https://markmcb.com/2013/02/04/cleanup-unused-linux-kernels-in-ubuntu/</a></li>
+<li><a class="reference external" href="http://www.ostechnix.com/how-to-create-bootable-usb-drive-using-dd-command/">http://www.ostechnix.com/how-to-create-bootable-usb-drive-using-dd-command/</a></li>
+<li><a class="reference external" href="https://blog.packagecloud.io/eng/2016/03/08/how-to-extract-and-disassmble-a-linux-kernel-image-vmlinuz/">https://blog.packagecloud.io/eng/2016/03/08/how-to-extract-and-disassmble-a-linux-kernel-image-vmlinuz/</a></li>
+</ul>
+</div>
+<div class="section" id="troubleshooting-log-parsing">
+<h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="CPU.html" class="btn btn-neutral float-right" title="Topic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Linux-Basics.html" class="btn btn-neutral" title="Linux Basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vinay Hegde.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

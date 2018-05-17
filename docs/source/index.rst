@@ -5,6 +5,24 @@ Notes - Vinay Hegde
 
 .. toctree::
    :maxdepth: 2
+   :caption: Basic-Concepts
+   :hidden:
+
+   Linux-Basics
+   Boot-Process
+   CPU
+   Memory
+   Swap
+   SSH
+   Utilities
+   Editors
+   Hardware
+   Provisioning
+   Storage
+   Package-Management
+
+.. toctree::
+   :maxdepth: 2
    :caption: Configuration Management
    :hidden:
 
