@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Topic &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>Memory &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Topic" href="Swap.html" />
-    <link rel="prev" title="Topic" href="CPU.html" /> 
+    <link rel="prev" title="CPU" href="CPU.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,11 +83,18 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Linux-Basics.html">Linux Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Boot-Process.html">Boot Process</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CPU.html">Topic</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Topic</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="CPU.html">CPU</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Memory</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#free-command-explained">Free Command - Explained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-commands">Other Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-ram-disk">Create a RAM Disk</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
 </ul>
 </li>
@@ -170,7 +177,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Topic</li>
+      <li>Memory</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -189,17 +196,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="topic">
-<h1>Topic<a class="headerlink" href="#topic" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how Topic works</em></p>
+  <div class="section" id="memory">
+<h1>Memory<a class="headerlink" href="#memory" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basics of how Memory works</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.ioflood.com/2015/03/27/making-sense-of-linux-memory-usage-part-1-how-to-read-top-in-centos/">http://blog.ioflood.com/2015/03/27/making-sense-of-linux-memory-usage-part-1-how-to-read-top-in-centos/</a></li>
+<li><a class="reference external" href="https://www.reddit.com/r/linux/comments/1hk5ow/free_buffer_swap_dirty_procmeminfo_explained/">https://www.reddit.com/r/linux/comments/1hk5ow/free_buffer_swap_dirty_procmeminfo_explained/</a></li>
+</ul>
 </div>
 <div class="section" id="commands">
 <h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="free-command-explained">
+<h3>Free Command - Explained<a class="headerlink" href="#free-command-explained" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://corlewsolutions.com/articles/article-6-understanding-the-free-command-in-ubuntu-and-linux">http://corlewsolutions.com/articles/article-6-understanding-the-free-command-in-ubuntu-and-linux</a></li>
+<li><a class="reference external" href="http://www.linuxatemyram.com/">http://www.linuxatemyram.com/</a></li>
+<li><a class="reference external" href="http://www.cloudibee.com/know-about-procmeminfo/">http://www.cloudibee.com/know-about-procmeminfo/</a></li>
+<li><a class="reference external" href="http://www.linuxnix.com/find-ram-details-in-linuxunix/">http://www.linuxnix.com/find-ram-details-in-linuxunix/</a></li>
+</ul>
+</div>
+<div class="section" id="other-commands">
+<h3>Other Commands<a class="headerlink" href="#other-commands" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.thegeekstuff.com/2010/08/ipcs-command-examples/">http://www.thegeekstuff.com/2010/08/ipcs-command-examples/</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/memory-semaphores-ipcs.png"><img alt="_images/memory-semaphores-ipcs.png" class="align-center" src="_images/memory-semaphores-ipcs.png" style="width: 763px; height: 228px;" /></a>
+<ul class="simple">
+<li><a class="reference external" href="http://www.tecmint.com/dstat-monitor-linux-server-performance-process-memory-network/">http://www.tecmint.com/dstat-monitor-linux-server-performance-process-memory-network/</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://github.com/pixelb/scripts/commits/master/scripts/ps_mem.py">http://github.com/pixelb/scripts/commits/master/scripts/ps_mem.py</a></li>
+</ul>
+<div class="section" id="create-a-ram-disk">
+<h3>Create a RAM Disk<a class="headerlink" href="#create-a-ram-disk" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.jamescoyle.net/how-to/943-create-a-ram-disk-in-linux">https://www.jamescoyle.net/how-to/943-create-a-ram-disk-in-linux</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
@@ -217,7 +256,7 @@
         <a href="Swap.html" class="btn btn-neutral float-right" title="Topic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="CPU.html" class="btn btn-neutral" title="Topic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="CPU.html" class="btn btn-neutral" title="CPU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
