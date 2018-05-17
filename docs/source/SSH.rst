@@ -50,7 +50,7 @@ SSH key-based logins
 
 ################################   
 Tuning & Hardening
-################################   
+################################
 
 - https://superuser.com/questions/718346/openssh-ssh-config-host-specific-overrides-not-working
    
@@ -68,7 +68,8 @@ Correct permissions of .ssh directory
     :height: 429px
         
         
-#Run same commands via SSH on multiple servers#   
+Run same commands via SSH on multiple servers
+*************************************************
 - https://www.linux.com/news/parallel-ssh-execution-and-single-shell-control-them-all
 
 - http://serverfault.com/questions/321167/add-correct-host-key-in-known-hosts-multiple-ssh-host-keys-per-hostname
