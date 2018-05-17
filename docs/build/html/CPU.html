@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Topic &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>CPU &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Memory.html" />
+    <link rel="next" title="Topic" href="Memory.html" />
     <link rel="prev" title="Boot Process" href="Boot-Process.html" /> 
 
   
@@ -83,13 +83,36 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Linux-Basics.html">Linux Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Boot-Process.html">Boot Process</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Topic</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CPU</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#types-of-processes">Types of Processes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output-of-ps-aux-explained">Output of ps aux - Explained</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#top">top</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sar">SAR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nice-renice-ionice">Nice / Renice / IOnice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kill">KILL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#htop">HTop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visual-representation-of-all-htop-parameters">Visual representation of all HTop parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#htop-command-explained">HTop command - Explained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sysdig">SysDig</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="Memory.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Swap.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSH.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utilities.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Editors.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hardware.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Provisioning.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Storage.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Package-Management.html">Topic</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Configuration Management</span></p>
 <ul>
@@ -161,7 +184,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Topic</li>
+      <li>CPU</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -180,20 +203,137 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="topic">
-<h1>Topic<a class="headerlink" href="#topic" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how Topic works</em></p>
+  <div class="section" id="cpu">
+<h1>CPU<a class="headerlink" href="#cpu" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basics of how CPU works</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages">http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages</a></li>
+</ul>
+<div class="section" id="types-of-processes">
+<h3>Types of Processes<a class="headerlink" href="#types-of-processes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.gmarik.info/blog/2012/orphan-vs-zombie-vs-daemon-processes/">http://www.gmarik.info/blog/2012/orphan-vs-zombie-vs-daemon-processes/</a></li>
+</ul>
+</div>
+<div class="section" id="output-of-ps-aux-explained">
+<h3>Output of ps aux - Explained<a class="headerlink" href="#output-of-ps-aux-explained" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://superuser.com/questions/117913/ps-aux-output-meaning">http://superuser.com/questions/117913/ps-aux-output-meaning</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/cpu-ps-aux-meaning.png"><img alt="_images/cpu-ps-aux-meaning.png" class="align-center" src="_images/cpu-ps-aux-meaning.png" style="width: 695px; height: 440px;" /></a>
+<ul class="simple">
+<li><a class="reference external" href="http://thelinuxstuff.blogspot.in/2012/08/process-state-codes-in-ps-output.html">http://thelinuxstuff.blogspot.in/2012/08/process-state-codes-in-ps-output.html</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/cpu-process-state-codes.png"><img alt="_images/cpu-process-state-codes.png" class="align-center" src="_images/cpu-process-state-codes.png" style="width: 733px; height: 654px;" /></a>
+</div>
 </div>
 <div class="section" id="commands">
 <h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="top">
+<h3>top<a class="headerlink" href="#top" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.thegeekstuff.com/2010/01/15-practical-unix-linux-top-command-examples/">http://www.thegeekstuff.com/2010/01/15-practical-unix-linux-top-command-examples/</a></li>
+<li><a class="reference external" href="http://www.slashroot.in/linux-cpu-performance-monitoring-tutorial">http://www.slashroot.in/linux-cpu-performance-monitoring-tutorial</a></li>
+<li><a class="reference external" href="http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/">http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/</a></li>
+<li><a class="reference external" href="http://tecadmin.net/understanding-linux-top-command-results-uses/">http://tecadmin.net/understanding-linux-top-command-results-uses/</a></li>
+<li><a class="reference external" href="http://linuxaria.com/howto/understanding-the-top-command-on-linux">http://linuxaria.com/howto/understanding-the-top-command-on-linux</a></li>
+<li><a class="reference external" href="http://www.tecmint.com/12-top-command-examples-in-linux/">http://www.tecmint.com/12-top-command-examples-in-linux/</a></li>
+<li><a class="reference external" href="http://linoxide.com/linux-command/linux-top-command-examples-screenshots/">http://linoxide.com/linux-command/linux-top-command-examples-screenshots/</a></li>
+<li><a class="reference external" href="http://www.dowdandassociates.com/blog/content/howto-troubleshoot-with-linux-top-command/">http://www.dowdandassociates.com/blog/content/howto-troubleshoot-with-linux-top-command/</a></li>
+<li><a class="reference external" href="http://www.linuxjournal.com/magazine/hack-and-linux-troubleshooting-part-i-high-load">http://www.linuxjournal.com/magazine/hack-and-linux-troubleshooting-part-i-high-load</a></li>
+<li><a class="reference external" href="http://www.crucialp.com/resources/tutorials/server-administration/server-loads-explained-linux-unix/">http://www.crucialp.com/resources/tutorials/server-administration/server-loads-explained-linux-unix/</a></li>
+<li><a class="reference external" href="https://haydenjames.io/use-atop-linux-server-performance-analysis/">https://haydenjames.io/use-atop-linux-server-performance-analysis/</a></li>
+<li><a class="reference external" href="https://alvinalexander.com/linux/unix-linux-process-memory-sort-ps-command-cpu">https://alvinalexander.com/linux/unix-linux-process-memory-sort-ps-command-cpu</a></li>
+<li><a class="reference external" href="https://math-linux.com/linux/tip-of-the-day/article/find-out-biggest-cpu-memory-consuming-processes-with-ps-command">https://math-linux.com/linux/tip-of-the-day/article/find-out-biggest-cpu-memory-consuming-processes-with-ps-command</a></li>
+</ul>
+</div>
+<div class="section" id="sar">
+<h3>SAR<a class="headerlink" href="#sar" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.thegeekstuff.com/2011/03/sar-examples/">http://www.thegeekstuff.com/2011/03/sar-examples/</a></li>
+<li><a class="reference external" href="http://linoxide.com/linux-command/linux-system-performance-monitoring-using-sar-command/">http://linoxide.com/linux-command/linux-system-performance-monitoring-using-sar-command/</a></li>
+<li><a class="reference external" href="http://www.slashroot.in/examples-using-sar-command-system-monitoring-linux">http://www.slashroot.in/examples-using-sar-command-system-monitoring-linux</a></li>
+<li><a class="reference external" href="http://www.blackmoreops.com/2014/06/18/sysstat-sar-examples-usage/">http://www.blackmoreops.com/2014/06/18/sysstat-sar-examples-usage/</a></li>
+<li><a class="reference external" href="http://linoxide.com/linux-command/linux-pidstat-monitor-statistics-procesess/">http://linoxide.com/linux-command/linux-pidstat-monitor-statistics-procesess/</a></li>
+<li><a class="reference external" href="http://www.thegeekstuff.com/2014/11/pidstat-examples/">http://www.thegeekstuff.com/2014/11/pidstat-examples/</a></li>
+<li><a class="reference external" href="http://www.yourownlinux.com/2014/08/sar-command-in-linux-tutorial-with-examples.html">http://www.yourownlinux.com/2014/08/sar-command-in-linux-tutorial-with-examples.html</a></li>
+<li><a class="reference external" href="https://crybit.com/sar-command/">https://crybit.com/sar-command/</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/open-source/command-line-hacks/linux-monitor-process-using-pidstat/">http://www.cyberciti.biz/open-source/command-line-hacks/linux-monitor-process-using-pidstat/</a></li>
+</ul>
+</div>
+<div class="section" id="nice-renice-ionice">
+<h3>Nice / Renice / IOnice<a class="headerlink" href="#nice-renice-ionice" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.faqforge.com/linux/reduce-load-of-backup-scripts-with-nice-and-ionice/">https://www.faqforge.com/linux/reduce-load-of-backup-scripts-with-nice-and-ionice/</a></li>
+<li><a class="reference external" href="http://www.slashroot.in/nice-and-renice-command-usage-examples-process-priority-linux">http://www.slashroot.in/nice-and-renice-command-usage-examples-process-priority-linux</a></li>
+</ul>
+</div>
+<div class="section" id="kill">
+<h3>KILL<a class="headerlink" href="#kill" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/">http://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/</a></li>
+<li><a class="reference external" href="https://www.quora.com/What-is-the-difference-between-Kill-and-Kill-9-command-in-Unix">https://www.quora.com/What-is-the-difference-between-Kill-and-Kill-9-command-in-Unix</a></li>
+<li><a class="reference external" href="http://bencane.com/2014/04/01/understanding-the-kill-command-and-how-to-terminate-processes-in-linux/">http://bencane.com/2014/04/01/understanding-the-kill-command-and-how-to-terminate-processes-in-linux/</a></li>
+<li><a class="reference external" href="https://rtcamp.com/tutorials/linux/kill-all-processes/">https://rtcamp.com/tutorials/linux/kill-all-processes/</a></li>
+<li><a class="reference external" href="http://www.tecmint.com/how-to-kill-a-process-in-linux/">http://www.tecmint.com/how-to-kill-a-process-in-linux/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux">https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/unix-linux-killall-command-examples-usage-syntax/">http://www.cyberciti.biz/faq/unix-linux-killall-command-examples-usage-syntax/</a></li>
+<li><a class="reference external" href="https://unix.stackexchange.com/questions/252349/what-is-the-difference-between-kill-pkill-and-killall">https://unix.stackexchange.com/questions/252349/what-is-the-difference-between-kill-pkill-and-killall</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/cpu-difference-between-pkill-killall.png"><img alt="_images/cpu-difference-between-pkill-killall.png" class="align-center" src="_images/cpu-difference-between-pkill-killall.png" style="width: 744px; height: 281px;" /></a>
+</div>
+<div class="section" id="htop">
+<h3>HTop<a class="headerlink" href="#htop" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="visual-representation-of-all-htop-parameters">
+<h3>Visual representation of all HTop parameters<a class="headerlink" href="#visual-representation-of-all-htop-parameters" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://codeahoy.com/2017/01/20/hhtop-explained-visually/">https://codeahoy.com/2017/01/20/hhtop-explained-visually/</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/cpu-visual-htop.png"><img alt="_images/cpu-visual-htop.png" class="align-center" src="_images/cpu-visual-htop.png" style="width: 2100px; height: 500px;" /></a>
+</div>
+<div class="section" id="htop-command-explained">
+<h3>HTop command - Explained<a class="headerlink" href="#htop-command-explained" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://peteris.rocks/blog/htop/">https://peteris.rocks/blog/htop/</a></li>
+<li><a class="reference external" href="http://www.servercraftmen.com/performance-tuning-htop-usage/">http://www.servercraftmen.com/performance-tuning-htop-usage/</a></li>
+<li><a class="reference external" href="http://www.webhostingbuzz.com/wiki/install-htop-linux/">http://www.webhostingbuzz.com/wiki/install-htop-linux/</a></li>
+<li><a class="reference external" href="https://www.tecmint.com/install-htop-linux-process-monitoring-for-rhel-centos-fedora/">https://www.tecmint.com/install-htop-linux-process-monitoring-for-rhel-centos-fedora/</a></li>
+<li><a class="reference external" href="https://delightlylinux.wordpress.com/2014/03/24/htop-a-better-process-viewer-then-top/">https://delightlylinux.wordpress.com/2014/03/24/htop-a-better-process-viewer-then-top/</a></li>
+<li><a class="reference external" href="http://www.thegeekstuff.com/2011/09/linux-htop-examples">http://www.thegeekstuff.com/2011/09/linux-htop-examples</a></li>
+</ul>
+</div>
+<div class="section" id="sysdig">
+<h3>SysDig<a class="headerlink" href="#sysdig" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://sysdig.com/blog/sysdig-vs-dtrace-vs-strace-a-technical-discussion/">https://sysdig.com/blog/sysdig-vs-dtrace-vs-strace-a-technical-discussion/</a></li>
+<li><a class="reference external" href="https://www.sysdig.org/wiki/sysdig-user-guide/">https://www.sysdig.org/wiki/sysdig-user-guide/</a></li>
+<li><a class="reference external" href="https://github.com/draios/sysdig/wiki/Sysdig-Examples">https://github.com/draios/sysdig/wiki/Sysdig-Examples</a></li>
+<li><a class="reference external" href="https://sysdig.com/blog/linux-troubleshooting-cheatsheet/">https://sysdig.com/blog/linux-troubleshooting-cheatsheet/</a></li>
+<li><a class="reference external" href="http://bencane.com/2014/04/18/using-sysdig-to-troubleshoot-like-a-boss/">http://bencane.com/2014/04/18/using-sysdig-to-troubleshoot-like-a-boss/</a></li>
+<li><a class="reference external" href="http://xmodulo.com/monitor-troubleshoot-linux-server-sysdig.html">http://xmodulo.com/monitor-troubleshoot-linux-server-sysdig.html</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Find the most number of processes running on the system</strong></li>
+</ul>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>sudo ps -AL --no-headers <span class="p">|</span> awk -F: <span class="s1">&#39;{print $3}&#39;</span> <span class="p">|</span> cut -d<span class="s1">&#39; &#39;</span> -f2 <span class="p">|</span> sort <span class="p">|</span> uniq -c <span class="p">|</span> sort -n <span class="p">|</span> tail -10
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li><strong>Check for zombie processes with PPID</strong></li>
+</ul>
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>sudo ps axo stat,ppid,pid,comm <span class="p">|</span> grep -w defunct
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 
@@ -205,7 +345,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Memory.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Memory.html" class="btn btn-neutral float-right" title="Topic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Boot-Process.html" class="btn btn-neutral" title="Boot Process" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
