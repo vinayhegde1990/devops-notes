@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Topic &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>SSH &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Topic" href="Utilities.html" />
-    <link rel="prev" title="Topic" href="Swap.html" /> 
+    <link rel="prev" title="Swap" href="Swap.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,13 +83,21 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Linux-Basics.html">Linux Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Boot-Process.html">Boot Process</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CPU.html">Topic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Memory.html">Topic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Swap.html">Topic</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Topic</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="CPU.html">CPU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Memory.html">Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Swap.html">Swap</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SSH</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ssh-key-based-logins">SSH key-based logins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-hardening">Tuning &amp; Hardening</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#correct-permissions-of-ssh-directory">Correct permissions of .ssh directory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tmux">TMux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
 </ul>
 </li>
@@ -170,7 +178,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Topic</li>
+      <li>SSH</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -189,17 +197,83 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="topic">
-<h1>Topic<a class="headerlink" href="#topic" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how Topic works</em></p>
+  <div class="section" id="ssh">
+<h1>SSH<a class="headerlink" href="#ssh" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basics of how SSH works</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://cavepopo.hd.free.fr/wordpress/linux/about-ssh-the-secure-shell/">http://cavepopo.hd.free.fr/wordpress/linux/about-ssh-the-secure-shell/</a></li>
+<li><a class="reference external" href="https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work">https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work</a></li>
+<li><a class="reference external" href="https://www.slashroot.in/secure-shell-how-does-ssh-work">https://www.slashroot.in/secure-shell-how-does-ssh-work</a></li>
+<li><a class="reference external" href="https://www.ibm.com/developerworks/aix/library/au-sshsecurity/index.html">https://www.ibm.com/developerworks/aix/library/au-sshsecurity/index.html</a></li>
+<li><a class="reference external" href="https://www.ibm.com/developerworks/library/l-keyc/index.html">https://www.ibm.com/developerworks/library/l-keyc/index.html</a></li>
+</ul>
 </div>
 <div class="section" id="commands">
 <h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ssh-key-based-logins">
+<h3>SSH key-based logins<a class="headerlink" href="#ssh-key-based-logins" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys">https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-freebsd-server">https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-freebsd-server</a></li>
+<li><a class="reference external" href="https://www.linode.com/docs/security/use-public-key-authentication-with-ssh">https://www.linode.com/docs/security/use-public-key-authentication-with-ssh</a></li>
+<li><a class="reference external" href="http://blog.nowherelan.com/2014/01/04/two-step-authentication-for-ssh-on-centos-6-using-google-authenticator/">http://blog.nowherelan.com/2014/01/04/two-step-authentication-for-ssh-on-centos-6-using-google-authenticator/</a></li>
+<li><a class="reference external" href="https://www.linux.com/blog/securing-ssh-two-factor-authentication-using-google-authenticator">https://www.linux.com/blog/securing-ssh-two-factor-authentication-using-google-authenticator</a></li>
+<li><a class="reference external" href="http://www.thegeekstuff.com/2008/11/3-steps-to-perform-ssh-login-without-password-using-ssh-keygen-ssh-copy-id/">http://www.thegeekstuff.com/2008/11/3-steps-to-perform-ssh-login-without-password-using-ssh-keygen-ssh-copy-id/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client">https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client</a></li>
+<li><a class="reference external" href="https://www.ssh.com/ssh/config/">https://www.ssh.com/ssh/config/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tuning-hardening">
+<h2>Tuning &amp; Hardening<a class="headerlink" href="#tuning-hardening" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://superuser.com/questions/718346/openssh-ssh-config-host-specific-overrides-not-working">https://superuser.com/questions/718346/openssh-ssh-config-host-specific-overrides-not-working</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorial_series/how-to-troubleshoot-ssh">https://www.digitalocean.com/community/tutorial_series/how-to-troubleshoot-ssh</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps">https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps</a></li>
+</ul>
+<div class="section" id="correct-permissions-of-ssh-directory">
+<h3>Correct permissions of .ssh directory<a class="headerlink" href="#correct-permissions-of-ssh-directory" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://superuser.com/questions/215504/permissions-on-private-key-in-ssh-folder">https://superuser.com/questions/215504/permissions-on-private-key-in-ssh-folder</a></li>
+</ul>
+<a class="reference internal image-reference" href="_images/ssh-dot-dir-perms.png"><img alt="_images/ssh-dot-dir-perms.png" class="align-center" src="_images/ssh-dot-dir-perms.png" style="width: 744px; height: 429px;" /></a>
+<p>#Run same commands via SSH on multiple servers#
+- <a class="reference external" href="https://www.linux.com/news/parallel-ssh-execution-and-single-shell-control-them-all">https://www.linux.com/news/parallel-ssh-execution-and-single-shell-control-them-all</a></p>
+<ul class="simple">
+<li><a class="reference external" href="http://serverfault.com/questions/321167/add-correct-host-key-in-known-hosts-multiple-ssh-host-keys-per-hostname">http://serverfault.com/questions/321167/add-correct-host-key-in-known-hosts-multiple-ssh-host-keys-per-hostname</a></li>
+<li><a class="reference external" href="http://unix.stackexchange.com/questions/19008/automatically-run-commands-over-ssh-on-many-servers">http://unix.stackexchange.com/questions/19008/automatically-run-commands-over-ssh-on-many-servers</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/tips/execute-commands-on-multiple-linux-or-unix-servers.html">http://www.cyberciti.biz/tips/execute-commands-on-multiple-linux-or-unix-servers.html</a></li>
+<li><a class="reference external" href="http://unix.stackexchange.com/questions/107800/using-while-loop-to-ssh-to-multiple-servers">http://unix.stackexchange.com/questions/107800/using-while-loop-to-ssh-to-multiple-servers</a></li>
+<li><a class="reference external" href="http://stackoverflow.com/questions/20254906/bash-script-to-ssh-multiple-servers-in-a-loop-and-issue-commands">http://stackoverflow.com/questions/20254906/bash-script-to-ssh-multiple-servers-in-a-loop-and-issue-commands</a></li>
+<li><a class="reference external" href="http://unix.stackexchange.com/questions/182101/script-to-ssh-to-multiple-linux-server-and-execute-a-find-command">http://unix.stackexchange.com/questions/182101/script-to-ssh-to-multiple-linux-server-and-execute-a-find-command</a></li>
+<li><a class="reference external" href="http://cavepopo.hd.free.fr/wordpress/linux/ssh-the-secure-shell-practical-examples/">http://cavepopo.hd.free.fr/wordpress/linux/ssh-the-secure-shell-practical-examples/</a></li>
+<li><a class="reference external" href="http://thornelabs.net/2013/08/21/simple-ways-to-send-multiple-line-commands-over-ssh.html">http://thornelabs.net/2013/08/21/simple-ways-to-send-multiple-line-commands-over-ssh.html</a></li>
+<li><a class="reference external" href="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/">http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/</a></li>
+<li><a class="reference external" href="http://aarvik.dk/ssh-fundamentals-cssh-and-fabric/">http://aarvik.dk/ssh-fundamentals-cssh-and-fabric/</a></li>
+<li><a class="reference external" href="http://aarvik.dk/how-to-create-socks-proxy-through-ssh/">http://aarvik.dk/how-to-create-socks-proxy-through-ssh/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tmux">
+<h2>TMux<a class="headerlink" href="#tmux" title="Permalink to this headline">¶</a></h2>
+<p>This section covers the basics of how TMux works.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://danielmiessler.com/study/tmux/">https://danielmiessler.com/study/tmux/</a></li>
+<li><a class="reference external" href="http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily">http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily</a></li>
+<li><a class="reference external" href="https://robots.thoughtbot.com/a-tmux-crash-course">https://robots.thoughtbot.com/a-tmux-crash-course</a></li>
+<li><a class="reference external" href="http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/">http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/</a></li>
+<li><a class="reference external" href="http://www.sitepoint.com/tmux-a-simple-start/">http://www.sitepoint.com/tmux-a-simple-start/</a></li>
+<li><a class="reference external" href="http://fideloper.com/mac-vim-tmux">http://fideloper.com/mac-vim-tmux</a></li>
+<li><a class="reference external" href="http://blog.victorquinn.com/tmux-tutorial">http://blog.victorquinn.com/tmux-tutorial</a></li>
+<li><a class="reference external" href="https://www.codementor.io/tmux/tutorial/beginners-guide-to-tmux-navigating-and-configuring-your-tmux">https://www.codementor.io/tmux/tutorial/beginners-guide-to-tmux-navigating-and-configuring-your-tmux</a></li>
+<li><a class="reference external" href="https://marc.cortinasval.cat/blog/2013/11/29/tmux-the-best-choice/">https://marc.cortinasval.cat/blog/2013/11/29/tmux-the-best-choice/</a></li>
+<li><a class="reference external" href="http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/">http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/</a></li>
+</ul>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
@@ -217,7 +291,7 @@
         <a href="Utilities.html" class="btn btn-neutral float-right" title="Topic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Swap.html" class="btn btn-neutral" title="Topic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Swap.html" class="btn btn-neutral" title="Swap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
