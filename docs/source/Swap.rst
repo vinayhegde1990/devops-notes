@@ -64,6 +64,6 @@ Troubleshooting & Log Parsing
 - https://unix.stackexchange.com/questions/294600/i-cant-enable-swap-space-on-centos-7
 
 .. image::  ../source/images/swap-fallocate-centos7.png
-    :width: 763px
+    :width: 797px
     :align: center
-    :height: 228px
+    :height: 318px
