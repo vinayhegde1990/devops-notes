@@ -1,8 +1,8 @@
 ************
-Topic
+Provisioning
 ************
 
-*This section covers the basics of how Topic works*
+*This section covers the basics of how Provisioning works*
 
 ########
 Concepts

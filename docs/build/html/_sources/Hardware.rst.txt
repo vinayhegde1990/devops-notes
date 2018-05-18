@@ -1,8 +1,8 @@
 ************
-Topic
+Hardware
 ************
 
-*This section covers the basics of how Topic works*
+*This section covers the basics of how Hardware works*
 
 ########
 Concepts

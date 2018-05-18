@@ -13,8 +13,6 @@ Welcome to my notes on various topics related to the DevOps terminology such as
 
 ..and many more.
 
-You can read the full documentation `here <https://devops-notes.readthedocs.io/>`_
-
 * Tools Used:
 
                 * **reStructuredText (RST)** - For writing the .rst files which render the formatting. You can start off by learning via `this <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_
