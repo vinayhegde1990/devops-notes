@@ -1,8 +1,8 @@
 ************
-Topic
+Storage
 ************
 
-*This section covers the basics of how Topic works*
+*This section covers the basics of how Storage works*
 
 ########
 Concepts
