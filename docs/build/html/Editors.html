@@ -89,10 +89,16 @@
 <li class="toctree-l1"><a class="reference internal" href="SSH.html">SSH</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Utilities</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Editors</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customizing-your-own-vimrc">Customizing your own .vimrc</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vi-editor-cheat-sheet">VI Editor Cheat Sheet</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#to-delete-all-lines-in-vim">To delete all lines in vim</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sed-awk">SED &amp;&amp;  AWK</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#converting-new-lines-to-spaces-via-sed">Converting New-Lines to spaces via sed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#awk-notes">AWK Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Hardware.html">Hardware</a></li>
@@ -191,18 +197,49 @@
             
   <div class="section" id="editors">
 <h1>Editors<a class="headerlink" href="#editors" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how Editors works</em></p>
-<div class="section" id="concepts">
-<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the basics of Editors</em></p>
+<ul class="simple">
+<li><a class="reference external" href="http://vim.rtorr.com/">http://vim.rtorr.com/</a></li>
+<li><a class="reference external" href="https://danielmiessler.com/study/vim/">https://danielmiessler.com/study/vim/</a></li>
+<li><a class="reference external" href="https://vim.swaroopch.com/">https://vim.swaroopch.com/</a></li>
+</ul>
+<div class="section" id="customizing-your-own-vimrc">
+<h2>Customizing your own .vimrc<a class="headerlink" href="#customizing-your-own-vimrc" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://dougblack.io/words/a-good-vimrc.html">https://dougblack.io/words/a-good-vimrc.html</a></li>
+</ul>
+<div class="section" id="vi-editor-cheat-sheet">
+<h3>VI Editor Cheat Sheet<a class="headerlink" href="#vi-editor-cheat-sheet" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="_images/editors-vim-cheat-sheet.png"><img alt="_images/editors-vim-cheat-sheet.png" class="align-center" src="_images/editors-vim-cheat-sheet.png" style="width: 1190px; height: 1684px;" /></a>
 </div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="to-delete-all-lines-in-vim">
+<h2>To delete all lines in vim<a class="headerlink" href="#to-delete-all-lines-in-vim" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/editors-vim-delete-all-lines.png"><img alt="_images/editors-vim-delete-all-lines.png" class="align-center" src="_images/editors-vim-delete-all-lines.png" style="width: 775px; height: 296px;" /></a>
+<div class="section" id="sed-awk">
+<h3>SED &amp;&amp;  AWK<a class="headerlink" href="#sed-awk" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.yourownlinux.com/2015/04/sed-command-in-linux-delete-lines-from-file.html">http://www.yourownlinux.com/2015/04/sed-command-in-linux-delete-lines-from-file.html</a></li>
+</ul>
 </div>
-<div class="section" id="troubleshooting-log-parsing">
-<h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="converting-new-lines-to-spaces-via-sed">
+<h2>Converting New-Lines to spaces via sed<a class="headerlink" href="#converting-new-lines-to-spaces-via-sed" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://unix.stackexchange.com/questions/26788/using-sed-to-convert-newlines-into-spaces">http://unix.stackexchange.com/questions/26788/using-sed-to-convert-newlines-into-spaces</a></li>
+<li><a class="reference external" href="https://stackoverflow.com/questions/13610639/tr-command-how-to-replace-the-string-n-with-an-actual-newline-n">https://stackoverflow.com/questions/13610639/tr-command-how-to-replace-the-string-n-with-an-actual-newline-n</a></li>
+<li><a class="reference external" href="https://stackoverflow.com/questions/1251999/how-can-i-replace-a-newline-n-using-sed">https://stackoverflow.com/questions/1251999/how-can-i-replace-a-newline-n-using-sed</a></li>
+</ul>
+</div>
+<div class="section" id="awk-notes">
+<h2>AWK Notes<a class="headerlink" href="#awk-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.theunixschool.com/2012/06/awk-10-examples-to-group-data-in-csv-or.html">http://www.theunixschool.com/2012/06/awk-10-examples-to-group-data-in-csv-or.html</a></li>
+<li><a class="reference external" href="https://stackoverflow.com/questions/15758814/turning-multiple-lines-into-one-line-with-comma-separated-perl-sed-awk">https://stackoverflow.com/questions/15758814/turning-multiple-lines-into-one-line-with-comma-separated-perl-sed-awk</a></li>
+<li><a class="reference external" href="https://stackoverflow.com/questions/8714355/bash-turning-multi-line-string-into-single-comma-separated">https://stackoverflow.com/questions/8714355/bash-turning-multi-line-string-into-single-comma-separated</a></li>
+<li><a class="reference external" href="http://linoxide.com/linux-command/awk-linux-famous-oneliners/">http://linoxide.com/linux-command/awk-linux-famous-oneliners/</a></li>
+<li><a class="reference external" href="http://www.linuxnix.com/category/programming/awk/">http://www.linuxnix.com/category/programming/awk/</a></li>
+</ul>
 </div>
 </div>
 
