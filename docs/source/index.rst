@@ -8,7 +8,6 @@ Notes - Vinay Hegde
    :caption: Basic-Concepts
    :hidden:
 
-   Linux-Basics
    Boot-Process
    CPU
    Memory
@@ -19,6 +18,7 @@ Notes - Vinay Hegde
    Hardware
    Provisioning
    Storage
+   File-Systems
    Package-Management
 
 .. toctree::

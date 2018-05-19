@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Notes - Vinay Hegde &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>Linux Basics &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -29,7 +29,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Boot Process" href="Boot-Process.html" /> 
+    <link rel="next" title="Package-Management" href="Package-Management.html" />
+    <link rel="prev" title="Storage" href="Storage.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -48,7 +49,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> DevOps-Notes
+            <a href="index.html" class="icon icon-home"> DevOps-Notes
           
 
           
@@ -79,7 +80,7 @@
             
             
               <p class="caption"><span class="caption-text">Basic-Concepts</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Boot-Process.html">Boot Process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CPU.html">CPU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Memory.html">Memory</a></li>
@@ -101,7 +102,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Storage.html#creating-mounting-a-2nd-hard-drive-in-linux">Creating &amp; mounting a 2nd Hard drive in linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Storage.html#good-explanation-of-all-parameters-to-be-used-in-fstab">Good explanation of all parameters to be used in fstab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Storage.html#online-visual-raid-calculator">Online Visual RAID Calculator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="File-Systems.html">Linux Basics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Package-Management.html">Package-Management</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Configuration Management</span></p>
@@ -143,7 +150,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">DevOps-Notes</a>
+          <a href="index.html">DevOps-Notes</a>
         
       </nav>
 
@@ -172,15 +179,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Notes - Vinay Hegde</li>
+      <li>Linux Basics</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/File-Systems.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -193,49 +200,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="notes-vinay-hegde">
-<h1>Notes - Vinay Hegde<a class="headerlink" href="#notes-vinay-hegde" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>Welcome to my notes on various topics related to the DevOps terminology such as</p>
-<ul class="simple">
-<li>Linux Operating Systems</li>
-<li>Networking</li>
-<li>Web / Email / DNS / Database Servers</li>
-<li>GIT</li>
-<li>Configuration Management Tools</li>
-<li>Programming (Python, Shell Scripting)</li>
-</ul>
-<p>..and many more.</p>
-<ul>
-<li><p class="first">Tools Used:</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>reStructuredText (RST)</strong> - For writing the .rst files which render the formatting. You can start off by learning via <a class="reference external" href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html">this</a></li>
-<li><strong>Sphinx</strong> - The engine that generates all the content in formats like <strong>HTML</strong>, <strong>LaTeX</strong>, <strong>ePub</strong>. A beginner’s guide can be found on their <a class="reference external" href="http://www.sphinx-doc.org/en/master/index.html">page</a></li>
-<li><strong>GitHub</strong> - For maintaining the source code in version control, accessible via <a class="reference external" href="https://github.com/vinayhegde1990/devops-notes/tree/master/docs/source">link</a></li>
-<li><strong>ReadTheDocs</strong> - The home of my documentation along with many others. They’ve an excellent <a class="reference external" href="http://docs.readthedocs.io/en/latest/getting_started.html">document</a> that will help you get up and running in no time.</li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-<div class="section" id="please-note">
-<h3>Please Note:<a class="headerlink" href="#please-note" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>This is still a work in progress. Contributions / Feedback are welcome!</li>
-<li>Feel free to contact me via <a class="reference external" href="mailto:vinay&#46;hegde30&#37;&#52;&#48;gmail&#46;com">email</a> or <a class="reference external" href="https://api.whatsapp.com/send?phone=919967875270">WhatsApp</a> for the above</li>
-</ul>
-<div class="toctree-wrapper compound">
+  <div class="section" id="linux-basics">
+<h1>Linux Basics<a class="headerlink" href="#linux-basics" title="Permalink to this headline">¶</a></h1>
+<p><em>This section covers the basic concepts of Linux</em></p>
+<div class="section" id="concepts">
+<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-</div>
+<div class="section" id="troubleshooting-log-parsing">
+<h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -247,8 +225,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Boot-Process.html" class="btn btn-neutral float-right" title="Boot Process" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Package-Management.html" class="btn btn-neutral float-right" title="Package-Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="Storage.html" class="btn btn-neutral" title="Storage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
