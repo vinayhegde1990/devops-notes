@@ -93,27 +93,31 @@
 <li class="toctree-l1"><a class="reference internal" href="Storage.html">Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="File-Systems.html">File Systems</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Package-Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#difference-between-yum-update-yum-upgrade">Difference between yum update / yum upgrade</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#difference-between-yum-update-yum-upgrade">Difference between yum update / yum upgrade</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#rpm">RPM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rpm">RPM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#yum">YUM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dnf">DNF</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#yum">YUM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#dnf">DNF</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rollback-or-revert-yum-changes">Rollback or Revert YUM Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-packages-for-rpm-based-os">Downloading packages for RPM based OS</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#rollback-or-revert-yum-changes">Rollback or Revert YUM Changes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#downloading-packages-for-rpm-based-os">Downloading packages for RPM based OS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#apt">APT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#apt">APT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Troubleshooting &amp; Log Parsing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#difference-between-apt-get-update-apt-get-upgrade">Difference between apt-get update / apt-get upgrade</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#id1">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id2">Troubleshooting &amp; Log Parsing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#difference-between-apt-get-update-apt-get-upgrade">Difference between apt-get update / apt-get upgrade</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Configuration Management</span></p>
 <ul>
@@ -213,11 +217,11 @@
 <li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg">https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg</a></li>
 <li><a class="reference external" href="https://blog.packagecloud.io/eng/2015/10/26/use-alien-to-convert-deb-to-rpm-and-rpm-to-deb/">https://blog.packagecloud.io/eng/2015/10/26/use-alien-to-convert-deb-to-rpm-and-rpm-to-deb/</a></li>
 </ul>
-</div>
-</div>
 <div class="section" id="difference-between-yum-update-yum-upgrade">
-<h1>Difference between yum update / yum upgrade<a class="headerlink" href="#difference-between-yum-update-yum-upgrade" title="Permalink to this headline">¶</a></h1>
+<h3>Difference between yum update / yum upgrade<a class="headerlink" href="#difference-between-yum-update-yum-upgrade" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="_images/package-mgmt-yum-upgrade-update.png"><img alt="_images/package-mgmt-yum-upgrade-update.png" class="align-center" src="_images/package-mgmt-yum-upgrade-update.png" style="width: 745px; height: 409px;" /></a>
+</div>
+</div>
 <div class="section" id="rpm">
 <h2>RPM<a class="headerlink" href="#rpm" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -226,10 +230,8 @@
 <li><a class="reference external" href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">https://fedoraproject.org/wiki/How_to_create_an_RPM_package</a></li>
 <li><a class="reference external" href="http://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/">http://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/</a></li>
 </ul>
-</div>
-</div>
 <div class="section" id="yum">
-<h1>YUM<a class="headerlink" href="#yum" title="Permalink to this headline">¶</a></h1>
+<h3>YUM<a class="headerlink" href="#yum" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="http://www.slashroot.in/yum-repository-and-package-management-complete-tutorial">http://www.slashroot.in/yum-repository-and-package-management-complete-tutorial</a></li>
 <li><a class="reference external" href="http://www.tecmint.com/20-linux-yum-yellowdog-updater-modified-commands-for-package-mangement/">http://www.tecmint.com/20-linux-yum-yellowdog-updater-modified-commands-for-package-mangement/</a></li>
@@ -239,11 +241,13 @@
 </ul>
 </div>
 <div class="section" id="dnf">
-<h1>DNF<a class="headerlink" href="#dnf" title="Permalink to this headline">¶</a></h1>
+<h3>DNF<a class="headerlink" href="#dnf" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://dnf.readthedocs.io/en/latest/index.html">https://dnf.readthedocs.io/en/latest/index.html</a></li>
 <li><a class="reference external" href="http://linoxide.com/linux-how-to/dnf-commands-manage-rpm-linux/">http://linoxide.com/linux-how-to/dnf-commands-manage-rpm-linux/</a></li>
 </ul>
+</div>
+</div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -254,10 +258,8 @@
 <li><a class="reference external" href="http://www.linuxtechi.com/download-rpm-using-yumdownloader-centos-7-rhel-7/">http://www.linuxtechi.com/download-rpm-using-yumdownloader-centos-7-rhel-7/</a></li>
 <li><a class="reference external" href="https://blog.packagecloud.io/eng/2015/10/13/inspect-extract-contents-rpm-packages/">https://blog.packagecloud.io/eng/2015/10/13/inspect-extract-contents-rpm-packages/</a></li>
 </ul>
-</div>
-</div>
 <div class="section" id="rollback-or-revert-yum-changes">
-<h1>Rollback or Revert YUM Changes<a class="headerlink" href="#rollback-or-revert-yum-changes" title="Permalink to this headline">¶</a></h1>
+<h3>Rollback or Revert YUM Changes<a class="headerlink" href="#rollback-or-revert-yum-changes" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://www.if-not-true-then-false.com/2010/yum-history-list-info-summary-repeat-redo-undo-new/">https://www.if-not-true-then-false.com/2010/yum-history-list-info-summary-repeat-redo-undo-new/</a></li>
 <li><a class="reference external" href="http://www.itechlounge.net/2012/08/linux-how-to-rollback-yum-updates-on-rhel-centos/">http://www.itechlounge.net/2012/08/linux-how-to-rollback-yum-updates-on-rhel-centos/</a></li>
@@ -265,10 +267,12 @@
 </ul>
 </div>
 <div class="section" id="downloading-packages-for-rpm-based-os">
-<h1>Downloading packages for RPM based OS<a class="headerlink" href="#downloading-packages-for-rpm-based-os" title="Permalink to this headline">¶</a></h1>
+<h3>Downloading packages for RPM based OS<a class="headerlink" href="#downloading-packages-for-rpm-based-os" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://pkgs.org/">https://pkgs.org/</a></li>
 </ul>
+</div>
+</div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -286,10 +290,8 @@
 <li><a class="reference external" href="https://blog.packagecloud.io/eng/2015/03/30/apt-cheat-sheet/">https://blog.packagecloud.io/eng/2015/03/30/apt-cheat-sheet/</a></li>
 <li><a class="reference external" href="https://help.ubuntu.com/community/Repositories/CommandLine">https://help.ubuntu.com/community/Repositories/CommandLine</a></li>
 </ul>
-</div>
-</div>
 <div class="section" id="id1">
-<h1>Configuration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h3>Configuration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="http://www.tecmint.com/apt-advanced-package-command-examples-in-ubuntu/">http://www.tecmint.com/apt-advanced-package-command-examples-in-ubuntu/</a></li>
 <li><a class="reference external" href="http://www.cyberciti.biz/faq/debian-ubuntu-linux-show-detailed-description-info/">http://www.cyberciti.biz/faq/debian-ubuntu-linux-show-detailed-description-info/</a></li>
@@ -297,14 +299,16 @@
 </ul>
 </div>
 <div class="section" id="id2">
-<h1>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
-</div>
+<h3>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="difference-between-apt-get-update-apt-get-upgrade">
-<h1>Difference between apt-get update / apt-get upgrade<a class="headerlink" href="#difference-between-apt-get-update-apt-get-upgrade" title="Permalink to this headline">¶</a></h1>
+<h4>Difference between apt-get update / apt-get upgrade<a class="headerlink" href="#difference-between-apt-get-update-apt-get-upgrade" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="https://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade">https://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade</a></li>
 </ul>
 <a class="reference internal image-reference" href="_images/package-mgmt-apt-upgrade-update.png"><img alt="_images/package-mgmt-apt-upgrade-update.png" class="align-center" src="_images/package-mgmt-apt-upgrade-update.png" style="width: 745px; height: 264px;" /></a>
+</div>
+</div>
+</div>
 </div>
 
 
