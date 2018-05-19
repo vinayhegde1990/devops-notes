@@ -2,7 +2,7 @@
 SPF & DKIM
 ****************
 
-*This section covers the basics of how SPF & DKIM works*
+*Some useful links to cover the basics of SPF & DKIM*
 
 ########
 Concepts

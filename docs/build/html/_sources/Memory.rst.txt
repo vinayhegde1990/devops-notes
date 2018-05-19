@@ -2,7 +2,7 @@
 Memory
 ************
 
-*This section covers the basics of how Memory works*
+*Some useful links to cover the basics of Memory*
 
 ########
 Concepts

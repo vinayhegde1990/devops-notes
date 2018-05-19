@@ -2,7 +2,7 @@
 PostgreSQL
 ***************
 
-*This section covers the basics of how PostgreSQL works*
+*Some useful links to cover the basics of PostgreSQl*
 
 ########
 Concepts

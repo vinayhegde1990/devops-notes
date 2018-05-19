@@ -2,7 +2,7 @@
 Boot Process
 *****************
 
-*This section covers how Boot Process works*
+*Some useful links to cover the basics of the Boot Process*
 
 ########
 Concepts

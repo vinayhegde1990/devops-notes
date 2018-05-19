@@ -2,7 +2,7 @@
 Email
 *********
 
-*This section covers the basics of how Email works*
+*Some useful links to cover the basics of Email*
 
 ########
 Concepts

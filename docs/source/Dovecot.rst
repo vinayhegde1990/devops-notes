@@ -2,7 +2,7 @@
 Dovecot
 ************
 
-*This section covers the basics of how Dovecot works*
+*Some useful links to cover the basics of Dovecot*
 
 ########
 Concepts

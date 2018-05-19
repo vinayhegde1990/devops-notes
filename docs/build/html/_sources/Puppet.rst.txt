@@ -2,10 +2,8 @@
 Puppet
 **********
 
-*This section covers the basics of how Puppet works (include diagrams/images if needed)*
+*Some useful links to cover the basics of Puppet*
 
-.. toctree::
-      :maxdepth: 2
 
 ################
 Concepts

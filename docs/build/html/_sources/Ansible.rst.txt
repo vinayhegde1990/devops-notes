@@ -2,7 +2,7 @@
 Ansible
 **********
 
-*This section covers the basics of how Ansible works (include diagrams/images if needed)**
+*Some useful links to cover the basics of Ansible*
 
 ==========
 → Concepts

@@ -2,7 +2,7 @@
 Swap
 ************
 
-*This section covers the basics of how Swap works*
+*Some useful links to cover the basics of Swap*
 
 ########
 Concepts

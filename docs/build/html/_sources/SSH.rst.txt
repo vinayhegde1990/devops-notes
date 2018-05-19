@@ -2,7 +2,7 @@
 SSH
 ************
 
-*This section covers the basics of how SSH works*
+*Some useful links to cover the basics of SSH*
 
 ########
 Concepts

@@ -2,7 +2,7 @@
 DNS
 ************
 
-*This section covers the basics of how DNS works*
+*Some useful links to cover the basics of DNS*
 
 ########
 Concepts

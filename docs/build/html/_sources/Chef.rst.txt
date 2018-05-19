@@ -2,8 +2,7 @@
 Chef
 **********
 
-*This section covers the basics of how Chef works (include diagrams/images if needed)*
-
+*Some useful links to cover the basics of Chef*
 
 ########
 Concepts

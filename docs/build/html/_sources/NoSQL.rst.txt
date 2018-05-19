@@ -2,7 +2,7 @@
 NoSQL
 **********
 
-*This section covers the basics of how NoSQL works*
+*Some useful links to cover the basics of NoSQL*
 
 ########
 Concepts
