@@ -198,11 +198,13 @@ Configuration
 - https://www.tecmint.com/parted-command-to-create-resize-rescue-linux-disk-partitions/
 
 Creating & mounting a 2nd Hard drive in linux
-**************************************************
+=============================================
+
 - http://geektnt.com/how-to-format-and-mount-second-hard-drive-on-linux.html
  
-Good explanation of all parameters to be used in fstab
-*********************************************************
+Good explanation fstab parameters
+=====================================
+
 - http://ubuntuforums.org/showthread.php?t=1604251
 
 .. image::  ../source/images/storage-fstab-parameters.png
