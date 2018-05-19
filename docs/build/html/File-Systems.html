@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Linux Basics &mdash; DevOps-Notes 1.0.0 documentation</title>
+  <title>File Systems &mdash; DevOps-Notes 1.0.0 documentation</title>
   
 
   
@@ -91,22 +91,20 @@
 <li class="toctree-l1"><a class="reference internal" href="Hardware.html">Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Provisioning.html">Provisioning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Storage.html">Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#grub">GRUB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#lvm">LVM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#raid">RAID</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#glusterfs">GlusterFS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#nfs">NFS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#scp">SCP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#rsync">Rsync</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#lsyncd">LsyncD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#creating-mounting-a-2nd-hard-drive-in-linux">Creating &amp; mounting a 2nd Hard drive in linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#good-explanation-of-all-parameters-to-be-used-in-fstab">Good explanation of all parameters to be used in fstab</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Storage.html#online-visual-raid-calculator">Online Visual RAID Calculator</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux Basics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">File Systems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ext-2-3-4">ext(2|3|4)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-descriptors">File Descriptors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#proc-file-systems">Proc File Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ulimit">ULimit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#directory-structures">Directory Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inodes">Inodes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#s-trace-command">S-Trace command</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Package-Management.html">Package-Management</a></li>
@@ -181,7 +179,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Linux Basics</li>
+      <li>File Systems</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -200,20 +198,83 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="linux-basics">
-<h1>Linux Basics<a class="headerlink" href="#linux-basics" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basic concepts of Linux</em></p>
+  <div class="section" id="file-systems">
+<h1>File Systems<a class="headerlink" href="#file-systems" title="Permalink to this headline">¶</a></h1>
+<p><em>Some useful links to cover the basics of File Systems</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.nixtutor.com/linux/understanding-the-linux-directory-layout/">https://www.nixtutor.com/linux/understanding-the-linux-directory-layout/</a></li>
+<li><a class="reference external" href="https://www.slashroot.in/understanding-file-system-superblock-linux">https://www.slashroot.in/understanding-file-system-superblock-linux</a></li>
+<li><a class="reference external" href="https://unix.stackexchange.com/questions/4402/what-is-a-superblock-inode-dentry-and-a-file">https://unix.stackexchange.com/questions/4402/what-is-a-superblock-inode-dentry-and-a-file</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/understanding-unix-linux-bsd-device-files/">http://www.cyberciti.biz/faq/understanding-unix-linux-bsd-device-files/</a></li>
+<li><a class="reference external" href="http://askubuntu.com/questions/397493/what-does-the-first-character-of-unix-mode-string-indicate">http://askubuntu.com/questions/397493/what-does-the-first-character-of-unix-mode-string-indicate</a></li>
+</ul>
+<div class="section" id="ext-2-3-4">
+<h3>ext(2|3|4)<a class="headerlink" href="#ext-2-3-4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.thegeekstuff.com/2011/05/ext2-ext3-ext4/">http://www.thegeekstuff.com/2011/05/ext2-ext3-ext4/</a></li>
+<li><a class="reference external" href="https://adarsh5388.wordpress.com/2013/11/29/difference-between-ext2-ext3-and-ext4-filesystem-in-linux/">https://adarsh5388.wordpress.com/2013/11/29/difference-between-ext2-ext3-and-ext4-filesystem-in-linux/</a></li>
+<li><a class="reference external" href="https://kerneltalks.com/disk-management/difference-between-ext2-ext3-and-ext4/amp/">https://kerneltalks.com/disk-management/difference-between-ext2-ext3-and-ext4/amp/</a></li>
+<li><a class="reference external" href="https://linoxide.com/how-tos/explained-in-detail-linux-ext2-ext3-and-ext4-filesystem/amp/">https://linoxide.com/how-tos/explained-in-detail-linux-ext2-ext3-and-ext4-filesystem/amp/</a></li>
+</ul>
+</div>
+<div class="section" id="file-descriptors">
+<h3>File Descriptors<a class="headerlink" href="#file-descriptors" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://linuxmeerkat.wordpress.com/2011/12/02/file-descriptors-explained/amp/">https://linuxmeerkat.wordpress.com/2011/12/02/file-descriptors-explained/amp/</a></li>
+<li><a class="reference external" href="https://www.bottomupcs.com/file_descriptors.xhtml">https://www.bottomupcs.com/file_descriptors.xhtml</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/tips/linux-procfs-file-descriptors.html">http://www.cyberciti.biz/tips/linux-procfs-file-descriptors.html</a></li>
+</ul>
+</div>
+<div class="section" id="proc-file-systems">
+<h3>Proc File Systems<a class="headerlink" href="#proc-file-systems" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.slashroot.in/proc-file-system-linux-explained">http://www.slashroot.in/proc-file-system-linux-explained</a></li>
+<li><a class="reference external" href="http://www.thegeekstuff.com/2010/11/linux-proc-file-system/">http://www.thegeekstuff.com/2010/11/linux-proc-file-system/</a></li>
+<li><a class="reference external" href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/Reference_Guide/s1-proc-directories.html">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/Reference_Guide/s1-proc-directories.html</a></li>
+</ul>
+</div>
+<div class="section" id="ulimit">
+<h3>ULimit<a class="headerlink" href="#ulimit" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://easyengine.io/tutorials/linux/increase-open-files-limit/">https://easyengine.io/tutorials/linux/increase-open-files-limit/</a></li>
+<li><a class="reference external" href="http://posidev.com/blog/2009/06/04/set-ulimit-parameters-on-ubuntu/">http://posidev.com/blog/2009/06/04/set-ulimit-parameters-on-ubuntu/</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/linux-increase-the-maximum-number-of-open-files/">http://www.cyberciti.biz/faq/linux-increase-the-maximum-number-of-open-files/</a></li>
+<li><a class="reference external" href="http://askubuntu.com/questions/181215/too-many-open-files-how-to-find-the-culprit">http://askubuntu.com/questions/181215/too-many-open-files-how-to-find-the-culprit</a></li>
+</ul>
+</div>
+<div class="section" id="directory-structures">
+<h3>Directory Structures<a class="headerlink" href="#directory-structures" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://askubuntu.com/questions/34880/use-of-opt-and-usr-local-directories-in-the-context-of-a-pc">http://askubuntu.com/questions/34880/use-of-opt-and-usr-local-directories-in-the-context-of-a-pc</a></li>
+<li><a class="reference external" href="http://www.ghacks.net/2009/04/04/get-to-know-linux-the-etcinitd-directory/">http://www.ghacks.net/2009/04/04/get-to-know-linux-the-etcinitd-directory/</a></li>
+<li><a class="reference external" href="http://askubuntu.com/questions/19320/how-to-enable-or-disable-services">http://askubuntu.com/questions/19320/how-to-enable-or-disable-services</a></li>
+</ul>
+</div>
+<div class="section" id="inodes">
+<h3>Inodes<a class="headerlink" href="#inodes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.slashroot.in/inode-and-its-structure-linux">http://www.slashroot.in/inode-and-its-structure-linux</a></li>
+<li><a class="reference external" href="https://tecadmin.net/what-is-inode-number-in-linux/">https://tecadmin.net/what-is-inode-number-in-linux/</a></li>
+<li><a class="reference external" href="http://www.grymoire.com/Unix/Inodes.html">http://www.grymoire.com/Unix/Inodes.html</a></li>
+<li><a class="reference external" href="http://teaching.idallen.com/dat2330/04f/notes/links_and_inodes.html">http://teaching.idallen.com/dat2330/04f/notes/links_and_inodes.html</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="commands">
 <h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="s-trace-command">
+<h3>S-Trace command<a class="headerlink" href="#s-trace-command" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://blog.packagecloud.io/eng/2016/02/29/how-does-strace-work/">https://blog.packagecloud.io/eng/2016/02/29/how-does-strace-work/</a></li>
+<li><a class="reference external" href="http://linoxide.com/linux-command/linux-strace-command-examples/">http://linoxide.com/linux-command/linux-strace-command-examples/</a></li>
+<li><a class="reference external" href="http://hokstad.com/5-simple-ways-to-troubleshoot-using-strace">http://hokstad.com/5-simple-ways-to-troubleshoot-using-strace</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/tips/linux-strace-command-examples.html">http://www.cyberciti.biz/tips/linux-strace-command-examples.html</a></li>
+<li><a class="reference external" href="https://blog.packagecloud.io/eng/2015/11/15/strace-cheat-sheet/">https://blog.packagecloud.io/eng/2015/11/15/strace-cheat-sheet/</a></li>
+<li><a class="reference external" href="https://www.ibm.com/developerworks/aix/library/au-unix-strace.html">https://www.ibm.com/developerworks/aix/library/au-unix-strace.html</a></li>
+</ul>
 </div>
-<div class="section" id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="troubleshooting-log-parsing">
-<h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

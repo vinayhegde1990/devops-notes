@@ -234,7 +234,7 @@ Troubleshooting & Log Parsing
 - http://articles.slicehost.com/2010/11/12/using-iotop-to-check-i-o-and-swap
 
 Online Visual RAID Calculator
-*****************************************
+==================================
 - https://www.synology.com/en-global/support/RAID_calculator
    
 - http://grijpink.eu/tools/raid/index.php
