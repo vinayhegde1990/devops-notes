@@ -1,4 +1,4 @@
-#ckage-Management
+Package-Management
 ***********************
 
 *Some useful links to cover the basics of Package-Management*
@@ -17,7 +17,6 @@ Difference between yum update / yum upgrade
     :width: 745px
     :align: center
     :height: 409px
-
 
 
 ##########
@@ -123,10 +122,10 @@ Configuration
 
 
 Troubleshooting & Log Parsing
-**************************************
+*******************************
 
 Difference between apt-get update / apt-get upgrade
-===========================================================
+******************************************************
 
 - https://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade
 
