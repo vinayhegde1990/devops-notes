@@ -27,9 +27,9 @@ Concepts
    
 - http://geek-university.com/linux/etc-fstab-file/
 
-
+######
 GRUB
-***********
+######
 
 - https://linuxnorth.wordpress.com/2011/03/09/grub2-revisited/
 
@@ -42,9 +42,9 @@ GRUB
 - https://ask.fedoraproject.org/en/question/32771/multiple-fedora-entries-in-grub/
 
 
-
+######
 LVM
-********
+######
 - http://www.tecmint.com/create-lvm-storage-in-linux/
    
 - http://www.howtogeek.com/howto/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/
@@ -63,9 +63,9 @@ LVM
    
 - http://www.cyberciti.biz/tips/fdisk-unable-to-create-partition-greater-2tb.html
 
-
+######
 RAID
-***********
+######
 - http://www.slashroot.in/raid-levels-raid0-raid1-raid10-raid5-raid6-complete-tutorial
    
 - http://www.tecmint.com/understanding-raid-setup-in-linux/
@@ -92,9 +92,9 @@ RAID
    
 - http://cavepopo.hd.free.fr/wordpress/linux/how-to-create-a-raid-array-using-omconfig-omreport-cli/
 
-
+############
 GlusterFS
-*********************
+############
 
 - https://www.interserver.net/tips/kb/what-is-glusterfs/
 
@@ -106,9 +106,10 @@ GlusterFS
 
 - https://gluster.readthedocs.io/en/latest/Quick-Start-Guide/Quickstart/
 
-
+######
 NFS
-*************
+######
+
 - http://cavepopo.hd.free.fr/wordpress/linux/about-nfs/
       
 - http://cavepopo.hd.free.fr/wordpress/network/nfs-the-network-file-system-practical-examples/
@@ -119,18 +120,18 @@ NFS
 
 - http://www.tecmint.com/how-to-setup-nfs-server-in-linux/
 
-
+######
 SCP
-*******
+######
 - http://www.tecmint.com/scp-commands-examples/
 
 - http://www.binarytides.com/linux-scp-command/
 
 - http://www.garron.me/en/linux/scp-linux-mac-command-windows-copy-files-over-ssh.html
 
-
+######
 Rsync
-*************
+######
 
 - http://www.server-world.info/en/note?os=CentOS_6&p=rsync
    
@@ -149,9 +150,9 @@ Rsync
 - http://www.crucialp.com/resources/tutorials/server-administration/how-to-copy-files-across-a-network-internet-in-unix-linux-redhat-debian-freebsd-scp-tar-rsync-secure-network-copy/
 
 
-
+######
 LsyncD
-*************
+######
 - http://www.nginxtips.com/lsyncd-live-file-syncronization-linux/
    
 - http://www.rackspace.com/knowledge_center/article/install-and-configure-lsyncd
@@ -159,15 +160,13 @@ LsyncD
 - http://crosstek.net/2013/06/28/two-way-sync-with-lsyncd-in-a-clustered-wordpress-installation/
 
 Explanation of lsyncd.conf parameters
-=======================================
-
+===========================================
 - https://www.lucasrolff.com/ha/replication-using-lsyncd/
 
 - https://github.com/axkibe/lsyncd/wiki/Manual%20to%20Lsyncd%202.1.x
 
 Max User Watches Error of Lsyncd
-==================================
-
+=========================================
 - https://xopo3o.blogspot.in/2015/11/how-to-lsyncd-error-consider-increasing.html
    
 - https://unix.stackexchange.com/questions/13751/kernel-inotify-watch-limit-reached
@@ -203,7 +202,7 @@ Creating & mounting a 2nd Hard drive in linux
 - http://geektnt.com/how-to-format-and-mount-second-hard-drive-on-linux.html
  
 Good explanation of all parameters to be used in fstab
-*******************************************************
+*********************************************************
 - http://ubuntuforums.org/showthread.php?t=1604251
 
 .. image::  ../source/images/storage-fstab-parameters.png
@@ -213,7 +212,7 @@ Good explanation of all parameters to be used in fstab
 
 
 ################################   
-Tuning, Hardening & Log Parsing
+Troubleshooting & Log Parsing
 ################################
 
 - http://www.tecmint.com/linux-performance-monitoring-with-vmstat-and-iostat-commands/
@@ -231,7 +230,6 @@ Tuning, Hardening & Log Parsing
 - https://www.cyberciti.biz/hardware/linux-iotop-simple-top-like-io-monitor/
 
 - http://articles.slicehost.com/2010/11/12/using-iotop-to-check-i-o-and-swap
-
 
 Online Visual RAID Calculator
 *****************************************

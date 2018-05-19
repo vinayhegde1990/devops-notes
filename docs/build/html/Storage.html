@@ -92,22 +92,24 @@
 <li class="toctree-l1"><a class="reference internal" href="Provisioning.html">Provisioning</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Storage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grub">GRUB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lvm">LVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#raid">RAID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#glusterfs">GlusterFS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nfs">NFS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scp">SCP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rsync">Rsync</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lsyncd">LsyncD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#explanation-of-lsyncd-conf-parameters">Explanation of lsyncd.conf parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#max-user-watches-error-of-lsyncd">Max User Watches Error of Lsyncd</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#grub">GRUB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#lvm">LVM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#raid">RAID</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#glusterfs">GlusterFS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#nfs">NFS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#scp">SCP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#rsync">Rsync</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#lsyncd">LsyncD</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#creating-mounting-a-2nd-hard-drive-in-linux">Creating &amp; mounting a 2nd Hard drive in linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#good-explanation-of-all-parameters-to-be-used-in-fstab">Good explanation of all parameters to be used in fstab</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#tuning-hardening-log-parsing">Tuning, Hardening &amp; Log Parsing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#online-visual-raid-calculator">Online Visual RAID Calculator</a></li>
@@ -221,9 +223,8 @@
 <li><a class="reference external" href="http://geek-university.com/linux/etc-fstab-file/">http://geek-university.com/linux/etc-fstab-file/</a></li>
 </ul>
 </div>
-</div>
 <div class="section" id="grub">
-<h1>GRUB<a class="headerlink" href="#grub" title="Permalink to this headline">¶</a></h1>
+<h2>GRUB<a class="headerlink" href="#grub" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://linuxnorth.wordpress.com/2011/03/09/grub2-revisited/">https://linuxnorth.wordpress.com/2011/03/09/grub2-revisited/</a></li>
 <li><a class="reference external" href="http://askubuntu.com/questions/2793/how-do-i-remove-or-hide-old-kernel-versions-to-clean-up-the-boot-menu">http://askubuntu.com/questions/2793/how-do-i-remove-or-hide-old-kernel-versions-to-clean-up-the-boot-menu</a></li>
@@ -233,7 +234,7 @@
 </ul>
 </div>
 <div class="section" id="lvm">
-<h1>LVM<a class="headerlink" href="#lvm" title="Permalink to this headline">¶</a></h1>
+<h2>LVM<a class="headerlink" href="#lvm" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://www.tecmint.com/create-lvm-storage-in-linux/">http://www.tecmint.com/create-lvm-storage-in-linux/</a></li>
 <li><a class="reference external" href="http://www.howtogeek.com/howto/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/">http://www.howtogeek.com/howto/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/</a></li>
@@ -247,7 +248,7 @@
 </ul>
 </div>
 <div class="section" id="raid">
-<h1>RAID<a class="headerlink" href="#raid" title="Permalink to this headline">¶</a></h1>
+<h2>RAID<a class="headerlink" href="#raid" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://www.slashroot.in/raid-levels-raid0-raid1-raid10-raid5-raid6-complete-tutorial">http://www.slashroot.in/raid-levels-raid0-raid1-raid10-raid5-raid6-complete-tutorial</a></li>
 <li><a class="reference external" href="http://www.tecmint.com/understanding-raid-setup-in-linux/">http://www.tecmint.com/understanding-raid-setup-in-linux/</a></li>
@@ -265,7 +266,7 @@
 </ul>
 </div>
 <div class="section" id="glusterfs">
-<h1>GlusterFS<a class="headerlink" href="#glusterfs" title="Permalink to this headline">¶</a></h1>
+<h2>GlusterFS<a class="headerlink" href="#glusterfs" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://www.interserver.net/tips/kb/what-is-glusterfs/">https://www.interserver.net/tips/kb/what-is-glusterfs/</a></li>
 <li><a class="reference external" href="http://www.slashroot.in/gfs-gluster-file-system-complete-tutorial-guide-for-an-administrator">http://www.slashroot.in/gfs-gluster-file-system-complete-tutorial-guide-for-an-administrator</a></li>
@@ -275,7 +276,7 @@
 </ul>
 </div>
 <div class="section" id="nfs">
-<h1>NFS<a class="headerlink" href="#nfs" title="Permalink to this headline">¶</a></h1>
+<h2>NFS<a class="headerlink" href="#nfs" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://cavepopo.hd.free.fr/wordpress/linux/about-nfs/">http://cavepopo.hd.free.fr/wordpress/linux/about-nfs/</a></li>
 <li><a class="reference external" href="http://cavepopo.hd.free.fr/wordpress/network/nfs-the-network-file-system-practical-examples/">http://cavepopo.hd.free.fr/wordpress/network/nfs-the-network-file-system-practical-examples/</a></li>
@@ -285,7 +286,7 @@
 </ul>
 </div>
 <div class="section" id="scp">
-<h1>SCP<a class="headerlink" href="#scp" title="Permalink to this headline">¶</a></h1>
+<h2>SCP<a class="headerlink" href="#scp" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://www.tecmint.com/scp-commands-examples/">http://www.tecmint.com/scp-commands-examples/</a></li>
 <li><a class="reference external" href="http://www.binarytides.com/linux-scp-command/">http://www.binarytides.com/linux-scp-command/</a></li>
@@ -293,7 +294,7 @@
 </ul>
 </div>
 <div class="section" id="rsync">
-<h1>Rsync<a class="headerlink" href="#rsync" title="Permalink to this headline">¶</a></h1>
+<h2>Rsync<a class="headerlink" href="#rsync" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://www.server-world.info/en/note?os=CentOS_6&amp;p=rsync">http://www.server-world.info/en/note?os=CentOS_6&amp;p=rsync</a></li>
 <li><a class="reference external" href="https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync">https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync</a></li>
@@ -306,21 +307,28 @@
 </ul>
 </div>
 <div class="section" id="lsyncd">
-<h1>LsyncD<a class="headerlink" href="#lsyncd" title="Permalink to this headline">¶</a></h1>
+<h2>LsyncD<a class="headerlink" href="#lsyncd" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://www.nginxtips.com/lsyncd-live-file-syncronization-linux/">http://www.nginxtips.com/lsyncd-live-file-syncronization-linux/</a></li>
 <li><a class="reference external" href="http://www.rackspace.com/knowledge_center/article/install-and-configure-lsyncd">http://www.rackspace.com/knowledge_center/article/install-and-configure-lsyncd</a></li>
 <li><a class="reference external" href="http://crosstek.net/2013/06/28/two-way-sync-with-lsyncd-in-a-clustered-wordpress-installation/">http://crosstek.net/2013/06/28/two-way-sync-with-lsyncd-in-a-clustered-wordpress-installation/</a></li>
 </ul>
+<div class="section" id="explanation-of-lsyncd-conf-parameters">
+<h3>Explanation of lsyncd.conf parameters<a class="headerlink" href="#explanation-of-lsyncd-conf-parameters" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://www.lucasrolff.com/ha/replication-using-lsyncd/">https://www.lucasrolff.com/ha/replication-using-lsyncd/</a></li>
 <li><a class="reference external" href="https://github.com/axkibe/lsyncd/wiki/Manual%20to%20Lsyncd%202.1.x">https://github.com/axkibe/lsyncd/wiki/Manual%20to%20Lsyncd%202.1.x</a></li>
 </ul>
+</div>
+<div class="section" id="max-user-watches-error-of-lsyncd">
+<h3>Max User Watches Error of Lsyncd<a class="headerlink" href="#max-user-watches-error-of-lsyncd" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://xopo3o.blogspot.in/2015/11/how-to-lsyncd-error-consider-increasing.html">https://xopo3o.blogspot.in/2015/11/how-to-lsyncd-error-consider-increasing.html</a></li>
 <li><a class="reference external" href="https://unix.stackexchange.com/questions/13751/kernel-inotify-watch-limit-reached">https://unix.stackexchange.com/questions/13751/kernel-inotify-watch-limit-reached</a></li>
 </ul>
 <a class="reference internal image-reference" href="_images/storage-backup-lsyncd-max-user.png"><img alt="_images/storage-backup-lsyncd-max-user.png" class="align-center" src="_images/storage-backup-lsyncd-max-user.png" style="width: 778px; height: 948px;" /></a>
+</div>
+</div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -347,8 +355,8 @@
 <li><a class="reference external" href="http://ubuntuforums.org/showthread.php?t=1604251">http://ubuntuforums.org/showthread.php?t=1604251</a></li>
 </ul>
 <a class="reference internal image-reference" href="_images/storage-fstab-parameters.png"><img alt="_images/storage-fstab-parameters.png" class="align-center" src="_images/storage-fstab-parameters.png" style="width: 1831px; height: 703px;" /></a>
-<div class="section" id="tuning-hardening-log-parsing">
-<h2>Tuning, Hardening &amp; Log Parsing<a class="headerlink" href="#tuning-hardening-log-parsing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="troubleshooting-log-parsing">
+<h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://www.tecmint.com/linux-performance-monitoring-with-vmstat-and-iostat-commands/">http://www.tecmint.com/linux-performance-monitoring-with-vmstat-and-iostat-commands/</a></li>
 <li><a class="reference external" href="http://linoxide.com/linux-command/linux-iostat-command/">http://linoxide.com/linux-command/linux-iostat-command/</a></li>
