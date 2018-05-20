@@ -22,6 +22,17 @@ Notes - Vinay Hegde
    Package-Management
 
 .. toctree::
+   :maxdepth: 4
+   :caption: Web Servers
+   :hidden:
+
+   Fundamentals
+   Apache
+   NGinx
+   HAProxy
+   SSL
+
+.. toctree::
    :maxdepth: 2
    :caption: Configuration Management
    :hidden:
