@@ -128,7 +128,7 @@ Difference between access & trunk ports
 ********************************************
 - https://bit.ly/2rXuh6M
 
-.. image::  ../source/images/networking-private-ip-ranges.png
+.. image::  ../source/images/networking-access-trunk-ports.png
     :width: 855px
     :align: center
     :height: 759px
