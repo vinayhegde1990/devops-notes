@@ -1,0 +1,396 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GIT &mdash; DevOps-Notes 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Puppet" href="Puppet.html" />
+    <link rel="prev" title="Bash" href="Bash.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> DevOps-Notes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Basic-Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Boot-Process.html">Boot Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CPU.html">CPU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Memory.html">Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Swap.html">Swap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSH.html">SSH</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Editors.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Provisioning.html">Provisioning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Storage.html">Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="File-Systems.html">File Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Package-Management.html">Package-Management</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Web Servers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Apache.html">Apache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NGinx.html">Nginx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HAProxy.html">HAProxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSL.html">SSL</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Uptime</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Monitoring.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Graphing.html">Graphing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Logging.html">Logging</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internet</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Networking-Protocols.html">Networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Linux-Security.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IPTables.html">IPTables</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Generic.html">Generic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bash.html">Bash</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Version Control</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GIT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#official-git-documentation">Official Git Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#self-hosted-github-clones">Self-hosted GitHub Clones</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reviews-configuration-of-the-above">Reviews || Configuration of the above</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#remove-local-commits-not-pushed-to-remote">Remove local commits NOT pushed to remote</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#random-notes">Random Notes</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Puppet.html">Puppet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Chef.html">Chef</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ansible.html">Ansible</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Databases</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="MySQL.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PostgreSQL.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NoSQL.html">NoSQL</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Mail Servers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Email.html">Email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Postfix.html">Postfix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exim.html">Exim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dovecot.html">Dovecot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Milters.html">Milters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SPF-DKIM.html">SPF &amp; DKIM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ClamAV.html">ClamAV</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Domain Name Servers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="DNS.html">DNS</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DevOps-Notes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>GIT</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/GIT.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="git">
+<h1>GIT<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h1>
+<p><em>Some useful links to cover the basics of GIT</em></p>
+<div class="section" id="concepts">
+<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="official-git-documentation">
+<h3>Official Git Documentation<a class="headerlink" href="#official-git-documentation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://git-scm.com/book/en/v2/">https://git-scm.com/book/en/v2/</a></li>
+<li><a class="reference external" href="https://danielmiessler.com/study/git/">https://danielmiessler.com/study/git/</a></li>
+<li><a class="reference external" href="https://about.gitlab.com/2015/05/18/simple-words-for-a-gitlab-newbie/">https://about.gitlab.com/2015/05/18/simple-words-for-a-gitlab-newbie/</a></li>
+<li><a class="reference external" href="http://slidetocode.com/2013/08/25/how-git-works/">http://slidetocode.com/2013/08/25/how-git-works/</a></li>
+<li><a class="reference external" href="http://juristr.com/blog/2013/04/git-explained/">http://juristr.com/blog/2013/04/git-explained/</a></li>
+<li><a class="reference external" href="https://betterexplained.com/articles/aha-moments-when-learning-git/">https://betterexplained.com/articles/aha-moments-when-learning-git/</a></li>
+<li><a class="reference external" href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/">http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/</a></li>
+<li><a class="reference external" href="http://2ndscale.com/rtomayko/2008/the-thing-about-git">http://2ndscale.com/rtomayko/2008/the-thing-about-git</a></li>
+<li><a class="reference external" href="http://eagain.net/articles/git-for-computer-scientists/">http://eagain.net/articles/git-for-computer-scientists/</a></li>
+<li><a class="reference external" href="https://www.sbf5.com/~cduan/technical/git/git-1.shtml">https://www.sbf5.com/~cduan/technical/git/git-1.shtml</a></li>
+<li><a class="reference external" href="https://launchschool.com/books/git/read/introduction">https://launchschool.com/books/git/read/introduction</a></li>
+<li><a class="reference external" href="http://githowto.com/">http://githowto.com/</a></li>
+<li><a class="reference external" href="http://gitimmersion.com/lab_01.html">http://gitimmersion.com/lab_01.html</a></li>
+<li><a class="reference external" href="http://swift.siphos.be/aglara/centralcmdb.html">http://swift.siphos.be/aglara/centralcmdb.html</a></li>
+<li><a class="reference external" href="http://www.gitguys.com/topics/">http://www.gitguys.com/topics/</a></li>
+<li><a class="reference external" href="https://robots.thoughtbot.com/tags/git">https://robots.thoughtbot.com/tags/git</a></li>
+<li><a class="reference external" href="https://www.linux.com/learn/finding-everything-git">https://www.linux.com/learn/finding-everything-git</a></li>
+<li><a class="reference external" href="http://slidetocode.com/2013/08/25/how-git-works/">http://slidetocode.com/2013/08/25/how-git-works/</a></li>
+<li><a class="reference external" href="http://juristr.com/blog/2013/04/git-explained/">http://juristr.com/blog/2013/04/git-explained/</a></li>
+<li><a class="reference external" href="http://pcottle.github.io/learnGitBranching/">http://pcottle.github.io/learnGitBranching/</a></li>
+<li><a class="reference external" href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a></li>
+<li><a class="reference external" href="https://dev.to/raha198/how-to-master-the-art-of-git">https://dev.to/raha198/how-to-master-the-art-of-git</a></li>
+<li><a class="reference external" href="http://www.sitepoint.com/git-for-beginners/">http://www.sitepoint.com/git-for-beginners/</a></li>
+<li><a class="reference external" href="https://dev.to/maxwell_dev/the-git-rebase-introduction-i-wish-id-had">https://dev.to/maxwell_dev/the-git-rebase-introduction-i-wish-id-had</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.atlassian.com/git/tutorials/">https://www.atlassian.com/git/tutorials/</a></li>
+<li><a class="reference external" href="http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous/">http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous/</a></li>
+<li><a class="reference external" href="http://kushagragour.in/blog/2014/01/build-git-learn-git/">http://kushagragour.in/blog/2014/01/build-git-learn-git/</a></li>
+<li><a class="reference external" href="http://wildlyinaccurate.com/a-hackers-guide-to-git/">http://wildlyinaccurate.com/a-hackers-guide-to-git/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-git-effectively">https://www.digitalocean.com/community/tutorials/how-to-use-git-effectively</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-git-branches">https://www.digitalocean.com/community/tutorials/how-to-use-git-branches</a></li>
+<li><a class="reference external" href="http://redmine.jamoma.org/projects/1/wiki/Working_with_GIT_branches">http://redmine.jamoma.org/projects/1/wiki/Working_with_GIT_branches</a></li>
+<li><a class="reference external" href="https://try.github.io/levels/1/challenges/1">https://try.github.io/levels/1/challenges/1</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/which-remote-url-should-i-use/">https://help.github.com/articles/which-remote-url-should-i-use/</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/using-ssh-over-the-https-port/">https://help.github.com/articles/using-ssh-over-the-https-port/</a></li>
+<li><a class="reference external" href="https://medium.com/&#64;haydar_ai/learning-how-to-git-using-ssh-instead-of-https-91f09cff72de">https://medium.com/&#64;haydar_ai/learning-how-to-git-using-ssh-instead-of-https-91f09cff72de</a></li>
+<li><a class="reference external" href="https://rtcamp.com/tutorials/git/">https://rtcamp.com/tutorials/git/</a></li>
+<li><a class="reference external" href="https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History">https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History</a></li>
+<li>Update multiple git repos : <a class="reference external" href="https://github.com/earwig/git-repo-updater">https://github.com/earwig/git-repo-updater</a></li>
+</ul>
+</div>
+<div class="section" id="self-hosted-github-clones">
+<h2>Self-hosted GitHub Clones<a class="headerlink" href="#self-hosted-github-clones" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://gogs.io/">https://gogs.io/</a></li>
+<li><a class="reference external" href="https://gitea.io/en-US/">https://gitea.io/en-US/</a></li>
+<li><a class="reference external" href="https://gitlab.com/">https://gitlab.com/</a></li>
+</ul>
+<div class="section" id="reviews-configuration-of-the-above">
+<h3>Reviews || Configuration of the above<a class="headerlink" href="#reviews-configuration-of-the-above" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://blog.ifloop.org/2017/10/12/gitlab-vs-gogs-vs-gitea/">https://blog.ifloop.org/2017/10/12/gitlab-vs-gogs-vs-gitea/</a></li>
+<li><a class="reference external" href="https://www.reddit.com/r/git/comments/6y68vr/gitlab_vs_bitbucket_server_vs_gitea_vs_gogs/">https://www.reddit.com/r/git/comments/6y68vr/gitlab_vs_bitbucket_server_vs_gitea_vs_gogs/</a></li>
+<li><a class="reference external" href="https://github.com/MartinThoma/MartinThoma.github.io/blob/pelican/content/2017-09-06-git-repository-managers.md">https://github.com/MartinThoma/MartinThoma.github.io/blob/pelican/content/2017-09-06-git-repository-managers.md</a></li>
+<li><a class="reference external" href="https://gitbucket.github.io/gitbucket-news/gitbucket/2017/03/29/benchmark-of-gitbucket.html">https://gitbucket.github.io/gitbucket-news/gitbucket/2017/03/29/benchmark-of-gitbucket.html</a></li>
+<li><a class="reference external" href="https://blog.hypriot.com/post/run-your-own-github-like-service-with-docker/">https://blog.hypriot.com/post/run-your-own-github-like-service-with-docker/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.gitguys.com/topics/merging-with-a-conflict-conflicts-and-resolutions/">http://www.gitguys.com/topics/merging-with-a-conflict-conflicts-and-resolutions/</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/error-permission-denied-publickey/">https://help.github.com/articles/error-permission-denied-publickey/</a></li>
+<li><a class="reference external" href="http://www.ikriv.com/blog/?p=1905">http://www.ikriv.com/blog/?p=1905</a></li>
+</ul>
+<div class="section" id="remove-local-commits-not-pushed-to-remote">
+<h3>Remove local commits NOT pushed to remote<a class="headerlink" href="#remove-local-commits-not-pushed-to-remote" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git">http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git</a></li>
+<li><a class="reference external" href="http://stackoverflow.com/questions/1611215/remove-a-git-commit-which-has-not-pushed">http://stackoverflow.com/questions/1611215/remove-a-git-commit-which-has-not-pushed</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="random-notes">
+<h2>Random Notes<a class="headerlink" href="#random-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://svnvsgit.com/">https://svnvsgit.com/</a></li>
+<li><a class="reference external" href="https://pixelbrackets.github.io/git_cheat_sheet/">https://pixelbrackets.github.io/git_cheat_sheet/</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Puppet.html" class="btn btn-neutral float-right" title="Puppet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Bash.html" class="btn btn-neutral" title="Bash" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vinay Hegde.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

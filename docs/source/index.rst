@@ -61,6 +61,13 @@ Notes - Vinay Hegde
 
 .. toctree::
    :maxdepth: 2
+   :caption: Version Control
+   :hidden:
+
+   GIT
+
+.. toctree::
+   :maxdepth: 2
    :caption: Configuration Management
    :hidden:
 
