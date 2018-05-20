@@ -97,16 +97,18 @@
 <p class="caption"><span class="caption-text">Web Servers</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Fundamentals.html">Fundamentals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#http-request-lifecycle-overview">HTTP request lifecycle overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#difference-between-http-443-and-https-80">Difference between <code class="docutils literal notranslate"><span class="pre">http</span> <span class="pre">443</span> <span class="pre">and</span> <span class="pre">https</span> <span class="pre">80</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#http-status-codes">HTTP status codes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#check-website-availability-issues-tools">Check website-availability issues - Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Apache.html">Apache</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NGinx.html">Nginx</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">HAProxy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#official-documentation">Official Documentation</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-hardening">Tuning &amp; Hardening</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sni-on-haproxy">SNI on HAProxy</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
 </ul>
 </li>
@@ -203,18 +205,62 @@
             
   <div class="section" id="haproxy">
 <h1>HAProxy<a class="headerlink" href="#haproxy" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how HAProxy works</em></p>
+<p><em>Some useful links to cover the basics of NGinx</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="official-documentation">
+<h3>Official Documentation<a class="headerlink" href="#official-documentation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://cbonte.github.io/haproxy-dconv/">https://cbonte.github.io/haproxy-dconv/</a></li>
+<li><a class="reference external" href="https://linuxacademy.com/howtoguides/posts/show/topic/12012-introduction-to-haproxy">https://linuxacademy.com/howtoguides/posts/show/topic/12012-introduction-to-haproxy</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts">https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts</a></li>
+</ul>
 </div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://serversforhackers.com/using-ssl-certificates-with-haproxy">https://serversforhackers.com/using-ssl-certificates-with-haproxy</a></li>
+<li><a class="reference external" href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html">https://cbonte.github.io/haproxy-dconv/configuration-1.5.html</a></li>
+<li><a class="reference external" href="https://coelhorjc.wordpress.com/2015/03/26/how-to-load-balance-an-http-server-using-with-haproxy-or-pound/">https://coelhorjc.wordpress.com/2015/03/26/how-to-load-balance-an-http-server-using-with-haproxy-or-pound/</a></li>
+<li><a class="reference external" href="http://blog.haproxy.com/haproxy/haproxy-and-ssl/">http://blog.haproxy.com/haproxy/haproxy-and-ssl/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-implement-ssl-termination-with-haproxy-on-ubuntu-14-04">https://www.digitalocean.com/community/tutorials/how-to-implement-ssl-termination-with-haproxy-on-ubuntu-14-04</a></li>
+<li><a class="reference external" href="http://ubtutorials.com/tutorial/436/how-implement-ssl-termination-haproxy-ubuntu-1404">http://ubtutorials.com/tutorial/436/how-implement-ssl-termination-haproxy-ubuntu-1404</a></li>
+<li><a class="reference external" href="https://www.howtoforge.com/high-availability-load-balancer-haproxy-heartbeat-debian-etch">https://www.howtoforge.com/high-availability-load-balancer-haproxy-heartbeat-debian-etch</a></li>
+<li><a class="reference external" href="http://support.severalnines.com/entries/23612682-Install-HAProxy-and-Keepalived-Virtual-IP">http://support.severalnines.com/entries/23612682-Install-HAProxy-and-Keepalived-Virtual-IP</a>-</li>
+<li><a class="reference external" href="http://behindtheracks.com/2014/04/redundant-load-balancers-haproxy-and-keepalived/">http://behindtheracks.com/2014/04/redundant-load-balancers-haproxy-and-keepalived/</a></li>
+<li><a class="reference external" href="https://serversforhackers.com/load-balancing-with-haproxy">https://serversforhackers.com/load-balancing-with-haproxy</a></li>
+<li><a class="reference external" href="http://www.linuxnix.com/heartbeat-clustering/">http://www.linuxnix.com/heartbeat-clustering/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-create-a-high-availability-setup-with-heartbeat-and-floating-ips-on-ubuntu-14-04">https://www.digitalocean.com/community/tutorials/how-to-create-a-high-availability-setup-with-heartbeat-and-floating-ips-on-ubuntu-14-04</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-create-a-high-availability-setup-with-corosync-pacemaker-and-floating-ips-on-ubuntu-14-04">https://www.digitalocean.com/community/tutorials/how-to-create-a-high-availability-setup-with-corosync-pacemaker-and-floating-ips-on-ubuntu-14-04</a></li>
+<li><a class="reference external" href="https://marc.cortinasval.cat/blog/2013/12/04/a-cheap-web-balancer-nginxhaproxypacemaker/">https://marc.cortinasval.cat/blog/2013/12/04/a-cheap-web-balancer-nginxhaproxypacemaker/</a></li>
+<li><a class="reference external" href="http://support.severalnines.com/entries/23612682-Install-HAProxy-and-Keepalived-Virtual-IP">http://support.severalnines.com/entries/23612682-Install-HAProxy-and-Keepalived-Virtual-IP</a>-</li>
+<li><a class="reference external" href="https://www.howtoforge.com/setting-up-a-high-availability-load-balancer-with-haproxy-keepalived-on-debian-lenny">https://www.howtoforge.com/setting-up-a-high-availability-load-balancer-with-haproxy-keepalived-on-debian-lenny</a></li>
+</ul>
+</div>
+<div class="section" id="tuning-hardening">
+<h2>Tuning &amp; Hardening<a class="headerlink" href="#tuning-hardening" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sni-on-haproxy">
+<h3>SNI on HAProxy<a class="headerlink" href="#sni-on-haproxy" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://stuff-things.net/2016/11/30/haproxy-sni/">http://stuff-things.net/2016/11/30/haproxy-sni/</a></li>
+<li><a class="reference external" href="http://www.networkinghowtos.com/howto/reload-haproxy-config-with-minimal-downtime/">http://www.networkinghowtos.com/howto/reload-haproxy-config-with-minimal-downtime/</a></li>
+<li><a class="reference external" href="http://blog.haproxy.com/2012/04/13/enhanced-ssl-load-balancing-with-server-name-indication-sni-tls-extension/">http://blog.haproxy.com/2012/04/13/enhanced-ssl-load-balancing-with-server-name-indication-sni-tls-extension/</a></li>
+<li><a class="reference external" href="https://medium.com/&#64;siddharth.d/securing-haproxy-and-nginx-via-http-headers-54020d460283">https://medium.com/&#64;siddharth.d/securing-haproxy-and-nginx-via-http-headers-54020d460283</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.linux.com/blog/how-analyze-haproxy-logs">https://www.linux.com/blog/how-analyze-haproxy-logs</a></li>
+<li><a class="reference external" href="http://logz.io/blog/monitor-haproxy-elk-stack/">http://logz.io/blog/monitor-haproxy-elk-stack/</a></li>
+<li><a class="reference external" href="https://github.com/gforcada/haproxy_log_analysis">https://github.com/gforcada/haproxy_log_analysis</a></li>
+<li><a class="reference external" href="https://serversforhackers.com/so-you-got-yourself-a-loadbalancer">https://serversforhackers.com/so-you-got-yourself-a-loadbalancer</a></li>
+<li><a class="reference external" href="http://www.networkinghowtos.com/howto/viewing-haproxy-statistics/">http://www.networkinghowtos.com/howto/viewing-haproxy-statistics/</a></li>
+<li><a class="reference external" href="https://www.datadoghq.com/blog/monitoring-haproxy-performance-metrics/">https://www.datadoghq.com/blog/monitoring-haproxy-performance-metrics/</a></li>
+<li><a class="reference external" href="https://www.datadoghq.com/blog/how-to-collect-haproxy-metrics/">https://www.datadoghq.com/blog/how-to-collect-haproxy-metrics/</a></li>
+</ul>
 </div>
 </div>
 
