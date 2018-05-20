@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Failover" href="Failover.html" />
+    <link rel="prev" title="Graphing" href="Graphing.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -99,6 +101,30 @@
 <li class="toctree-l1"><a class="reference internal" href="NGinx.html">Nginx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HAProxy.html">HAProxy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SSL.html">SSL</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Uptime</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Monitoring.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Graphing.html">Graphing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Logging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linux-logs">Linux Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#log-rotate">Log-rotate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#elk-stack">ELK Stack</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#elasticsearch">ElasticSearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logstash">Logstash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kibana">Kibana</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Failover.html">Failover</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Configuration Management</span></p>
 <ul>
@@ -194,15 +220,81 @@
 <p><em>Some useful links to cover the basics of Logging</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://syslog-ng.org/">https://syslog-ng.org/</a></li>
+<li><a class="reference external" href="https://www.loggly.com/ultimate-guide/linux-logging-basics/">https://www.loggly.com/ultimate-guide/linux-logging-basics/</a></li>
+<li><a class="reference external" href="https://www.loggly.com/ultimate-guide/access-and-error-logs/">https://www.loggly.com/ultimate-guide/access-and-error-logs/</a></li>
+</ul>
+<div class="section" id="linux-logs">
+<h3>Linux Logs<a class="headerlink" href="#linux-logs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.thegeekstuff.com/2011/08/linux-var-log-files/">http://www.thegeekstuff.com/2011/08/linux-var-log-files/</a></li>
+<li><a class="reference external" href="https://www.loggly.com/ultimate-guide/managing-linux-logs/">https://www.loggly.com/ultimate-guide/managing-linux-logs/</a></li>
+<li><a class="reference external" href="https://blog.logentries.com/2012/05/logging-on-linux-part-1-ive-got-a-bunch-of-linux-boxes-what-should-i-be-looking-out-for-in-my-logs/">https://blog.logentries.com/2012/05/logging-on-linux-part-1-ive-got-a-bunch-of-linux-boxes-what-should-i-be-looking-out-for-in-my-logs/</a></li>
+<li><a class="reference external" href="https://www.eurovps.com/blog/important-linux-log-files-you-must-be-monitoring">https://www.eurovps.com/blog/important-linux-log-files-you-must-be-monitoring</a></li>
+</ul>
 </div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="log-rotate">
+<h3>Log-rotate<a class="headerlink" href="#log-rotate" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://serversforhackers.com/managing-logs-with-logrotate">https://serversforhackers.com/managing-logs-with-logrotate</a></li>
+<li><a class="reference external" href="http://articles.slicehost.com/2010/6/30/understanding-logrotate-on-ubuntu-part-1">http://articles.slicehost.com/2010/6/30/understanding-logrotate-on-ubuntu-part-1</a></li>
+<li><a class="reference external" href="http://articles.slicehost.com/2010/6/30/understanding-logrotate-on-centos-part-1">http://articles.slicehost.com/2010/6/30/understanding-logrotate-on-centos-part-1</a></li>
+<li><a class="reference external" href="http://www.rackspace.com/knowledge_center/article/understanding-logrotate-utility">http://www.rackspace.com/knowledge_center/article/understanding-logrotate-utility</a></li>
+<li><a class="reference external" href="http://www.softpanorama.org/Commercial_linuxes/RHEL/rhel_log_rotation.shtml">http://www.softpanorama.org/Commercial_linuxes/RHEL/rhel_log_rotation.shtml</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-manage-log-files-with-logrotate-on-ubuntu-12-10">https://www.digitalocean.com/community/tutorials/how-to-manage-log-files-with-logrotate-on-ubuntu-12-10</a></li>
+<li><a class="reference external" href="http://linuxers.org/howto/howto-use-logrotate-manage-log-files">http://linuxers.org/howto/howto-use-logrotate-manage-log-files</a></li>
+<li><a class="reference external" href="http://linuxconfig.org/setting-up-logrotate-on-redhat-linux">http://linuxconfig.org/setting-up-logrotate-on-redhat-linux</a></li>
+<li><a class="reference external" href="http://www.thegeekstuff.com/2010/07/logrotate-examples/">http://www.thegeekstuff.com/2010/07/logrotate-examples/</a></li>
+<li><a class="reference external" href="http://www.techrepublic.com/article/manage-linux-log-files-with-logrotate/">http://www.techrepublic.com/article/manage-linux-log-files-with-logrotate/</a></li>
+<li><a class="reference external" href="https://www.linode.com/docs/uptime/logs/use-logrotate-to-manage-log-files">https://www.linode.com/docs/uptime/logs/use-logrotate-to-manage-log-files</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.loggly.com/ultimate-guide/troubleshooting-with-linux-logs/">https://www.loggly.com/ultimate-guide/troubleshooting-with-linux-logs/</a></li>
+<li><a class="reference external" href="https://www.loggly.com/ultimate-guide/centralizing-windows-logs/">https://www.loggly.com/ultimate-guide/centralizing-windows-logs/</a></li>
+<li><a class="reference external" href="https://blog.logentries.com/2016/09/avoid-these-things-when-logging-from-your-application/">https://blog.logentries.com/2016/09/avoid-these-things-when-logging-from-your-application/</a></li>
+</ul>
+</div>
+<div class="section" id="elk-stack">
+<h2>ELK Stack<a class="headerlink" href="#elk-stack" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the basics of the ELK stack - ElasticSearch, Logstash and Kibana</em></p>
+<ul class="simple">
+<li><a class="reference external" href="http://logz.io/learn/complete-guide-elk-stack/">http://logz.io/learn/complete-guide-elk-stack/</a></li>
+<li><a class="reference external" href="http://logz.io/blog/10-elasticsearch-concepts/">http://logz.io/blog/10-elasticsearch-concepts/</a></li>
+</ul>
+<div class="section" id="elasticsearch">
+<h3>ElasticSearch<a class="headerlink" href="#elasticsearch" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://logz.io/blog/elasticsearch-tutorial/">http://logz.io/blog/elasticsearch-tutorial/</a></li>
+<li><a class="reference external" href="http://vichargrave.com/ossec-log-management-with-elasticsearch">http://vichargrave.com/ossec-log-management-with-elasticsearch</a></li>
+<li><a class="reference external" href="http://aarvik.dk/a-bit-on-elasticsearch-logstash-kibana-the-elk-stack/">http://aarvik.dk/a-bit-on-elasticsearch-logstash-kibana-the-elk-stack/</a></li>
+</ul>
+</div>
+<div class="section" id="logstash">
+<h3>Logstash<a class="headerlink" href="#logstash" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://logz.io/blog/logstash-tutorial/">http://logz.io/blog/logstash-tutorial/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-logstash-and-kibana-to-centralize-and-visualize-logs-on-ubuntu-14-04">https://www.digitalocean.com/community/tutorials/how-to-use-logstash-and-kibana-to-centralize-and-visualize-logs-on-ubuntu-14-04</a></li>
+<li><a class="reference external" href="http://logz.io/blog/fluentd-logstash/">http://logz.io/blog/fluentd-logstash/</a></li>
+<li><a class="reference external" href="http://www.slashroot.in/logstash-tutorial-linux-central-logging-server">http://www.slashroot.in/logstash-tutorial-linux-central-logging-server</a></li>
+</ul>
+</div>
+<div class="section" id="kibana">
+<h3>Kibana<a class="headerlink" href="#kibana" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://logz.io/blog/kibana-tutorial/">http://logz.io/blog/kibana-tutorial/</a></li>
+<li><a class="reference external" href="http://logz.io/blog/kibana-visualizations/">http://logz.io/blog/kibana-visualizations/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-kibana-dashboards-and-visualizations">https://www.digitalocean.com/community/tutorials/how-to-use-kibana-dashboards-and-visualizations</a></li>
+<li><a class="reference external" href="https://marc.cortinasval.cat/blog/2014/03/05/kibana-help-us-to-analyze-cdn-logs/">https://marc.cortinasval.cat/blog/2014/03/05/kibana-help-us-to-analyze-cdn-logs/</a></li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -211,6 +303,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Failover.html" class="btn btn-neutral float-right" title="Failover" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Graphing.html" class="btn btn-neutral" title="Graphing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
