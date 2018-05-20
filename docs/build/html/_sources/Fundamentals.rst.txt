@@ -24,12 +24,12 @@ Concepts
 - https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236
 
 HTTP request lifecycle overview 
-**************************************
+#################################
 - https://dev.to/dangolant/things-i-brushed-up-on-this-week-the-http-request-lifecycle-
    
 
 Difference between ``http 443 and https 80``
-*********************************************
+##############################################
 - http://serverfault.com/questions/705197/http-over-port-443-vs-https-over-port-80
 
 .. image::  ../source/images/web-servers-diff-port-80-443.png
@@ -38,7 +38,7 @@ Difference between ``http 443 and https 80``
     :height: 831px
         
 HTTP status codes
-********************************
+########################
 - http://www.restapitutorial.com/httpstatuscodes.html
    
 - https://httpstatuses.com/
@@ -51,7 +51,7 @@ HTTP status codes
     :height: 831px
 
 Check website-availability issues - Tools
-********************************************
+############################################
 - https://www.site24x7.com/tools.html
    
 - https://geopeeker.com/
@@ -89,3 +89,4 @@ wGET
 - http://www.linuxtechi.com/wget-command-practical-examples/
    
 - https://alvinalexander.com/linux-unix/how-to-make-offline-mirror-copy-website-with-wget
+
