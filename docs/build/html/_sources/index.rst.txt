@@ -22,7 +22,7 @@ Notes - Vinay Hegde
    Package-Management
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
    :caption: Web Servers
    :hidden:
 
