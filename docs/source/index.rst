@@ -52,6 +52,15 @@ Notes - Vinay Hegde
 
 .. toctree::
    :maxdepth: 2
+   :caption: Programming
+   :hidden:
+
+   Generic
+   Python
+   Bash
+
+.. toctree::
+   :maxdepth: 2
    :caption: Configuration Management
    :hidden:
 
