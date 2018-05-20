@@ -97,18 +97,31 @@
 <p class="caption"><span class="caption-text">Web Servers</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Fundamentals.html">Fundamentals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#http-request-lifecycle-overview">HTTP request lifecycle overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#difference-between-http-443-and-https-80">Difference between <code class="docutils literal notranslate"><span class="pre">http</span> <span class="pre">443</span> <span class="pre">and</span> <span class="pre">https</span> <span class="pre">80</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#http-status-codes">HTTP status codes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#check-website-availability-issues-tools">Check website-availability issues - Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Apache.html">Apache</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NGinx.html">Nginx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HAProxy.html">HAProxy</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">SSL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#faqs-on-ssl">FAQs on SSL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#server-name-indication">Server Name Indication</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#basics-of-openssl-commands-for-csr-keys-certs">Basics of OpenSSL Commands for CSR, Keys &amp; Certs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wildcard-ssl-on-sub-domain">Wildcard SSL on sub-domain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#switching-from-http-to-https">Switching from HTTP to HTTPs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-san-ssl-certificate">Creating SAN SSL certificate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-hardening">Tuning &amp; Hardening</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hardening-your-web-servers-ssl-ciphers">Hardening Your Web Server’s SSL Ciphers</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#free-ssl-certificates-letsencrypt">Free SSL Certificates : LetsEncrypt</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -203,18 +216,120 @@
             
   <div class="section" id="ssl">
 <h1>SSL<a class="headerlink" href="#ssl" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how SSL works</em></p>
+<p><em>Some useful links to cover the basics of SSL</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/a-comparison-of-let-s-encrypt-commercial-and-private-certificate-authorities-and-self-signed-ssl-certificates">https://www.digitalocean.com/community/tutorials/a-comparison-of-let-s-encrypt-commercial-and-private-certificate-authorities-and-self-signed-ssl-certificates</a></li>
+<li><a class="reference external" href="https://www.digicert.com/ssl.htm">https://www.digicert.com/ssl.htm</a></li>
+<li><a class="reference external" href="http://grahamc.com/blog/openssl-madness-how-to-create-keys-certificate-signing-requests-authorities-and-pem-files/">http://grahamc.com/blog/openssl-madness-how-to-create-keys-certificate-signing-requests-authorities-and-pem-files/</a></li>
+<li><a class="reference external" href="https://www.digicert.com/csr-creation.htm">https://www.digicert.com/csr-creation.htm</a></li>
+<li><a class="reference external" href="http://swift.siphos.be/aglara/certificates.html">http://swift.siphos.be/aglara/certificates.html</a></li>
+<li><a class="reference external" href="https://www.openssl.org/docs/manmaster/apps/verify.html">https://www.openssl.org/docs/manmaster/apps/verify.html</a></li>
+<li><a class="reference external" href="http://www.openssl.org/docs/manmaster/apps/x509.html">http://www.openssl.org/docs/manmaster/apps/x509.html</a></li>
+<li><a class="reference external" href="http://www.slashroot.in/understanding-working-secure-socket-layerssl">http://www.slashroot.in/understanding-working-secure-socket-layerssl</a></li>
+<li><a class="reference external" href="http://www.slashroot.in/understanding-ssl-handshake-protocol">http://www.slashroot.in/understanding-ssl-handshake-protocol</a></li>
+<li><a class="reference external" href="https://www.troyhunt.com/life-is-about-to-get-harder-for-websites-without-https/">https://www.troyhunt.com/life-is-about-to-get-harder-for-websites-without-https/</a></li>
+<li><a class="reference external" href="https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/">https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/</a></li>
+</ul>
+<div class="section" id="faqs-on-ssl">
+<h3>FAQs on SSL<a class="headerlink" href="#faqs-on-ssl" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://timnash.co.uk/guessing-ssl-questions/">https://timnash.co.uk/guessing-ssl-questions/</a></li>
+<li><a class="reference external" href="http://www.martfox.com/customer/knowledgebase/140/Why-a-SSL-Requires-Dedicated-IP.html">http://www.martfox.com/customer/knowledgebase/140/Why-a-SSL-Requires-Dedicated-IP.html</a></li>
+<li><a class="reference external" href="https://dzone.com/articles/introduction-to-ssl-for-managers">https://dzone.com/articles/introduction-to-ssl-for-managers</a></li>
+<li><a class="reference external" href="https://www.nutsandboltsmedia.com/does-your-website-really-need-ssl/">https://www.nutsandboltsmedia.com/does-your-website-really-need-ssl/</a></li>
+</ul>
 </div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="server-name-indication">
+<h3>Server Name Indication<a class="headerlink" href="#server-name-indication" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://devcentral.f5.com/articles/ssl-profiles-part-7-server-name-indication">https://devcentral.f5.com/articles/ssl-profiles-part-7-server-name-indication</a></li>
+<li><a class="reference external" href="http://wiki.apache.org/httpd/NameBasedSSLVHostsWithSNI">http://wiki.apache.org/httpd/NameBasedSSLVHostsWithSNI</a></li>
+<li><a class="reference external" href="https://www.digicert.com/ssl-support/apache-multiple-ssl-certificates-using-sni.htm">https://www.digicert.com/ssl-support/apache-multiple-ssl-certificates-using-sni.htm</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="basics-of-openssl-commands-for-csr-keys-certs">
+<h3>Basics of OpenSSL Commands for CSR, Keys &amp; Certs<a class="headerlink" href="#basics-of-openssl-commands-for-csr-keys-certs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs">https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs</a></li>
+</ul>
+</div>
+<div class="section" id="wildcard-ssl-on-sub-domain">
+<h3>Wildcard SSL on sub-domain<a class="headerlink" href="#wildcard-ssl-on-sub-domain" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://stackoverflow.com/questions/2115611/wildcard-ssl-on-sub-subdomain">http://stackoverflow.com/questions/2115611/wildcard-ssl-on-sub-subdomain</a></li>
+<li><a class="reference external" href="http://serverfault.com/questions/566426/does-each-subdomain-need-its-own-ssl-certificate">http://serverfault.com/questions/566426/does-each-subdomain-need-its-own-ssl-certificate</a></li>
+<li><a class="reference external" href="http://serverfault.com/questions/104160/wildcard-ssl-certificate-for-second-level-subdomain">http://serverfault.com/questions/104160/wildcard-ssl-certificate-for-second-level-subdomain</a></li>
+</ul>
+</div>
+<div class="section" id="switching-from-http-to-https">
+<h3>Switching from HTTP to HTTPs<a class="headerlink" href="#switching-from-http-to-https" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.smashingmagazine.com/2017/06/guide-switching-http-https/">https://www.smashingmagazine.com/2017/06/guide-switching-http-https/</a></li>
+<li><a class="reference external" href="http://searchengineland.com/http-https-seos-guide-securing-website-246940">http://searchengineland.com/http-https-seos-guide-securing-website-246940</a></li>
+<li><a class="reference external" href="https://yoast.com/moving-your-website-to-https-ssl-tips-tricks/">https://yoast.com/moving-your-website-to-https-ssl-tips-tricks/</a></li>
+</ul>
+</div>
+<div class="section" id="creating-san-ssl-certificate">
+<h3>Creating SAN SSL certificate<a class="headerlink" href="#creating-san-ssl-certificate" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://geekflare.com/san-ssl-certificate/">https://geekflare.com/san-ssl-certificate/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tuning-hardening">
+<h2>Tuning &amp; Hardening<a class="headerlink" href="#tuning-hardening" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://heartbleed.com/">http://heartbleed.com/</a></li>
+<li><a class="reference external" href="http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html">http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html</a></li>
+<li><a class="reference external" href="https://www.yahoo.com/tech/heres-what-you-need-to-know-about-the-heartbleed-bug-82120054478.html">https://www.yahoo.com/tech/heres-what-you-need-to-know-about-the-heartbleed-bug-82120054478.html</a></li>
+<li><a class="reference external" href="http://thehackernews.com/2014/04/heartbleed-bug-explained-10-most.html">http://thehackernews.com/2014/04/heartbleed-bug-explained-10-most.html</a></li>
+<li><a class="reference external" href="http://kb.odin.com/en/118918">http://kb.odin.com/en/118918</a></li>
+<li><a class="reference external" href="https://security.stackexchange.com/questions/8210/what-vulnerabilities-could-be-caused-by-a-wildcard-ssl-cert">https://security.stackexchange.com/questions/8210/what-vulnerabilities-could-be-caused-by-a-wildcard-ssl-cert</a></li>
+<li><a class="reference external" href="http://www.jamescoyle.net/how-to/1073-bash-script-to-create-an-ssl-certificate-key-and-request-csr">http://www.jamescoyle.net/how-to/1073-bash-script-to-create-an-ssl-certificate-key-and-request-csr</a></li>
+<li><a class="reference external" href="https://rtcamp.com/wordpress-nginx/tutorials/ssl/multidomain-ssl-subject-alternative-names/">https://rtcamp.com/wordpress-nginx/tutorials/ssl/multidomain-ssl-subject-alternative-names/</a></li>
+</ul>
+<div class="section" id="hardening-your-web-servers-ssl-ciphers">
+<h3>Hardening Your Web Server’s SSL Ciphers<a class="headerlink" href="#hardening-your-web-servers-ssl-ciphers" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/">https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/</a></li>
+<li><a class="reference external" href="https://cipherli.st/">https://cipherli.st/</a></li>
+<li><a class="reference external" href="https://mozilla.github.io/server-side-tls/ssl-config-generator/">https://mozilla.github.io/server-side-tls/ssl-config-generator/</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.sslshopper.com/ssl-certificate-tools.html">https://www.sslshopper.com/ssl-certificate-tools.html</a></li>
+<li><a class="reference external" href="https://cheapsslsecurity.com/ssltools/">https://cheapsslsecurity.com/ssltools/</a></li>
+<li><a class="reference external" href="http://geekflare.com/ssl-test-certificate/">http://geekflare.com/ssl-test-certificate/</a></li>
+<li><a class="reference external" href="https://serversforhackers.com/self-signed-ssl-certificates">https://serversforhackers.com/self-signed-ssl-certificates</a></li>
+</ul>
+</div>
+<div class="section" id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.sslshopper.com/article-most-common-openssl-commands.html">https://www.sslshopper.com/article-most-common-openssl-commands.html</a></li>
+<li><a class="reference external" href="http://www.shellhacks.com/en/HowTo-Check-SSL-Certificate-Expiration-Date-from-the-Linux-Shell">http://www.shellhacks.com/en/HowTo-Check-SSL-Certificate-Expiration-Date-from-the-Linux-Shell</a></li>
+<li><a class="reference external" href="https://cryptoreport.websecurity.symantec.com/checker/">https://cryptoreport.websecurity.symantec.com/checker/</a></li>
+<li><a class="reference external" href="https://www.digicert.com/help/">https://www.digicert.com/help/</a></li>
+</ul>
+<div class="section" id="free-ssl-certificates-letsencrypt">
+<h3>Free SSL Certificates : LetsEncrypt<a class="headerlink" href="#free-ssl-certificates-letsencrypt" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/an-introduction-to-let-s-encrypt">https://www.digitalocean.com/community/tutorials/an-introduction-to-let-s-encrypt</a></li>
+<li><a class="reference external" href="https://geekflare.com/free-ssl-tls-certificate/">https://geekflare.com/free-ssl-tls-certificate/</a></li>
+<li><a class="reference external" href="https://serversforhackers.com/video/letsencrypt-for-free-easy-ssl-certificates">https://serversforhackers.com/video/letsencrypt-for-free-easy-ssl-certificates</a></li>
+<li><a class="reference external" href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+<li><a class="reference external" href="https://digitz.org/blog/lets-encrypt-ssl-centos-7-setup/">https://digitz.org/blog/lets-encrypt-ssl-centos-7-setup/</a></li>
+<li><a class="reference external" href="https://certbot.eff.org/lets-encrypt/centosrhel7-nginx.html">https://certbot.eff.org/lets-encrypt/centosrhel7-nginx.html</a></li>
+</ul>
+</div>
 </div>
 </div>
 
