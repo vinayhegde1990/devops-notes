@@ -8,7 +8,7 @@ Monitoring
 Concepts
 ########
 
-.. image::  ../source/images/web-servers-apache-mpms.png
+.. image::  ../source/images/monitoring-perf-tools.png
     :width: 698px
     :align: center
     :height: 948px

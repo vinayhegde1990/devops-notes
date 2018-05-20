@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Logging" href="Logging.html" />
+    <link rel="prev" title="Monitoring" href="Monitoring.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -99,6 +101,24 @@
 <li class="toctree-l1"><a class="reference internal" href="NGinx.html">Nginx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="HAProxy.html">HAProxy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SSL.html">SSL</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Uptime</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Monitoring.html">Monitoring</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Graphing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ganglia">Ganglia</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-ganglia-does">What Ganglia does</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#important-points">Important points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parts-of-ganglia-monitoring-tool">Parts of Ganglia Monitoring Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Logging.html">Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Failover.html">Failover</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Configuration Management</span></p>
 <ul>
@@ -194,15 +214,96 @@
 <p><em>Some useful links to cover the basics of Graphing</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<p><strong>Cacti</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.cacti.net/index.php">http://www.cacti.net/index.php</a></li>
+</ul>
+<p><strong>Metrics</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.4aiur.net/2012/01/installing-and-configuring-graphite-on-centos/">http://blog.4aiur.net/2012/01/installing-and-configuring-graphite-on-centos/</a></li>
+<li><a class="reference external" href="http://kaivanov.blogspot.in/2014/07/metrics-visualisation-and-collection.html">http://kaivanov.blogspot.in/2014/07/metrics-visualisation-and-collection.html</a></li>
+</ul>
 </div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ganglia">
+<h2>Ganglia<a class="headerlink" href="#ganglia" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.slashroot.in/introduction-ganglia-monitoring-and-graphing-tool">http://www.slashroot.in/introduction-ganglia-monitoring-and-graphing-tool</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04">https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04</a></li>
+<li><a class="reference external" href="https://sachinsharm.wordpress.com/2013/08/17/setup-and-configure-ganglia-3-6-on-centosrhel-6-3/">https://sachinsharm.wordpress.com/2013/08/17/setup-and-configure-ganglia-3-6-on-centosrhel-6-3/</a></li>
+</ul>
+<div class="section" id="what-ganglia-does">
+<h3>What Ganglia does<a class="headerlink" href="#what-ganglia-does" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><cite>Graph different properties of a server such as CPU,memory,load,etc</cite></li>
+<li><cite>Compare the graphing trend of those properties with previous trend &amp; identify which node or host is causing the issue easily from the trend.</cite></li>
+<li><cite>Make custom metrics for graphing for different process.</cite></li>
+<li><cite>Machines from different data centers which are part of one single cluster must be represented in that single cluster in a single interface.</cite></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="important-points">
+<h3>Important points<a class="headerlink" href="#important-points" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Node</strong> : <cite>SINGLE machine sending data to Ganglia monitoring daemon. (All individual servers are nodes, can or can’t be part of a cluster)</cite></li>
+<li><strong>Cluster</strong> : <cite>All nodes that are used for any particular purpose is a CLUSTER.</cite></li>
+<li><strong>Grid</strong> : <cite>Collection of clusters is a GRID.</cite></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="parts-of-ganglia-monitoring-tool">
+<h3>Parts of Ganglia Monitoring Tool<a class="headerlink" href="#parts-of-ganglia-monitoring-tool" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><strong>1. Gmond :</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>Ganglia Monitoring daemon (Service that needs to be installed on each &amp; every node that needs to be monitored)</cite></li>
+<li><cite>Sends data via XML over TCP &amp; main configuration file</cite> : <code class="docutils literal notranslate"><span class="pre">/etc/gmond.conf</span></code></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>2. Gmetad :</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>Collects data from Gmond daemons &amp; stores in RRD (Round robin database)</cite></li>
+<li><cite>Main configuration file is /etc/gmetad.conf &amp; should be installed on one node of each cluster</cite></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>3. RRD tool :</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>Used by Ganglia to store data for visualization (graphing) &amp; store data of particular time intervals &amp; then graphs the same.</cite></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>4. PHP Front-End :</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>A web interface on the master node that displays graphs and metrics from data in the RRD tool.</cite></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://linuxdrops.com/install-ganglia-monitoring-system-on-centos-rhel/">http://linuxdrops.com/install-ganglia-monitoring-system-on-centos-rhel/</a></li>
+<li><a class="reference external" href="https://sachinsharm.wordpress.com/2013/08/17/setup-and-configure-ganglia-3-6-on-centosrhel-6-3/">https://sachinsharm.wordpress.com/2013/08/17/setup-and-configure-ganglia-3-6-on-centosrhel-6-3/</a></li>
+<li><a class="reference external" href="https://sachinsharm.wordpress.com/2013/08/19/setup-and-configure-ganglia-python-modules-on-centosrhel-6-3/">https://sachinsharm.wordpress.com/2013/08/19/setup-and-configure-ganglia-python-modules-on-centosrhel-6-3/</a></li>
+<li><a class="reference external" href="http://a4amittripathi.blogspot.in/2014/01/how-to-configure-and-install-ganglia-in.html">http://a4amittripathi.blogspot.in/2014/01/how-to-configure-and-install-ganglia-in.html</a></li>
+<li><a class="reference external" href="http://www.ibm.com/developerworks/library/l-ganglia-nagios-1/">http://www.ibm.com/developerworks/library/l-ganglia-nagios-1/</a></li>
+</ul>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://ahmadchaudary.wordpress.com/tag/ganglia-monitoring/">https://ahmadchaudary.wordpress.com/tag/ganglia-monitoring/</a></li>
+<li><a class="reference external" href="http://rowsandcolumns.blogspot.in/2010/07/compiling-ganglia-errors-and-problems.html">http://rowsandcolumns.blogspot.in/2010/07/compiling-ganglia-errors-and-problems.html</a></li>
+</ul>
 </div>
 </div>
 
@@ -211,6 +312,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Logging.html" class="btn btn-neutral float-right" title="Logging" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Monitoring.html" class="btn btn-neutral" title="Monitoring" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
