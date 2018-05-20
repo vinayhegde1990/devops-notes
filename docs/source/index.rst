@@ -40,7 +40,6 @@ Notes - Vinay Hegde
    Monitoring
    Graphing
    Logging
-   Failover
 
 .. toctree::
    :maxdepth: 2
