@@ -3,9 +3,9 @@ Fundamentals
 
 *Some useful links to cover the basics of Web-Servers*
 
-########
+##########
 Concepts
-########
+##########
 
 - http://computer.howstuffworks.com/web-server2.htm
    
@@ -51,7 +51,7 @@ HTTP status codes
     :height: 831px
 
 Check website-availability issues - Tools
-***************************************************
+********************************************
 - https://www.site24x7.com/tools.html
    
 - https://geopeeker.com/
@@ -59,9 +59,9 @@ Check website-availability issues - Tools
 - https://httpstatus.io/
         
         
-#####   
+#######   
 cURL
-#####
+#######
 - http://www.thegeekstuff.com/2012/04/curl-examples/
    
 - http://www.slashroot.in/curl-command-tutorial-linux-example-usage
@@ -77,9 +77,9 @@ cURL
 - https://blog.josephscott.org/2011/10/14/timing-details-with-curl/
 
 
-######
+#######
 wGET
-######
+#######
 - http://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/
    
 - http://www.tecmint.com/10-wget-command-examples-in-linux/
