@@ -34,6 +34,16 @@ Notes - Vinay Hegde
 
 .. toctree::
    :maxdepth: 2
+   :caption: Uptime
+   :hidden:
+   
+   Monitoring
+   Graphing
+   Logging
+   Failover
+
+.. toctree::
+   :maxdepth: 2
    :caption: Configuration Management
    :hidden:
 
