@@ -97,15 +97,14 @@
 <p class="caption"><span class="caption-text">Web Servers</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Fundamentals.html">Fundamentals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#http-request-lifecycle-overview">HTTP request lifecycle overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#difference-between-http-443-and-https-80">Difference between <code class="docutils literal notranslate"><span class="pre">http</span> <span class="pre">443</span> <span class="pre">and</span> <span class="pre">https</span> <span class="pre">80</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#http-status-codes">HTTP status codes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html#check-website-availability-issues-tools">Check website-availability issues - Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Apache.html">Apache</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Nginx</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nginx-with-https-using-ssl-via-letsencrypt">Nginx with HTTPS using SSL via LetsEncrypt</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-hardening">Tuning &amp; Hardening</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-log-parsing">Troubleshooting &amp; Log Parsing</a></li>
 </ul>
 </li>
@@ -203,18 +202,65 @@
             
   <div class="section" id="nginx">
 <h1>Nginx<a class="headerlink" href="#nginx" title="Permalink to this headline">¶</a></h1>
-<p><em>This section covers the basics of how Nginx works</em></p>
+<p><em>Some useful links to cover the basics of NGinx</em></p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms">https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms</a></li>
+<li><a class="reference external" href="https://www.nginx.com/resources/wiki/start/">https://www.nginx.com/resources/wiki/start/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts">https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts</a></li>
+<li><a class="reference external" href="https://www.linode.com/docs/websites/nginx/how-to-configure-nginx">https://www.linode.com/docs/websites/nginx/how-to-configure-nginx</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching">https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching</a></li>
+<li><a class="reference external" href="https://www.atulhost.com/nginx">https://www.atulhost.com/nginx</a></li>
+</ul>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://fideloper.com/ubuntu-12-04-lemp-nginx-setup">http://fideloper.com/ubuntu-12-04-lemp-nginx-setup</a></li>
+<li><a class="reference external" href="https://blog.serverdensity.com/monitor-nginx/">https://blog.serverdensity.com/monitor-nginx/</a></li>
+<li><a class="reference external" href="http://devdocs.io/nginx/">http://devdocs.io/nginx/</a></li>
+<li><a class="reference external" href="http://nginx.org/en/docs/">http://nginx.org/en/docs/</a></li>
+<li><a class="reference external" href="https://rtcamp.com/tutorials/nginx/">https://rtcamp.com/tutorials/nginx/</a></li>
+<li><a class="reference external" href="http://articles.slicehost.com/nginx">http://articles.slicehost.com/nginx</a></li>
+<li><a class="reference external" href="https://rtcamp.com/wordpress-nginx/tutorials/">https://rtcamp.com/wordpress-nginx/tutorials/</a></li>
+<li><a class="reference external" href="https://geekflare.com/category/web-infrastructure/nginx/">https://geekflare.com/category/web-infrastructure/nginx/</a></li>
+<li><a class="reference external" href="https://geekflare.com/nginx-webserver-security-hardening-guide/">https://geekflare.com/nginx-webserver-security-hardening-guide/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-create-temporary-and-permanent-redirects-with-apache-and-nginx">https://www.digitalocean.com/community/tutorials/how-to-create-temporary-and-permanent-redirects-with-apache-and-nginx</a></li>
+<li><a class="reference external" href="https://www.nginx.com/blog/creating-nginx-rewrite-rules/">https://www.nginx.com/blog/creating-nginx-rewrite-rules/</a></li>
+<li><a class="reference external" href="https://www.godaddy.com/garage/tech/config/how-to-install-and-configure-nginx-on-fedora/">https://www.godaddy.com/garage/tech/config/how-to-install-and-configure-nginx-on-fedora/</a></li>
+</ul>
+<div class="section" id="nginx-with-https-using-ssl-via-letsencrypt">
+<h3>Nginx with HTTPS using SSL via LetsEncrypt<a class="headerlink" href="#nginx-with-https-using-ssl-via-letsencrypt" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://shawnliu.me/post/using-lets-encrypt-for-nginx-on-centos-7/">https://shawnliu.me/post/using-lets-encrypt-for-nginx-on-centos-7/</a></li>
+<li><a class="reference external" href="https://www.e2enetworks.com/help/knowledge-base/free-ssl-for-ngnix-on-centos-by-lets-encrypt/">https://www.e2enetworks.com/help/knowledge-base/free-ssl-for-ngnix-on-centos-by-lets-encrypt/</a></li>
+<li><a class="reference external" href="https://www.imagescape.com/blog/2017/11/27/free-and-auto-renewing-ssl-certificates-letsencrypt-quick-setup-2017-edition/">https://www.imagescape.com/blog/2017/11/27/free-and-auto-renewing-ssl-certificates-letsencrypt-quick-setup-2017-edition/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tuning-hardening">
+<h2>Tuning &amp; Hardening<a class="headerlink" href="#tuning-hardening" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://linuxbsdos.com/2015/02/17/how-to-reduce-php-fpm-php5-fpm-ram-usage-by-about-50/">http://linuxbsdos.com/2015/02/17/how-to-reduce-php-fpm-php5-fpm-ram-usage-by-about-50/</a></li>
+<li><a class="reference external" href="https://www.nginx.com/blog/10-tips-for-10x-application-performance/">https://www.nginx.com/blog/10-tips-for-10x-application-performance/</a></li>
+<li><a class="reference external" href="http://www.tokiwinter.com/building-a-highly-available-load-balancer-with-nginx-and-keepalived-on-centos/">http://www.tokiwinter.com/building-a-highly-available-load-balancer-with-nginx-and-keepalived-on-centos/</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/rhel-centos-fedora-keepalived-lvs-cluster-configuration/">http://www.cyberciti.biz/faq/rhel-centos-fedora-keepalived-lvs-cluster-configuration/</a></li>
+<li><a class="reference external" href="https://lincolnloop.com/blog/rate-limiting-nginx/">https://lincolnloop.com/blog/rate-limiting-nginx/</a></li>
+<li><a class="reference external" href="https://www.nginx.com/blog/benefits-of-microcaching-nginx/">https://www.nginx.com/blog/benefits-of-microcaching-nginx/</a></li>
+<li><a class="reference external" href="https://anturis.com/blog/nginx-vs-apache/">https://anturis.com/blog/nginx-vs-apache/</a></li>
+<li><a class="reference external" href="http://www.thegeekstuff.com/2013/11/nginx-vs-apache/">http://www.thegeekstuff.com/2013/11/nginx-vs-apache/</a></li>
+<li><a class="reference external" href="https://www.fissionblue.com/blog/mask-domain-entire-site-using-nginx-ssl/">https://www.fissionblue.com/blog/mask-domain-entire-site-using-nginx-ssl/</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations">https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations</a></li>
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration">https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration</a></li>
+</ul>
 </div>
 <div class="section" id="troubleshooting-log-parsing">
 <h2>Troubleshooting &amp; Log Parsing<a class="headerlink" href="#troubleshooting-log-parsing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://logz.io/blog/nginx-log-analysis/">http://logz.io/blog/nginx-log-analysis/</a></li>
+<li><a class="reference external" href="http://logz.io/blog/nginx-access-log-monitoring-dashboard/">http://logz.io/blog/nginx-access-log-monitoring-dashboard/</a></li>
+</ul>
 </div>
 </div>
 
