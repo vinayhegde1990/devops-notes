@@ -43,6 +43,15 @@ Notes - Vinay Hegde
 
 .. toctree::
    :maxdepth: 2
+   :caption: Internet
+   :hidden:
+        
+   Networking-Protocols
+   Linux-Security
+   IPTables
+
+.. toctree::
+   :maxdepth: 2
    :caption: Configuration Management
    :hidden:
 
