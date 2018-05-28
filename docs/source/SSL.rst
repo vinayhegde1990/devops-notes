@@ -11,6 +11,11 @@ Concepts
 - https://www.digitalocean.com/community/tutorials/a-comparison-of-let-s-encrypt-commercial-and-private-certificate-authorities-and-self-signed-ssl-certificates
    
 - https://www.digicert.com/ssl.htm
+
+.. image::  ../source/images/web-servers-ssl-handshake.png
+    :width: 1098px
+    :align: center
+    :height: 672px
    
 - http://grahamc.com/blog/openssl-madness-how-to-create-keys-certificate-signing-requests-authorities-and-pem-files/
    

@@ -2,7 +2,7 @@
 HAProxy
 ************
 
-*Some useful links to cover the basics of NGinx*
+*Some useful links to cover the basics of HAProxy*
 
 ########
 Concepts
