@@ -17,6 +17,12 @@ Environment Variables {ENV}
 Crontab
 #############
 
+*Some useful links to cover the working of Crontab*
+
+- http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/
+
+- http://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/
+
 - https://www.pantz.org/software/cron/croninfo.html
 
 .. image::  ../source/images/utilities-cron-syntax-1.png
@@ -30,11 +36,8 @@ Crontab
     :width: 1180px
     :align: center
     :height: 1953px
-        
-- http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/
 
-- http://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/
-
+   
 Online Utilities to generate crons
 ***********************************
 - http://cronchecker.net/
@@ -51,6 +54,8 @@ Online Utilities to generate crons
 ########
 GREP
 ########
+
+*Some useful links to cover the working of Grep*
 
 - https://www.linode.com/docs/tools-reference/search-and-filter-text-with-grep
    
@@ -84,6 +89,8 @@ Grepping ps output without showing the grep process
 FIND
 ######
 
+*Some useful links to cover the working of Find*
+
 - https://danielmiessler.com/study/find/
    
 - https://www.digitalocean.com/community/tutorials/how-to-use-find-and-locate-to-search-for-files-on-a-linux-vps
@@ -98,6 +105,8 @@ FIND
 ################
 File Permissions
 ################
+
+*Some useful links to cover the working of File Permissions*
 
 - https://www.linux.com/learn/getting-know-linux-file-permissions
    
@@ -120,7 +129,7 @@ File Permissions
 - https://www.linode.com/docs/tools-reference/linux-users-and-groups
 
 
-Why sudo cd directories doesn't work
+Why sudo cd <path-to-dir> doesn't work
 ***************************************************
 - https://superuser.com/questions/241129/why-wont-sudo-cd-work
 
@@ -182,7 +191,7 @@ SetUID and SetGID
 UMask Values
 ************************
 - → UMask contains default permissions for newly created files / directories based on base permissions for those
-- → Base permissions for files are 666 (read-write permissions for owner-group-other : execute permissions are excluded by default for files as a security measure)
+- → Base permissions for files is 666 (read-write permissions for owner-group-other : execute permissions are excluded by for files as security measure)
 - → Similarly, the base permissions for directories are 777 (read-write-execute permissions for owner-group-other)
 - → The UMask values are inverse to regular file permissions → i.e: chmod
 - → UMask values = Base permissions - required permissions `All UMasks <https://www.linuxtrainingacademy.com/all-umasks/>`_
@@ -197,6 +206,8 @@ UMask Values
 ##########
 SymLinks
 ##########
+
+*Some useful links to cover the working of SymLinks*
 
 - http://www.cyberciti.biz/tips/understanding-unixlinux-symbolic-soft-and-hard-links.html
    
@@ -287,6 +298,8 @@ Random Tools
 #######
 SysCTL
 #######
+
+*Some useful links to cover the working of SysCTL*
 
 - http://go2linux.garron.me/linux/2011/02/introduction-and-how-sysctl-linux-900/
    

@@ -1,7 +1,7 @@
 Storage
 ************
 
-*Some useful links to cover the basics of Storage*
+*Some useful links to cover the basics of Storage, I/O*
 
 ########
 Concepts

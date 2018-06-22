@@ -81,7 +81,6 @@
             
               <p class="caption"><span class="caption-text">Basic-Concepts</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Linux-Basics.html">Linux Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Boot-Process.html">Boot Process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CPU.html">CPU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Memory.html">Memory</a></li>
@@ -99,7 +98,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#find">FIND</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#file-permissions">File Permissions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#why-sudo-cd-directories-doesn-t-work">Why sudo cd directories doesn’t work</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-sudo-cd-path-to-dir-doesn-t-work">Why sudo cd &lt;path-to-dir&gt; doesn’t work</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sudoers">Sudoers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#usermod-command">UserMod Command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#setuid-and-setgid">SetUID and SetGID</a></li>
@@ -128,7 +127,38 @@
 <li class="toctree-l1"><a class="reference internal" href="Hardware.html">Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Provisioning.html">Provisioning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Storage.html">Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="File-Systems.html">File Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Package-Management.html">Package-Management</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Web Servers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Fundamentals.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Apache.html">Apache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NGinx.html">Nginx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HAProxy.html">HAProxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSL.html">SSL</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Uptime</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Monitoring.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Graphing.html">Graphing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Logging.html">Logging</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internet</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Networking-Protocols.html">Networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Linux-Security.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IPTables.html">IPTables</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Generic.html">Generic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bash.html">Bash</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Version Control</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GIT.html">GIT</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Configuration Management</span></p>
 <ul>
@@ -231,7 +261,10 @@
 </div>
 <div class="section" id="crontab">
 <h2>Crontab<a class="headerlink" href="#crontab" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the working of Crontab</em></p>
 <ul class="simple">
+<li><a class="reference external" href="http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/">http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/</a></li>
+<li><a class="reference external" href="http://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/">http://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/</a></li>
 <li><a class="reference external" href="https://www.pantz.org/software/cron/croninfo.html">https://www.pantz.org/software/cron/croninfo.html</a></li>
 </ul>
 <a class="reference internal image-reference" href="_images/utilities-cron-syntax-1.png"><img alt="_images/utilities-cron-syntax-1.png" class="align-center" src="_images/utilities-cron-syntax-1.png" style="width: 846px; height: 183px;" /></a>
@@ -239,10 +272,6 @@
 <li><a class="reference external" href="http://corntab.com/crontab_syntax">http://corntab.com/crontab_syntax</a></li>
 </ul>
 <a class="reference internal image-reference" href="_images/utilities-cron-syntax-2.png"><img alt="_images/utilities-cron-syntax-2.png" class="align-center" src="_images/utilities-cron-syntax-2.png" style="width: 1180px; height: 1953px;" /></a>
-<ul class="simple">
-<li><a class="reference external" href="http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/">http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/</a></li>
-<li><a class="reference external" href="http://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/">http://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/</a></li>
-</ul>
 <div class="section" id="online-utilities-to-generate-crons">
 <h3>Online Utilities to generate crons<a class="headerlink" href="#online-utilities-to-generate-crons" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -256,6 +285,7 @@
 </div>
 <div class="section" id="grep">
 <h2>GREP<a class="headerlink" href="#grep" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the working of Grep</em></p>
 <ul class="simple">
 <li><a class="reference external" href="https://www.linode.com/docs/tools-reference/search-and-filter-text-with-grep">https://www.linode.com/docs/tools-reference/search-and-filter-text-with-grep</a></li>
 <li><a class="reference external" href="https://danielmiessler.com/study/grep/">https://danielmiessler.com/study/grep/</a></li>
@@ -276,6 +306,7 @@
 </div>
 <div class="section" id="find">
 <h2>FIND<a class="headerlink" href="#find" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the working of Find</em></p>
 <ul class="simple">
 <li><a class="reference external" href="https://danielmiessler.com/study/find/">https://danielmiessler.com/study/find/</a></li>
 <li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-find-and-locate-to-search-for-files-on-a-linux-vps">https://www.digitalocean.com/community/tutorials/how-to-use-find-and-locate-to-search-for-files-on-a-linux-vps</a></li>
@@ -286,6 +317,7 @@
 </div>
 <div class="section" id="file-permissions">
 <h2>File Permissions<a class="headerlink" href="#file-permissions" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the working of File Permissions</em></p>
 <ul class="simple">
 <li><a class="reference external" href="https://www.linux.com/learn/getting-know-linux-file-permissions">https://www.linux.com/learn/getting-know-linux-file-permissions</a></li>
 <li><a class="reference external" href="http://www.penguintutor.com/linux/file-permissions-reference">http://www.penguintutor.com/linux/file-permissions-reference</a></li>
@@ -298,8 +330,8 @@
 <li><a class="reference external" href="https://www.linux.com/learn/how-easily-back-and-restore-linux-file-permissions">https://www.linux.com/learn/how-easily-back-and-restore-linux-file-permissions</a></li>
 <li><a class="reference external" href="https://www.linode.com/docs/tools-reference/linux-users-and-groups">https://www.linode.com/docs/tools-reference/linux-users-and-groups</a></li>
 </ul>
-<div class="section" id="why-sudo-cd-directories-doesn-t-work">
-<h3>Why sudo cd directories doesn’t work<a class="headerlink" href="#why-sudo-cd-directories-doesn-t-work" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="why-sudo-cd-path-to-dir-doesn-t-work">
+<h3>Why sudo cd &lt;path-to-dir&gt; doesn’t work<a class="headerlink" href="#why-sudo-cd-path-to-dir-doesn-t-work" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://superuser.com/questions/241129/why-wont-sudo-cd-work">https://superuser.com/questions/241129/why-wont-sudo-cd-work</a></li>
 </ul>
@@ -345,7 +377,7 @@
 <h3>UMask Values<a class="headerlink" href="#umask-values" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>→ UMask contains default permissions for newly created files / directories based on base permissions for those</li>
-<li>→ Base permissions for files are 666 (read-write permissions for owner-group-other : execute permissions are excluded by default for files as a security measure)</li>
+<li>→ Base permissions for files is 666 (read-write permissions for owner-group-other : execute permissions are excluded by for files as security measure)</li>
 <li>→ Similarly, the base permissions for directories are 777 (read-write-execute permissions for owner-group-other)</li>
 <li>→ The UMask values are inverse to regular file permissions → i.e: chmod</li>
 <li>→ UMask values = Base permissions - required permissions <a class="reference external" href="https://www.linuxtrainingacademy.com/all-umasks/">All UMasks</a></li>
@@ -357,6 +389,7 @@
 </div>
 <div class="section" id="symlinks">
 <h2>SymLinks<a class="headerlink" href="#symlinks" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the working of SymLinks</em></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.cyberciti.biz/tips/understanding-unixlinux-symbolic-soft-and-hard-links.html">http://www.cyberciti.biz/tips/understanding-unixlinux-symbolic-soft-and-hard-links.html</a></li>
 <li><a class="reference external" href="http://www.thegeekstuff.com/2010/10/linux-ln-command-examples/">http://www.thegeekstuff.com/2010/10/linux-ln-command-examples/</a></li>
@@ -424,6 +457,7 @@
 </div>
 <div class="section" id="sysctl">
 <h2>SysCTL<a class="headerlink" href="#sysctl" title="Permalink to this headline">¶</a></h2>
+<p><em>Some useful links to cover the working of SysCTL</em></p>
 <ul class="simple">
 <li><a class="reference external" href="http://go2linux.garron.me/linux/2011/02/introduction-and-how-sysctl-linux-900/">http://go2linux.garron.me/linux/2011/02/introduction-and-how-sysctl-linux-900/</a></li>
 <li><a class="reference external" href="http://www.slashroot.in/linux-network-tcp-performance-tuning-sysctl">http://www.slashroot.in/linux-network-tcp-performance-tuning-sysctl</a></li>

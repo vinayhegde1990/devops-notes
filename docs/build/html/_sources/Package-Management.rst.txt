@@ -86,6 +86,13 @@ Downloading packages for RPM based OS
 - https://pkgs.org/
 
 
+Delta-RPMs
+****************
+• https://unix.stackexchange.com/questions/277900/do-i-need-to-do-something-about-delta-rpms-disabled
+
+• https://www.certdepot.net/rhel7-get-started-delta-rpms/
+
+
 
 ################################   
 Troubleshooting & Log Parsing

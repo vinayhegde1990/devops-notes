@@ -34,8 +34,10 @@ To delete all lines in vim
     :height: 296px
         
 ###########
-SED &&  AWK
+SED && AWK
 ###########
+
+*Some useful links to cover the working of Sed & AWK*
 
 - http://www.yourownlinux.com/2015/04/sed-command-in-linux-delete-lines-from-file.html
 
