@@ -38,7 +38,7 @@ Difference between GRUB / LILO
 - https://www.ibm.com/developerworks/library/l-bootload/index.html
 
 
-Do we need a separate boot partition in Linux OS?
+Is a separate boot partition necessary in Linux OS?
 **********************************************************
 
 - http://superuser.com/questions/522971/is-a-boot-partition-always-necessary

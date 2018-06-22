@@ -1,7 +1,7 @@
 Apache
 ************
 
-*Some useful links to cover the basics of Apache
+*Some useful links to cover the basics of Apache*
 
 ########
 Concepts

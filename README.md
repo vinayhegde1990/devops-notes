@@ -16,11 +16,11 @@ You can read the complete documentation [here](https://devops-notes.readthedocs.
 <h2> Tools Used: </h2>
 <h3> reStructuredText (RST): </h3>
 
-- For writing the .rst files which render the formatting. You can start off by learning via [this](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+- For writing .rst files to render the formatting. You can start learning via [this](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
 
 <h3> Sphinx: </h3> 
 
-- The engine that generates content in formats like HTML, LaTeX, ePub. A beginner’s guide can be found on their [page](http://www.sphinx-doc.org/en/master/index.html)
+- The engine generating content in HTML, LaTeX, ePub. A beginner’s guide can be found on their [page](http://www.sphinx-doc.org/en/master/index.html)
 
 <h3> GitHub: </h3> 
 
@@ -28,7 +28,7 @@ You can read the complete documentation [here](https://devops-notes.readthedocs.
 
 <h3> ReadTheDocs: </h3> 
 
-- The home of my documentation along with many others. They’ve an excellent [document](http://docs.readthedocs.io/en/latest/getting_started.html) to help you get up and running in no time.
+- Hosting my documentation along with many others. They’ve an excellent [document](http://docs.readthedocs.io/en/latest/getting_started.html) to help you get up and running in no time.
 
 
 <h2> Please note: </h2>

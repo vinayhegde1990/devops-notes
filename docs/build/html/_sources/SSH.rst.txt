@@ -99,7 +99,7 @@ Run same commands via SSH on multiple servers
 TMux
 ##########
 
-This section covers the basics of how TMux works.
+Some useful links to cover the working of TMux.
    
 - https://danielmiessler.com/study/tmux/
    

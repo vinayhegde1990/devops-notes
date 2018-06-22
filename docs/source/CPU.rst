@@ -15,8 +15,8 @@ Types of Processes
 ********************************************
 - http://www.gmarik.info/blog/2012/orphan-vs-zombie-vs-daemon-processes/
 
-Output of ps aux - Explained
-*****************************
+Output of ps command - Explained
+**************************************
 - http://superuser.com/questions/117913/ps-aux-output-meaning
 
 .. image::  ../source/images/cpu-ps-aux-meaning.png
