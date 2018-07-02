@@ -24,6 +24,7 @@ Tools Used:
 
 Please Note:
 -------------------
-- This is still a work in progress. Contributions / Feedback are welcome!
-- Feel free to contact me via `email <vinay.hegde30@gmail.com>`_ or `WhatsApp <https://api.whatsapp.com/send?phone=919967875270>`_ for the above
+- This is still a work in progress. Feedback, suggestions and queries are always appreciated!
+- Kindly read the guidelines on how to share your :ref:`CONTRIBUTING` to this project.
+- Feel free to contact me directly via `email <vinay.hegde30@gmail.com>`_ or `WhatsApp <https://api.whatsapp.com/send?phone=919967875270>`_ on the above.
 
