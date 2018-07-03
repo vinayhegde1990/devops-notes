@@ -133,9 +133,32 @@ Remove local commits NOT pushed to remote
 - http://stackoverflow.com/questions/1611215/remove-a-git-commit-which-has-not-pushed
 
 
+Understanding .gitignore file
+#########################################
+- https://www.git-tower.com/learn/git/faq/ignore-tracked-files-in-git
+
+- https://github.com/github/gitignore
+
+- https://www.gitignore.io/
+
+
+####################
+Better GIT Workflow
+####################
+
+- https://pixelbrackets.github.io/git_cheat_sheet/
+
+- https://github.com/git-tips/tips
+
+- https://github.com/so-fancy/diff-so-fancy
+
+- https://dev.to/shreyasminocha/how-i-do-my-git-commits-34d?
+
+- https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+
+
 ################
 Random Notes
 ################
-- https://svnvsgit.com/
-   
-- https://pixelbrackets.github.io/git_cheat_sheet/
+- https://svnvsgit.com
+
