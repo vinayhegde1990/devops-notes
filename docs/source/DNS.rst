@@ -44,15 +44,14 @@ Domain Transfer (AXFR)
 - The original DNS specifications `RFC-1034 <http://www.zytrax.com/books/dns/apd/rfc1034.txt>`_ & `RFC-1035 <http://www.zytrax.com/books/dns/apd/rfc1035.txt>`_ envisaged that **slave** (or secondary) DNS servers would poll the **master**. 
 - The time between such 'polling' is determined by the refresh value on the domain's `SOA Resource Record <http://www.zytrax.com/books/dns/ch8/soa.html>`_
 - The polling process is accomplished by the 'slave' sending a query to the **master** and requesting its current SOA record.
-- If the serial number of this record is higher than the current one maintained by the **slave** a zone transfer (AXFR) is requested & done on **TCP** Port 53. 
+- If serial number of this record is higher than the current one maintained by the **slave** a zone transfer (AXFR) is requested & done on **TCP** Port 53.
 
 
 DNS uses UDP for DNS queries over port 53
 **************************************************************
-- DNS uses UDP for basic usage, replying to DNS queries of the clients. When a client asks DNS server for a Name to IP or IP to NAME resolution, then DNS uses UDP protocol to reply to that query. 
-- The reason for using UDP is that UDP is not connection oriented, so its light weight & fast, which results in sending the results of the query to the client in much less time compared to TCP.
+- DNS uses UDP for to replying to client DNS queries such as client asking DNS server for a Name to IP or IP to NAME resolution.
+- The reason is that UDP is not connection oriented, so its light-weight & fast, resulting in faster data transmission of results to client compared to TCP.
 - At the same time, if needed then DNS can also work over TCP to serve the DNS queries, but UDP is always preferred because of greater speed.
-
 
 
 Why DNS uses TCP for Zone files transfer over port 53
@@ -72,7 +71,7 @@ Resource Records
 * MX Record
                 * map a mail exchange used for the domain
 
-``IN  MX  10   mail.domain.com. (where 10 is priority for the record. Lower value, higher priority will be given to the MX in a DNS lookup)``
+``IN  MX  10  mail.domain.com. (where 10 is record priority. Priority is given to MX with lower values at DNS lookup)``
 
 * PTR 
                 * maps an IP address to a reverse name 
