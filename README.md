@@ -33,5 +33,6 @@ You can read the complete documentation [here](https://devops-notes.readthedocs.
 
 <h2> Please note: </h2>
 
-- This is still a work in progress. Contributions / Feedback are welcome!
-- Feel free to contact me via [email](vinay.hegde30@gmail.com) or [WhatsApp](https://api.whatsapp.com/send?phone=919967875270) for the above
+- This is still a work in progress. Feedback, suggestions and queries are always appreciated!
+- Kindly read the guidelines on how to share your [Contributions](Contributing.md) to this project.
+- Feel free to contact me directly via [email](mailto:vinay.hegde30@gmail.com) or [WhatsApp](https://api.whatsapp.com/send?phone=919967875270) on the above
