@@ -36,3 +36,51 @@ Configuration
 Online Interpreter for Multiple Languages
 #############################################
 - https://tio.run/
+
+
+
+#################
+DevOps
+#################
+
+.. image::  ../source/images/programming-devops-tree.png
+    :width: 1414px
+    :align: center
+    :height: 1717px
+
+
+- https://devops.zeef.com/christian.peper
+
+- https://dev-ops-tools.zeef.com/richard.kraayenhagen
+
+- https://dev.to/
+
+- https://xebialabs.com/glossary/
+
+- https://xebialabs.com/the-ultimate-devops-tool-chest/
+
+- https://xebialabs.com/periodic-table-of-devops-tools/
+
+- https://zachholman.com/posts/deploying-software
+
+- https://www.ibm.com/developerworks/learn/devops/
+
+- https://learn-anything.xyz/programming/software-development/devops
+
+- http://itrevolution.com/devops-blog/
+
+- https://continuousdelivery.com
+
+- http://dev2ops.org
+
+- https://codeascraft.com
+
+- http://www.devopsbookmarks.com
+
+- https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592
+
+- https://increment.com/on-call/
+
+- https://medium.com/cleartax-engineering/cleartaxs-requirements-from-a-deployment-pipeline-1b77a55ba08c
+
+- http://www.humanops.com/
