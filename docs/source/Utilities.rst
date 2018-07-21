@@ -292,9 +292,7 @@ Random Tools
    
 - https://danielmiessler.com/blog/collection-of-less-commonly-used-unix-commands/
 
-- http://tecadmin.net/install-s3cmd-manage-amazon-s3-buckets/
-   
-- http://tecadmin.net/s3cmd-file-sync-with-s3bucket/
+- http://www.commandlinefu.com/commands/browse
 
 
 #######

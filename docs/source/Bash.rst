@@ -8,6 +8,8 @@ Bash
 Concepts
 ########
 
+- http://linuxcommand.org/index.php
+
 - http://bencane.com/2014/09/02/understanding-exit-codes-and-how-to-use-them-in-bash-scripts/
    
 - http://bencane.com/2014/01/27/8-examples-of-bash-if-statements-to-get-you-started/
@@ -53,6 +55,16 @@ Concepts
 #################
 Configuration
 #################
+
+
+Man Pages - Online and Interactive
+#########################################
+- http://tldr.sh/
+
+- https://www.commandlinux.com/
+
+- https://explainshell.com/
+
 
 Online IDE for Bash Scripts
 ##################################
