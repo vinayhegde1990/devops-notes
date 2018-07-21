@@ -35,6 +35,7 @@ Concepts
    
 - https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/
 
+
 FAQs on SSL
 #############
 - https://timnash.co.uk/guessing-ssl-questions/
@@ -44,6 +45,8 @@ FAQs on SSL
 - https://dzone.com/articles/introduction-to-ssl-for-managers
    
 - https://www.nutsandboltsmedia.com/does-your-website-really-need-ssl/
+
+- https://www.slashroot.in/how-does-ssltls-chain-certificates-and-its-validation-work
 
 
 Server Name Indication

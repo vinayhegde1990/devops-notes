@@ -12,6 +12,8 @@ Environment Variables {ENV}
 
 - https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-a-linux-vps
 
+- https://www.slashroot.in/difference-between-bashrc-and-bashprofile
+
 
 #############
 Crontab
