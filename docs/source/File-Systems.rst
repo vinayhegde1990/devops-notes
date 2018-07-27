@@ -45,6 +45,10 @@ Proc File Systems
 
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/Reference_Guide/s1-proc-directories.html
 
+.. image:: ../source/images/file-systems-proc.png
+    :width: 1519px
+    :align: center
+    :height: 1129px
 
 ULimit   
 **************

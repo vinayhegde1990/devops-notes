@@ -12,6 +12,11 @@ Concepts
 
 - http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages
 
+.. image:: ../source/images/cpu-process-contents.png
+    :width: 1650px
+    :align: center
+    :height: 1275px
+
 
 Types of Processes
 ********************************************
