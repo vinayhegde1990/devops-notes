@@ -8,6 +8,16 @@ Networking
 Concepts
 ########
 
+OSI Model Mnemonic : ``Please Do Not Teach Students Pointless Acronyms``
+########################################################################
+- https://www.cybrary.it/0p3n/osi-model-7-layers-basic-understanding/
+
+.. image::  
+   ../source/images/networking-osi-model-table.png
+    :width: 1388px
+    :align: center
+    :height: 638px
+
 - https://www.thomas-krenn.com/en/wiki/Two_Default_Gateways_on_One_System
 
 - http://cavepopo.hd.free.fr/wordpress/linux/networking-on-linux-practical-examples/
@@ -32,25 +42,6 @@ Category Cables
    
 - https://planetechusa.com/blog/ethernet-different-ethernet-categories-cat3-vs-cat5e-vs-cat6-vs-cat6a-vs-cat7-vs-cat8/
 
-
-OSI Model Mnemonic : ``Please Do Not Teach Students Pointless Acronyms``
-########################################################################
-- https://www.cybrary.it/0p3n/osi-model-7-layers-basic-understanding/
-
-- http://serverfault.com/questions/49765/how-does-ipv4-subnetting-work/49836
-
-- https://danielmiessler.com/study/subnetting/
- 
-- http://computer.howstuffworks.com/internet/basics/question549.htm
-   
-- http://computer.howstuffworks.com/internet/basics/question5491.htm
-
-- http://computer.howstuffworks.com/internet/basics/question5492.htm
-
-- http://computer.howstuffworks.com/internet/basics/question5493.htm
-         
-- http://unixadminschool.com/blog/2014/01/ipv6-the-solution-for-ipv4-exhaustion/
-
 MAC Addresses : Explained
 #########################
 
@@ -74,6 +65,15 @@ Private  / Public / LocalHost IPs:
     :width: 726px
     :align: center
     :height: 290px
+
+- http://serverfault.com/questions/49765/how-does-ipv4-subnetting-work/49836
+
+- https://danielmiessler.com/study/subnetting/
+ 
+- http://computer.howstuffworks.com/internet/basics/question549.htm
+         
+- http://unixadminschool.com/blog/2014/01/ipv6-the-solution-for-ipv4-exhaustion/
+
 
 TCP
 ###########
