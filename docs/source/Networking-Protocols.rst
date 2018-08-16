@@ -12,8 +12,7 @@ OSI Model Mnemonic : ``Please Do Not Teach Students Pointless Acronyms``
 ########################################################################
 - https://www.cybrary.it/0p3n/osi-model-7-layers-basic-understanding/
 
-.. image::  
-   ../source/images/networking-osi-model-table.png
+.. image::  ../source/images/networking-osi-model-table.png
     :width: 1388px
     :align: center
     :height: 638px
