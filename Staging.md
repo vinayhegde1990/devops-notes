@@ -30,8 +30,7 @@ make html
 
 **Note:** *You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead.*
 
-
-5. 5. To publish only relevant files but NOT the build, _static & _templates directories - please add a .gitignore in the root directory. A sample is below
+5. To publish only relevant code files but NOT build, _static & _templates directories - please add a .gitignore in the root directory. A sample is below
 
 ```python
 #Folders to ignore
@@ -39,7 +38,7 @@ build
 _templates
 _static
 
-Extensions to ignore
+#Extensions to ignore
 *.pyc
 *.diff
 *.err
