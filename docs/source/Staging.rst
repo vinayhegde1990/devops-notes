@@ -1,7 +1,7 @@
 .. _STAGING:
 
-Getting Started
-======================
+Staging
+===========
 
 .. Note:: This document will show you how to create a Staging environment to work with Sphinx & Read the Docs.
 
@@ -39,10 +39,28 @@ Getting Started
        
    make html
         
-.. Note::  You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead. 
+.. Note::  You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead.
 
 
-5. Edit your files to rebuild until you like what you see, then commit your changes and push to your public repository. Once you have **Sphinx** documentation in a public repository, you can start using **Read the Docs**.
+5. To publish only relevant files but NOT the build, _static & _templates directories - please add a .gitignore in the root directory. A sample is below
+
+.. code-block:: bash
+   :linenos:
+
+   #Folders to ignore
+   build
+   _templates
+   _static
+
+   #Extensions to ignore
+   *.pyc
+   *.diff
+   *.err
+   *.orig
+   *.rej
+ 
+
+6. Edit your files to rebuild until you like what you see, then commit your changes and push to your public repository. Once you have **Sphinx** documentation in a public repository, you can start using **Read the Docs**.
 
 
 
