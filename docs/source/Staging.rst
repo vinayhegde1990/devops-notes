@@ -1,7 +1,7 @@
 .. _STAGING:
 
-Staging
-========
+Getting Started
+======================
 
 .. Note:: This document will show you how to create a Staging environment to work with Sphinx & Read the Docs.
 

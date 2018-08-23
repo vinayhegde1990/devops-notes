@@ -1,4 +1,4 @@
-<h1>Staging</h1>
+<h1>Getting Started</h1>
 
 <h4> This document will show you how to create a Staging environment to work with Sphinx & Read the Docs </h4>
 
@@ -28,7 +28,7 @@ sphinx-quickstart
 make html
 ```
 
-You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead. 
+**Note:** *You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead.*
 
 
 5. Edit your files to rebuild until you like what you see, then commit your changes and push to your public repository. Once you have **Sphinx** documentation in a public repository, you can start using **Read the Docs**.
