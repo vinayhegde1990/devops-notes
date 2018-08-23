@@ -22,7 +22,7 @@ cd docs
 sphinx-quickstart
 ```
 
-4. This quick start will walk you through creating the basic configuration; in most cases, you can just accept the defaults. When it's done, you'll have an *index.rst*, a *conf.py* and some other files. Add these to revision control. Now, edit your *index.rst* and add some information about your project. Include as much detail as you like. Build them to see how they look:	
+4. This will walk you through creating the basic configuration; in most cases, you can just accept the defaults. When it's done, you'll have an *index.rst*, a *conf.py* and some other files. Add these to revision control. Now, edit your *index.rst* and add some information about your project. Include as much detail as you like. Build them to see how they look:
 
 ```
 make html
@@ -31,4 +31,43 @@ make html
 **Note:** *You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead.*
 
 
-5. Edit your files to rebuild until you like what you see, then commit your changes and push to your public repository. Once you have **Sphinx** documentation in a public repository, you can start using **Read the Docs**.
+5. 5. To publish only relevant files but NOT the build, _static & _templates directories - please add a .gitignore in the root directory. A sample is below
+
+```python
+#Folders to ignore
+build
+_templates
+_static
+
+Extensions to ignore
+*.pyc
+*.diff
+*.err
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.cache
+*.egg-info
+*~
+*#
+
+#Logs and database files to be ignored
+*.log
+*.sql
+*.sqlite
+
+#OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+```
+
+6. Edit your files to rebuild until you like what you see, then commit your changes and push to your public repository. Once you have **Sphinx** documentation in a public repository, you can start using **Read the Docs**.
