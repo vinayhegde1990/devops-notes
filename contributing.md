@@ -13,6 +13,6 @@
 <h2>Creating a Pull Request</h2> 
 
 1. Fork the repo and create your branch from master.
-2. Please ensure a staging environment to test the newly created/edited content renders in your local browser (i.e: **Mozilla Firefox, Google Chrome** etc) to avoid any surprises later.
+2. Please ensure a [Staging](Staging.md) environment to test the newly created/edited content renders in your local browser (i.e: **Mozilla Firefox, Google Chrome** etc) to avoid any surprises later.
 3. Make sure your code lints.
 4. Issue that pull request!
