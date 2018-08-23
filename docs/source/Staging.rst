@@ -58,6 +58,31 @@ Staging
    *.err
    *.orig
    *.rej
- 
+   *.swo
+   *.swp
+   *.vi
+   *.cache
+   *.egg-info
+   *~
+   *#
+
+   #Logs and database files to be ignored
+   *.log
+   *.sql
+   *.sqlite
+
+   #OS or Editor folders
+   .DS_Store
+   Thumbs.db
+   .cache
+   .project
+   .settings
+   .tmproj
+   *.esproj
+   nbproject
+   *.sublime-project
+   *.sublime-workspace
+   .tm_properties
+   ._*
 
 6. Edit your files to rebuild until you like what you see, then commit your changes and push to your public repository. Once you have **Sphinx** documentation in a public repository, you can start using **Read the Docs**.
