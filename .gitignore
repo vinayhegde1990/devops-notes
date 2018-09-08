@@ -2,6 +2,7 @@
 build
 _templates
 _static
+.github
 
 #Extensions to ignore
 *.pyc
