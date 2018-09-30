@@ -36,6 +36,8 @@ Configuration
 -  http://www.thegeekstuff.com/2009/04/15-practical-postgresql-database-adminstration-commands/
    
 -  https://launchschool.com/blog/how-to-install-postgres-for-linux
+
+-  https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2
    
 
 Replication using Slony
@@ -63,6 +65,8 @@ Tuning & Hardening
 ################
 Troubleshooting
 ################
+
+- https://stackoverflow.com/questions/17443379/psql-fatal-peer-authentication-failed-for-user-dev/21889759
 
 FAQ - When pg-cancel-backend / pg-terminate-backend doesn't work
 *************************************************************************************
