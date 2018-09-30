@@ -140,6 +140,8 @@ Types of DNS Servers
 - http://swift.siphos.be/aglara/dnsserver.html
    
 - https://geekflare.com/understanding-dns-terminology/
+
+- https://en.wikipedia.org/wiki/Wildcard_DNS_record
         
 - DNS Explained via `YouTube <https://www.youtube.com/watch?v=72snZctFFtA>`_
 
