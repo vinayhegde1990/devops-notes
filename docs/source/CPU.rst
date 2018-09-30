@@ -49,11 +49,10 @@ NoHUP &
 
 - https://unix.stackexchange.com/questions/3886/difference-between-nohup-disown-and
 
-.. image::  ../source/images/cpu-nohup-disown-&.png
+.. image::  ../source/images/cpu-nohup-disown.png
     :width: 918px
     :align: center
     :height: 2483px
-
 
 top
 *****
