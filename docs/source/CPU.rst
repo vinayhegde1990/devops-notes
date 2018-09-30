@@ -43,6 +43,18 @@ Output of ps command - Explained
 Commands
 ##########
 
+NoHUP &
+*************************
+- https://stackoverflow.com/questions/15595374/whats-the-difference-between-nohup-and-ampersand
+
+- https://unix.stackexchange.com/questions/3886/difference-between-nohup-disown-and
+
+.. image::  ../source/images/cpu-nohup-disown-&.png
+    :width: 918px
+    :align: center
+    :height: 2483px
+
+
 top
 *****
 
