@@ -73,6 +73,10 @@ GREP
 
 - https://alvinalexander.com/unix/edu/examples/grep.shtml
 
+- https://stackoverflow.com/questions/2427913/how-can-i-grep-for-a-string-that-begins-with-a-dash-hyphen
+
+- https://stackoverflow.com/questions/221921/use-grep-exclude-include-syntax-to-not-grep-through-certain-files?
+
 
 Grepping ps output without showing the grep process
 ***************************************************************

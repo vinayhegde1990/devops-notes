@@ -14,7 +14,7 @@ Ansible
 ===============
 → Configuration
 ===============
-   
+- https://blog.ssdnodes.com/blog/step-by-step-ansible-guide/   
 
 =================
 → Troubleshooting

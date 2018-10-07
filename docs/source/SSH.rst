@@ -102,6 +102,8 @@ TMux
 Some useful links to cover the working of TMux.
    
 - https://danielmiessler.com/study/tmux/
+
+- https://tmuxcheatsheet.com/
    
 - http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily
    

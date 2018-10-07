@@ -116,9 +116,15 @@ Troubleshooting & Log Parsing
 APT
 ######
 
+- https://askubuntu.com/questions/18804/what-do-the-various-dpkg-flags-like-ii-rc-mean
+
+- https://unix.stackexchange.com/questions/6284/check-package-version-using-apt-get-aptitude
+
 - https://blog.packagecloud.io/eng/2015/03/30/apt-cheat-sheet/
 
 - https://help.ubuntu.com/community/Repositories/CommandLine
+
+- https://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/
 
 
 Configuration
