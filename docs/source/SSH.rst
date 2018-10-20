@@ -58,6 +58,8 @@ Tuning & Hardening
    
 - https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps
 
+- https://stackoverflow.com/questions/10310299/proper-way-to-sudo-over-ssh
+
 Correct permissions of .ssh directory
 ****************************************
 - https://superuser.com/questions/215504/permissions-on-private-key-in-ssh-folder
@@ -122,6 +124,8 @@ Some useful links to cover the working of TMux.
 - https://marc.cortinasval.cat/blog/2013/11/29/tmux-the-best-choice/
    
 - http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
+
+- https://github.com/rothgar/awesome-tmux
 
 ################################   
 Troubleshooting & Log Parsing

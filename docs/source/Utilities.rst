@@ -318,6 +318,10 @@ Random Tools
 
 - http://www.commandlinefu.com/commands/browse
 
+- https://distrochooser.de/en
+
+- https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/
+
 
 #######
 SysCTL
@@ -345,6 +349,8 @@ LSOF
 - http://www.thegeekstuff.com/2012/08/lsof-command-examples/
    
 - https://www.ibm.com/developerworks/aix/library/au-lsof.html
+
+- https://unix.stackexchange.com/questions/253321/how-to-display-size-human-readable-in-lsof-grep-var
 
 
 ##########
