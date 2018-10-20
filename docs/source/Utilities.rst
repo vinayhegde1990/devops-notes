@@ -14,6 +14,8 @@ Environment Variables {ENV}
 
 - https://www.slashroot.in/difference-between-bashrc-and-bashprofile
 
+- https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
+
 
 #############
 Crontab
@@ -133,6 +135,8 @@ File Permissions
 - https://www.linux.com/learn/how-easily-back-and-restore-linux-file-permissions
    
 - https://www.linode.com/docs/tools-reference/linux-users-and-groups
+
+- https://unix.stackexchange.com/questions/102286/ls-gives-no-such-file-or-directory-message
 
 
 Why sudo cd <path-to-dir> doesn't work
