@@ -240,6 +240,22 @@ XArgs vs Exec
    
 - http://www.differencebetween.co.in/technology/difference-between-xargs-and-exec/
 
+- https://stackoverflow.com/questions/16758525/make-xargs-handle-filenames-that-contain-spaces
+
+.. image::  ../source/images/utilities-xargs-names-with-spaces-2.png
+    :width: 720px
+    :align: center
+    :height: 545px
+
+
+- https://askubuntu.com/questions/666001/piping-find-name-to-xargs-results-in-filenames-with-spaces-not-being-passed-to/666004
+
+.. image::  ../source/images/utilities-xargs-names-with-spaces-1.png
+    :width: 726px
+    :align: center
+    :height: 560px
+ 
+
 
 NTP
 **************
