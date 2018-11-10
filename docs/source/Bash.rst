@@ -37,6 +37,10 @@ Conditional Statements, Loops
 
 - https://dev.to/rpalo/bash-brackets-quick-reference-4eh6
 
+- https://www.cyberciti.biz/faq/howto-check-if-a-directory-exists-in-a-bash-shellscript/
+
+- https://unix.stackexchange.com/questions/52800/how-to-do-an-if-statement-from-the-result-of-an-executed-command
+
 
 Editing & Formatting Text
 ##################################
@@ -84,6 +88,8 @@ Variables, Functions in Bash
 - https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php
 
 - https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions
+
+- https://www.shellscript.sh/functions.html
    
 
 ##################################
@@ -92,3 +98,9 @@ Troubleshooting & Log Parsing
 - https://www.tutorialkart.com/bash-shell-scripting/write-output-of-bash-command-to-log-file-example
 
 - http://www.shellhacks.com/en/7-Tips-Tuning-Command-Line-History-in-Bash
+
+- https://github.com/kward/shunit2
+
+- https://github.com/bmizerany/roundup
+
+- https://github.com/sstephenson/bats
