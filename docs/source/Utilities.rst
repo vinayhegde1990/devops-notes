@@ -284,6 +284,8 @@ Renaming / Deleting multiple files
    
 - https://askubuntu.com/questions/470134/how-to-find-the-creation-time-of-a-file
 
+- https://www.if-not-true-then-false.com/2011/linux-display-show-file-contents-tabs-line-breaks-non-printing-characters/
+
 
 Rename multiple files with different extensions
 ********************************************************

@@ -8,7 +8,11 @@ SSL
 Concepts
 ########
 
+- https://tls.ulfheim.net
+
 - https://www.digitalocean.com/community/tutorials/a-comparison-of-let-s-encrypt-commercial-and-private-certificate-authorities-and-self-signed-ssl-certificates
+
+- https://scotthelme.co.uk/https-cheat-sheet/
    
 - https://www.digicert.com/ssl.htm
 
@@ -47,6 +51,10 @@ FAQs on SSL
 - https://www.nutsandboltsmedia.com/does-your-website-really-need-ssl/
 
 - https://www.slashroot.in/how-does-ssltls-chain-certificates-and-its-validation-work
+
+- https://blog-cloudflare-com.cdn.ampproject.org/c/s/blog.cloudflare.com/rfc-8446-aka-tls-1-3/amp/
+
+- https://serverfault.com/questions/9708/what-is-a-pem-file-and-how-does-it-differ-from-other-openssl-generated-key-file
 
 
 Server Name Indication
