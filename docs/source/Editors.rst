@@ -97,3 +97,14 @@ Online Editors
 - https://markable.in
 
 - https://hackmd.io
+
+
+Atom
+################
+
+
+Configuration
+************************
+- https://stackoverflow.com/questions/30006827/how-to-save-atom-editor-config-and-list-of-packages-installed
+
+- https://discuss.atom.io/t/how-to-backup-all-your-settings/15674
