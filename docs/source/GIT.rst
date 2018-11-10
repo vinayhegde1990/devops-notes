@@ -156,6 +156,10 @@ Better GIT Workflow
 
 - https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 
+- http://michaelwales.com/articles/make-gitconfig-work-for-you/
+
+- https://blog.scottnonnenberg.com/better-git-configuration/
+
 
 ################
 Random Notes
