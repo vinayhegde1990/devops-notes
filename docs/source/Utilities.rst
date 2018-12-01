@@ -110,6 +110,21 @@ FIND
 - https://www.linode.com/docs/tools-reference/tools/find-files-in-linux-using-the-command-line
 
 
+#######################
+User Management
+#######################
+
+- https://www.linode.com/docs/tools-reference/linux-users-and-groups
+
+- https://askubuntu.com/questions/34074/how-do-i-change-my-username
+
+.. image::  ../source/images/utilities-change-username.png
+    :width: 753px
+    :align: center
+    :height: 1049px
+
+
+
 ################
 File Permissions
 ################
@@ -135,22 +150,6 @@ File Permissions
 - https://www.linux.com/learn/how-easily-back-and-restore-linux-file-permissions
 
 - https://unix.stackexchange.com/questions/102286/ls-gives-no-such-file-or-directory-message
-
-
-#######################
-User Management
-#######################
-
-- https://www.linode.com/docs/tools-reference/linux-users-and-groups
-
-- https://askubuntu.com/questions/34074/how-do-i-change-my-username
-
-.. image::  ../source/images/utilities-change-username.png
-    :width: 753px
-    :align: center
-    :height: 1049px
-
-
 
 
 Why sudo cd <path-to-dir> doesn't work
