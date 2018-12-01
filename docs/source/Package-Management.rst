@@ -127,6 +127,22 @@ APT
 - https://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/
 
 
+
+Working With Packages
+*****************************
+
+- https://askubuntu.com/questions/44122/how-to-upgrade-a-single-package-using-apt-get
+
+- https://askubuntu.com/questions/80655/how-can-i-check-dependency-list-for-a-deb-package
+
+- https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
+
+.. image::  ../source/images/package-mgmt-list-all-installed-packages.png
+    :width: 745px
+    :align: center
+    :height: 264px
+
+
 Configuration
 *******************
 - http://www.tecmint.com/apt-advanced-package-command-examples-in-ubuntu/
@@ -138,6 +154,17 @@ Configuration
 
 Troubleshooting & Log Parsing
 **************************************
+
+Is apt-get autoremove safe
+============================================
+
+- https://askubuntu.com/questions/393212/is-it-safe-to-use-the-command-apt-get-autoremove-in-this-particular-scenario/393215
+
+.. image::  ../source/images/package-mgmt-apt-autoremove.png
+    :width: 738px
+    :align: center
+    :height: 603px
+
 
 Difference between apt-get update / apt-get upgrade
 ===========================================================
