@@ -62,6 +62,9 @@ Converting New-Lines to Spaces
 
 - https://stackoverflow.com/questions/1251999/how-can-i-replace-a-newline-n-using-sed
 
+- https://stackoverflow.com/questions/19151954/how-to-use-variables-in-a-command-in-sed
+
+
 AWK Notes
 ********************
 - http://www.theunixschool.com/2012/06/awk-10-examples-to-group-data-in-csv-or.html
