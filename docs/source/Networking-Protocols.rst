@@ -173,6 +173,8 @@ TRACEROUTE
 
 - http://www.mavetju.org/networking/basicnetworktroubleshooting.php
 
+- https://www.maxcdn.com/one/tutorial/how-to-read-a-traceroute/
+
 
 TCPDUMP
 ##########
