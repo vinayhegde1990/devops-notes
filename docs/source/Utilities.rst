@@ -77,7 +77,9 @@ GREP
 
 - https://stackoverflow.com/questions/2427913/how-can-i-grep-for-a-string-that-begins-with-a-dash-hyphen
 
-- https://stackoverflow.com/questions/221921/use-grep-exclude-include-syntax-to-not-grep-through-certain-files?
+- https://stackoverflow.com/questions/221921/use-grep-exclude-include-syntax-to-not-grep-through-certain-files
+
+- https://stackoverflow.com/questions/25853722/how-to-suppress-binary-file-matching-results-in-grep
 
 
 Grepping ps output without showing the grep process
@@ -108,6 +110,8 @@ FIND
 - http://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/
    
 - https://www.linode.com/docs/tools-reference/tools/find-files-in-linux-using-the-command-line
+
+- https://alvinalexander.com/blog/post/linux-unix/find-how-multiple-search-patterns-filename-command
 
 
 #######################
@@ -182,6 +186,20 @@ Sudoers
 - https://www.garron.me/en/linux/visudo-command-sudoers-file-sudo-default-editor.html
    
 - https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-on-ubuntu-and-centos
+
+- https://askubuntu.com/questions/73864/how-to-modify-an-invalid-etc-sudoers-file
+
+.. image::  ../source/images/utilities-fix-invalid-sudoers-file.png
+    :width: 751px
+    :align: center
+    :height: 682px
+
+- https://askubuntu.com/questions/799669/etc-sudoers-file-corrupted-and-i-cant-run-pkexec-visudo-over-ssh
+
+.. image::  ../source/images/utilities-pksudo-visudo-invalid-sudoers.png
+    :width: 748px
+    :align: center
+    :height: 396px
    
    
 UserMod Command
