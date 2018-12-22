@@ -355,6 +355,8 @@ Random Tools
 
 - https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/
 
+- https://www.dynacont.net/documentation/linux/Useful_SystemD_commands/
+
 
 #######
 SysCTL
