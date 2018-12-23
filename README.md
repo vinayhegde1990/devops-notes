@@ -36,3 +36,4 @@ You can read the complete documentation [here](https://devops-notes.readthedocs.
 - This is still a work in progress. Feedback, suggestions and queries are always appreciated!
 - Kindly read the guidelines on how to share your [Contributions](contributing.md) to this project.
 - Feel free to contact me directly via [email](mailto:vinay.hegde30@gmail.com) or [WhatsApp](https://api.whatsapp.com/send?phone=919967875270) on the above
+- At all times, please refer to the **[Code of Conduct](CODE_OF_CONDUCT.md)** guidelines on interacting with other community members in a respectful and cordial manner.
