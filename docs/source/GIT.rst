@@ -160,6 +160,14 @@ Better GIT Workflow
 
 - https://blog.scottnonnenberg.com/better-git-configuration/
 
+- https://howtogit.net/
+
+- https://githooks.com/
+
+- https://nvie.com/posts/a-successful-git-branching-model/
+
+- https://dev.to/_darrenburns/8-productivity-tips-for-github-44kn
+
 
 ################
 Random Notes
