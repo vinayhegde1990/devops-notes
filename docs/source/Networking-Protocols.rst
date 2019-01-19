@@ -23,6 +23,8 @@ OSI Model Mnemonic : ``Please Do Not Teach Students Pointless Acronyms``
 
 - http://www.linuxhomenetworking.com/
 
+- https://askleo.com/why_cant_i_connect_with_a_169254xx_ip_address/
+
 
 Finding optimum MTU ``(Maximum Transmission Unit)`` size
 #########################################################

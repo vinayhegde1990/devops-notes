@@ -22,6 +22,8 @@ Concepts
 
 - https://github.com/dylanaraps/pure-bash-bible
 
+- https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je
+
 
 Conditional Statements, Loops
 ##################################

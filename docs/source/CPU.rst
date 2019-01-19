@@ -208,3 +208,10 @@ Troubleshooting & Log Parsing
    :linenos: 
    
    sudo ps axo stat,ppid,pid,comm | grep -w defunct
+
+- **View Column Headers in ps output**
+
+.. code-block:: bash
+   :linenos: 
+ 
+   sudo ps aux | head -1 && sudo ps aux | grep <process-name> | grep -v grep
