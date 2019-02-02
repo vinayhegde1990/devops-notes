@@ -18,6 +18,7 @@ Concepts
    
 - https://www.ibm.com/developerworks/library/l-keyc/index.html
 
+- https://www.ssh.com/ssh/port
 
 
 ##########
@@ -59,6 +60,8 @@ Tuning & Hardening
 - https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps
 
 - https://stackoverflow.com/questions/10310299/proper-way-to-sudo-over-ssh
+
+- https://security.stackexchange.com/questions/150540/is-it-completely-safe-to-publish-an-ssh-public-key
 
 Correct permissions of .ssh directory
 ****************************************
