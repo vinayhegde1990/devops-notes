@@ -141,6 +141,30 @@ Understanding .gitignore file
 
 - https://www.gitignore.io/
 
+- https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore
+
+.. image::  ../source/images/git-ignore-tracked-file.png
+    :width: 675px
+    :align: center
+    :height: 301px
+
+Git Operations (Stash, Merge, Diff)
+##############################################
+- https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+
+- https://www.git-tower.com/learn/git/faq/save-changes-with-git-stash
+
+- https://stackoverflow.com/questions/19003009/how-to-recover-stashed-uncommitted-changes
+
+- https://www.atlassian.com/git/tutorials/using-branches/git-merge
+
+- https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches
+
+.. image::  ../source/images/git-compare-files-diff-branches.png
+    :width: 688px
+    :align: center
+    :height: 609px
+
 
 ####################
 Better GIT Workflow
@@ -167,6 +191,8 @@ Better GIT Workflow
 - https://nvie.com/posts/a-successful-git-branching-model/
 
 - https://dev.to/_darrenburns/8-productivity-tips-for-github-44kn
+
+- https://scotch.io/tutorials/using-git-hooks-in-your-development-workflow
 
 
 ################
