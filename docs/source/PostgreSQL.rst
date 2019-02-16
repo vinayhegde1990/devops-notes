@@ -58,9 +58,10 @@ Replication using Slony
 ######################   
 Tuning & Hardening
 ######################
--  https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-against-automated-attacks 
+- https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-against-automated-attacks
 
-   
+- https://spapas.github.io/2016/11/02/postgresql-backup/
+
 
 ################
 Troubleshooting
