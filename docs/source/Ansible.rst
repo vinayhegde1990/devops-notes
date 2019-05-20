@@ -20,6 +20,13 @@ Official Documentation
 ##################
 Configuration
 ##################
+
+Ansible.cfg
+#########
+- https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg
+
+- http://techadminblog.com/get-execution-time-of-each-task-ansible/
+
 - https://blog.ssdnodes.com/blog/step-by-step-ansible-guide/
 
 - https://stackoverflow.com/questions/27733511/how-to-set-linux-environment-variables-with-ansible
@@ -33,6 +40,8 @@ Run one Task - Ansible Playbook
     :align: center
     :height: 852px
 
+
 ##################
 Troubleshooting
 ##################
+- https://stackoverflow.com/questions/20563639/ansible-playbook-shell-output
