@@ -63,6 +63,14 @@ Tuning & Hardening
 
 - https://security.stackexchange.com/questions/150540/is-it-completely-safe-to-publish-an-ssh-public-key
 
+- https://superuser.com/questions/868998/how-can-i-find-a-list-of-macs-ciphers-and-kexalgorithms-that-my-openssh-client
+
+.. image::  ../source/images/ssh-keys-ciphers-kex.png
+    :width: 745px
+    :align: center
+    :height: 409px
+
+
 Correct permissions of .ssh directory
 ****************************************
 - https://superuser.com/questions/215504/permissions-on-private-key-in-ssh-folder
@@ -71,8 +79,8 @@ Correct permissions of .ssh directory
     :width: 744px
     :align: center
     :height: 429px
-        
-        
+
+
 Run same commands via SSH on multiple servers
 *************************************************
 - https://www.linux.com/news/parallel-ssh-execution-and-single-shell-control-them-all
