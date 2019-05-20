@@ -8,7 +8,10 @@ Ansible
 Concepts
 #########
 - https://blog.josephkahn.io/articles/ansible/
+
 - http://engineering.waveapps.io/post/80595462671/an-ansible-primer
+
+- http://tjheeta.github.io/2015/04/15/ansible-vs-chef/
 
 
 ##########################

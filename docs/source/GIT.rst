@@ -170,6 +170,8 @@ Git Operations (Stash, Merge, Diff)
 Better GIT Workflow
 ####################
 
+- https://sandofsky.com/blog/git-workflow.html
+
 - https://pixelbrackets.github.io/git_cheat_sheet/
 
 - https://github.com/git-tips/tips
