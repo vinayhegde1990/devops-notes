@@ -22,7 +22,7 @@ Configuration
 ##################
 
 Ansible.cfg
-#########
+############
 - https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg
 
 - http://techadminblog.com/get-execution-time-of-each-task-ansible/
