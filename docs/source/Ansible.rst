@@ -45,3 +45,7 @@ Run one Task - Ansible Playbook
 Troubleshooting
 ##################
 - https://stackoverflow.com/questions/20563639/ansible-playbook-shell-output
+
+- https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html
+
+- https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html
