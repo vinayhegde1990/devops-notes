@@ -120,13 +120,21 @@ User Management
 
 - https://www.linode.com/docs/tools-reference/linux-users-and-groups
 
+- https://linux-audit.com/unused-linux-users-delete-or-keep/
+
+- https://askubuntu.com/questions/515103/how-can-i-display-all-users-and-groups-with-a-command
+
+.. image::  ../source/images/utilities-list-all-users-groups.png
+    :width: 738px
+    :align: center
+    :height: 310px
+
 - https://askubuntu.com/questions/34074/how-do-i-change-my-username
 
 .. image::  ../source/images/utilities-change-username.png
     :width: 753px
     :align: center
     :height: 1049px
-
 
 
 ################
