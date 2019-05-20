@@ -20,7 +20,18 @@ Official Documentation
 ##################
 Configuration
 ##################
-- https://blog.ssdnodes.com/blog/step-by-step-ansible-guide/   
+- https://blog.ssdnodes.com/blog/step-by-step-ansible-guide/
+
+- https://stackoverflow.com/questions/27733511/how-to-set-linux-environment-variables-with-ansible
+
+Run one Task - Ansible Playbook
+################################
+- https://stackoverflow.com/questions/23945201/how-to-run-only-one-task-in-ansible-playbook
+
+.. image::  ../source/images/ansible-run-one-task-playbook.png
+    :width: 759px
+    :align: center
+    :height: 852px
 
 ##################
 Troubleshooting
