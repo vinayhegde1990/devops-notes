@@ -41,6 +41,15 @@ Run one Task - Ansible Playbook
     :height: 852px
 
 
+Managing Users with Ansible
+################################
+- https://www.alibabacloud.com/blog/managing-system-users-using-ansible_593861
+
+- https://serverfault.com/questions/830302/ensure-only-specific-list-of-users-exist-with-ansible
+
+- http://minimum-viable-automation.com/ansible/managing-users-accounts-ansible/
+
+
 ##################
 Troubleshooting
 ##################
