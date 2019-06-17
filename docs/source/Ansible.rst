@@ -13,6 +13,8 @@ Concepts
 
 - http://tjheeta.github.io/2015/04/15/ansible-vs-chef/
 
+- https://andidog.de/blog/2017-04-24-ansible-best-practices
+
 
 ##########################
 Official Documentation
@@ -44,6 +46,21 @@ Run one Task - Ansible Playbook
     :height: 852px
 
 
+Basic Ansible Tutorials
+################################
+- https://serversforhackers.com/c/an-ansible2-tutorial
+
+- https://leucos.github.io/ansible-files-layout
+
+- https://www.linode.com/docs/applications/configuration-management/automatically-configure-servers-with-ansible-and-playbooks/
+
+- https://www.digitalocean.com/community/tutorials/how-to-manage-multistage-environments-with-ansible
+
+- http://codeheaven.io/15-things-you-should-know-about-ansible/
+
+- https://symfonycasts.com/screencast/ansible/handlers
+
+
 Managing Users with Ansible
 ################################
 - https://www.alibabacloud.com/blog/managing-system-users-using-ansible_593861
@@ -51,6 +68,18 @@ Managing Users with Ansible
 - https://serverfault.com/questions/830302/ensure-only-specific-list-of-users-exist-with-ansible
 
 - http://minimum-viable-automation.com/ansible/managing-users-accounts-ansible/
+
+
+NGinx Setup via Ansible
+################################
+- https://symfonycasts.com/screencast/ansible/nginx-conf-template
+
+- https://blog.serverdensity.com/deploying-nginx-with-ansible/
+
+- https://meritocracy.is/blog/2017/07/24/manage-nginx-configurations-ansible/
+
+- https://liquidat.wordpress.com/2016/01/26/howto-introduction-to-ansible-variables/
+
 
 
 ##################
