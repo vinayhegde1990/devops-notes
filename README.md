@@ -6,12 +6,12 @@ Welcome to my notes on various topics related to the DevOps / SysAdmin terminolo
 - Networking
 - Web / Email / DNS / Database Servers
 - GIT
-- Configuration Management Tools (Chef, Ansible, Puppet)
-- Programming (Python, Shell Scripting)
+- Configuration Management Tools (_Chef, Ansible, Puppet_)
+- Programming (_Python, Ruby, Shell Scripting_)..and many more. You can read the complete documentation **[here](https://rebrand.ly/VH-notes-RTD)**
 
-..and many more.
 
-You can read the complete documentation [here](https://devops-notes.readthedocs.io)
+![Quick Preview](https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/master/images/devops.png)
+&copy; https://github.com/kamranahmedse/developer-roadmap#devops-roadmap
 
 <h2> Tools Used: </h2>
 <h3> reStructuredText (RST): </h3>
