@@ -28,12 +28,12 @@ You can read the complete documentation [here](https://devops-notes.readthedocs.
 
 <h3> ReadTheDocs: </h3> 
 
-- Hosting my documentation along with many others. They’ve an excellent [document](http://docs.readthedocs.io/en/latest/getting_started.html) to help you get up and running in no time.
+- Hosting my documentation alongside many others. Refer this excellent [document](http://docs.readthedocs.io/en/latest/getting_started.html) to help you get up and running in no time.
 
 
 <h2> Please note: </h2>
 
-- This is still a work in progress. Feedback, suggestions and queries are always appreciated!
+- Due to dynamic content for all topics in here, this will forever be a work in progress. Feedback, suggestions and queries are always appreciated!
 - Kindly read the guidelines on how to share your [Contributions](contributing.md) to this project.
 - Feel free to contact me directly via [email](mailto:vinay.hegde30@gmail.com) or [WhatsApp](https://api.whatsapp.com/send?phone=919967875270) on the above
 - At all times, please refer to the **[Code of Conduct](CODE_OF_CONDUCT.md)** guidelines on interacting with other community members in a respectful and cordial manner.
