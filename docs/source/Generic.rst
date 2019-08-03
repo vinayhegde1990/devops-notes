@@ -30,6 +30,8 @@ Concepts
 
 - https://devdocs.io
 
+- https://books.goalkicker.com/
+
 
 ################
 Configuration
