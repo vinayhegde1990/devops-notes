@@ -58,6 +58,7 @@ Notes - Vinay Hegde
    Generic
    Python
    Bash
+   Ruby
 
 .. toctree::
    :maxdepth: 2
