@@ -158,12 +158,24 @@ Git Operations (Stash, Merge, Diff)
 
 - https://www.atlassian.com/git/tutorials/using-branches/git-merge
 
+- https://stackoverflow.com/questions/20106712/what-are-the-differences-between-git-remote-prune-git-prune-git-fetch-prune
+
 - https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches
 
 .. image::  ../source/images/git-compare-files-diff-branches.png
     :width: 688px
     :align: center
     :height: 609px
+
+
+####################
+Git on Windows
+####################
+- https://gist.github.com/adamjohnson/5682757
+
+- https://stackoverflow.com/questions/11000869/command-line-git-on-windows
+
+- http://guides.beanstalkapp.com/version-control/git-on-windows.html
 
 
 ####################

@@ -63,6 +63,8 @@ Tuning & Hardening
 
 - https://security.stackexchange.com/questions/150540/is-it-completely-safe-to-publish-an-ssh-public-key
 
+- https://hackerific.net/2017/04/23/ssh-audit---a-tool-for-checking-ssh-server-security/
+
 - https://superuser.com/questions/868998/how-can-i-find-a-list-of-macs-ciphers-and-kexalgorithms-that-my-openssh-client
 
 .. image::  ../source/images/ssh-keys-ciphers-kex.png
