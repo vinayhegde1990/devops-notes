@@ -8,7 +8,7 @@ Concepts
 ##########
 
 - http://computer.howstuffworks.com/web-server2.htm
-   
+ 
 - https://serversforhackers.com/hosting-web-applications
    
 - https://danielmiessler.com/study/web-performance/
@@ -16,6 +16,8 @@ Concepts
 - https://launchschool.com/books/http/read/introduction
    
 - https://github.com/alex/what-happens-when
+
+- https://howhttps.works/
    
 - https://dev.to/pratikaambani/explain-http-verbs-like-im-five-b10
    
@@ -75,6 +77,8 @@ cURL
 - https://robots.thoughtbot.com/back-to-basics-http-requests
    
 - https://blog.josephscott.org/2011/10/14/timing-details-with-curl/
+
+- http://http-prompt.com/
 
 
 #######

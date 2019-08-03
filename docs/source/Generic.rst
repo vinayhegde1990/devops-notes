@@ -28,6 +28,8 @@ Concepts
    
 - https://dev.to/rpalo/powershell-tutorial-especially-for-people-who-hate-powershell-2g25
 
+- https://devdocs.io
+
 
 ################
 Configuration
