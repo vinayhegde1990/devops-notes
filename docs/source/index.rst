@@ -82,6 +82,7 @@ Notes - Vinay Hegde
    :hidden:
    
    Docker
+   AWS
    
 .. toctree::
    :maxdepth: 2
