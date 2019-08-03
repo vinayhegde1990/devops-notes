@@ -35,3 +35,5 @@ Troubleshooting & Log Parsing
 - https://www.exceptionalcreatures.com/bestiary/Net/OpenTimeout.html
 
 - https://dev.to/exampro/testunit-writing-test-code-in-ruby-part-1-of-3-44m2
+
+- http://engineering.pivotal.io/post/debugging-ruby-memory-issues-cloud-foundry-cloud-controller/

@@ -187,6 +187,8 @@ PowerDNS Configuration / Tweaks
    
 - https://blog.powerdns.com/2015/03/11/introducing-dnsdist-dns-abuse-and-dos-aware-query-distribution-for-optimal-performance/
 
+- https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-dnscontrol-on-ubuntu-18-04
+
 
 ##################################   
 Troubleshooting & Log Parsing

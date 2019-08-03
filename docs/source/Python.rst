@@ -81,6 +81,12 @@ Configuration
     :width: 723px
     :align: center
     :height: 321px
+	
+- https://techglimpse.com/error-executing-python3-5-command-solution/
+
+- https://stackoverflow.com/questions/24205624/how-do-i-resolve-not-fully-installed-package-python3-setuptools
+
+- https://stackoverflow.com/questions/38132755/importerror-no-module-named-encodings
    
 Visual IDE for Python
 #######################
