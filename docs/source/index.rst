@@ -75,6 +75,13 @@ Notes - Vinay Hegde
    Puppet
    Chef
    Ansible
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Virtualization
+   :hidden:
+   
+   Docker
    
 .. toctree::
    :maxdepth: 2
