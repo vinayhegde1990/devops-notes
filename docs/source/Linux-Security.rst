@@ -10,6 +10,8 @@ Concepts
 
 - https://www.thefanclub.co.za/how-to/how-secure-ubuntu-1604-lts-server-part-1-basics
 
+- https://github.com/imthenachoman/How-To-Secure-A-Linux-Server
+
 - https://dev.to/danlebrero/kerberos-explained-in-pictures
 
 
