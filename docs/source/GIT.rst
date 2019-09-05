@@ -148,7 +148,7 @@ Understanding .gitignore file
     :align: center
     :height: 301px
 
-Git Operations (Stash, Merge, Diff)
+Git Operations (Stash, Merge, Diff, Rebase)
 ##############################################
 - https://www.atlassian.com/git/tutorials/saving-changes/git-stash
 
@@ -159,6 +159,8 @@ Git Operations (Stash, Merge, Diff)
 - https://www.atlassian.com/git/tutorials/using-branches/git-merge
 
 - https://stackoverflow.com/questions/20106712/what-are-the-differences-between-git-remote-prune-git-prune-git-fetch-prune
+
+- https://blog.algolia.com/master-git-rebase/
 
 - https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches
 

@@ -78,6 +78,8 @@ cURL
    
 - https://blog.josephscott.org/2011/10/14/timing-details-with-curl/
 
+- https://stackoverflow.com/questions/46362284/run-multiple-curl-commands-in-parallel
+
 - http://http-prompt.com/
 
 

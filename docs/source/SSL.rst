@@ -34,10 +34,6 @@ Concepts
 - http://www.slashroot.in/understanding-working-secure-socket-layerssl
    
 - http://www.slashroot.in/understanding-ssl-handshake-protocol
-   
-- https://www.troyhunt.com/life-is-about-to-get-harder-for-websites-without-https/
-   
-- https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/
 
 
 FAQs on SSL
@@ -55,6 +51,12 @@ FAQs on SSL
 - https://blog-cloudflare-com.cdn.ampproject.org/c/s/blog.cloudflare.com/rfc-8446-aka-tls-1-3/amp/
 
 - https://serverfault.com/questions/9708/what-is-a-pem-file-and-how-does-it-differ-from-other-openssl-generated-key-file
+
+- https://www.troyhunt.com/life-is-about-to-get-harder-for-websites-without-https/
+
+- https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/
+
+- https://www.troyhunt.com/extended-validation-certificates-are-dead/
 
 
 Server Name Indication
