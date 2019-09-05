@@ -147,6 +147,8 @@ Rsync
    
 - http://www.techonthenet.com/linux/commands/rsync.php
 
+- https://unix.stackexchange.com/questions/4712/rsync-two-file-types-in-one-command/4713#4713
+
 - http://www.crucialp.com/resources/tutorials/server-administration/how-to-copy-files-across-a-network-internet-in-unix-linux-redhat-debian-freebsd-scp-tar-rsync-secure-network-copy/
 
 - https://stackoverflow.com/questions/20244585/how-does-scp-differ-from-rsync/20257021#20257021
@@ -156,6 +158,7 @@ Rsync
     :align: center
     :height: 598px 
 
+- https://unix.stackexchange.com/questions/4712/rsync-two-file-types-in-one-command/4713#4713
 
 ######
 LsyncD
