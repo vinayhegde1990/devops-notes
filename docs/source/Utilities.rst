@@ -113,6 +113,13 @@ FIND
 
 - https://alvinalexander.com/blog/post/linux-unix/find-how-multiple-search-patterns-filename-command
 
+- https://stackoverflow.com/questions/5475905/linux-delete-file-with-size-0/18052644#18052644
+
+.. image::  ../source/images/utilities-find-delete-empty-files.png
+    :width: 748px
+    :align: center
+    :height: 351px
+
 
 #######################
 User Management

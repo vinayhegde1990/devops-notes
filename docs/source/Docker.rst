@@ -71,6 +71,8 @@ Troubleshooting & Log Parsing
 
 - https://stackoverflow.com/questions/24481564/how-can-i-find-a-docker-image-with-a-specific-tag-in-docker-registry-on-the-dock/32622147
 
+- https://codefresh.io/docker-tutorial/not-ignore-dockerignore/
+
 
 ################################
 Tuning & Hardening
