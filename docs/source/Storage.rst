@@ -149,6 +149,13 @@ Rsync
 
 - http://www.crucialp.com/resources/tutorials/server-administration/how-to-copy-files-across-a-network-internet-in-unix-linux-redhat-debian-freebsd-scp-tar-rsync-secure-network-copy/
 
+- https://stackoverflow.com/questions/20244585/how-does-scp-differ-from-rsync/20257021#20257021
+
+.. image::  ../source/images/utilities-scp-rsync-difference.png
+    :width: 753px
+    :align: center
+    :height: 598px 
+
 
 ######
 LsyncD
