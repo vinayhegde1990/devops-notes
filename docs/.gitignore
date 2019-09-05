@@ -1,4 +1,4 @@
-#Folders to ignore
+#Files & Folders to ignore, sourced via https://stackoverflow.com/q/9570382
 build
 _templates
 _static
