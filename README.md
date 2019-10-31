@@ -34,6 +34,5 @@ Welcome to my notes on various topics related to the DevOps / SysAdmin terminolo
 <h2> Please note: </h2>
 
 - Due to dynamic content for all topics in here, this will forever be a work in progress. Feedback, suggestions and queries are always appreciated!
-- Kindly read the guidelines on how to share your [Contributions](contributing.md) to this project.
-- Feel free to contact me directly via [email](mailto:vinay.hegde30@gmail.com) or [WhatsApp](https://api.whatsapp.com/send?phone=919967875270) on the above
+- For contributions, please read the guidelines on how to share your [Contributions](contributing.md) to this project.
 - At all times, please refer to the **[Code of Conduct](CODE_OF_CONDUCT.md)** guidelines on interacting with other community members in a respectful and cordial manner.
