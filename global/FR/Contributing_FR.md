@@ -1,6 +1,6 @@
-#Contributions
+# Contributions
 
-####Lorsque vous contribuez à ce projet, veuillez vous assurer que: avant de faire une demande de tirage:
+#### Lorsque vous contribuez à ce projet, veuillez vous assurer que: avant de faire une demande de tirage:
 
 - Les **sections** ou **sous-sections** que vous souhaitez ajouter n'existent pas déjà.
 - S'ils le font, les améliorations sont les bienvenues!
@@ -9,9 +9,7 @@
 - Si la **langue / technologie** de votre section n'existe pas, n'hésitez pas à créer une nouvelle entrée dans la table des matières.
   
     
-##Création d'une demande d'extraction
-
-
+## Création d'une demande d'extraction
 1. Déchiffrez le référentiel et créez votre branche à partir du maître.
 2. Assurez-vous qu'un environnement [Staging](Staging.md) vous permet de tester le rendu du contenu nouvellement créé / modifié dans votre navigateur local (_par exemple, **Mozilla Firefox, Google Chrome**, etc_) afin d'éviter toute surprise par la suite.
 3. Assurez-vous que votre code est lisse.
