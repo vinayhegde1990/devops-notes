@@ -1,4 +1,4 @@
-:earth_africa: Прочитайте эту страницу в [English](README.md) ∙ [French](global/FR/README_FR.md) ∙ [Español](global/ES/README_ES.md) ∙ [Русский](global/RU/README_RU.md) :earth_africa:
+:earth_africa: Прочитайте эту страницу в [English](../../README.md) ∙ [French](../../global/FR/README_FR.md) ∙ [Español](../../global/ES/README_ES.md) ∙ [Русский](../../global/RU/README_RU.md) :earth_africa:
 
 <h1> Обзор </h1>
 Добро пожаловать в мои заметки на различные темы, связанные с терминологией DevOps / инженер по надежности сайта, такие как - Вы можете прочитать полную документацию **[здесь](https://rebrand.ly/VH-notes-RTD)**
