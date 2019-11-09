@@ -1,4 +1,4 @@
-:earth_africa: Lisez cette page en [English](README.md) ∙ [French](global/FR/README_FR.md) ∙ [Español](global/ES/README_ES.md) ∙ [Русский](global/RU/README_RU.md) :earth_africa:
+:earth_africa: Lisez cette page en [English](../../README.md) ∙ [French](README_FR.md) ∙ [Español](../../global/ES/README_ES.md) ∙ [Русский](../../global/RU/README_RU.md) :earth_africa:
 
 <h1> Présentation </h1>
 
