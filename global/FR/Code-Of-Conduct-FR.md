@@ -1,4 +1,4 @@
-#Code de conduite du contributeur
+# Code de conduite du contributeur
 
 ## Notre engagement
 
@@ -69,8 +69,8 @@ membres de la direction du projet.
 
 ## Attribution
 
-Ce code de conduite est adapté de la page d'accueil de [Convention de collaboration](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html), version 1.4,
-disponible à l'adresse
+Ce code de conduite est adapté de la page d'accueil de [Convention de collaboration](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html), version 1.4 - disponible à l'adresse 
+
 
 Pour obtenir des réponses aux questions courantes sur ce code de conduite, voir
 https://www.contributor-covenant.org/faq
