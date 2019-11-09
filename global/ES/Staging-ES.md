@@ -1,34 +1,35 @@
-<h1>Getting Started</h1>
-<h4> This document will show you how to create a Staging environment to work with Sphinx & Read the Docs </h4>
-1. Assuming you have Python already, install Sphinx:
+<h1>Empezando</h1>
+<h4> Este documento le mostrará cómo crear un entorno de ensayo para trabajar con Sphinx y leer los documentos </h4>
+
+1. Suponiendo que ya tiene Python, instale Sphinx:
 
 ```bash
 sudo pip install sphinx sphinx-autobuild
 ```
 
-2. Create a directory inside your project to hold your docs:
+2. Crea un directorio dentro de tu proyecto para guardar tus documentos:
 
 ```bash
 cd /path/to/project
 mkdir docs
 ```
 
-3. Run sphinx-quickstart in there:
+3. Ejecute sphinx-quickstart allí:
 
 ```bash
 cd docs
 sphinx-quickstart
 ```
 
-4. This will walk you through creating the basic configuration; in most cases, you can just accept the defaults. When it's done, you'll have an *index.rst*, a *conf.py* and some other files. Add these to revision control. Now, edit your *index.rst* and add some information about your project. Include as much detail as you like. Build them to see how they look:
+4. Esto lo guiará a través de la creación de la configuración básica; en la mayoría de los casos, solo puede aceptar los valores predeterminados. Cuando termine, tendrá un *index.rst*, un *conf.py* y algunos otros archivos. Agregue estos al control de revisión. Ahora, edite su *index.rst* y agregue información sobre su proyecto. Incluye tantos detalles como quieras. Construirlos para ver cómo se ven:
 
 ```
 make html
 ```
 
-**Note:** *You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead.*
+**Nota:** *Puede usar sphinx-autobuild para recargar automáticamente sus documentos. Ejecute sphinx-autobuild. _build / html en su lugar*
 
-5. To publish only relevant code files but NOT build, _static & _templates directories - please add a .gitignore in the root directory. A sample is below
+5. Para publicar solo archivos de código relevantes pero NO compilar directorios _static y _templates - agregue un .gitignore en el directorio raíz. Una muestra está debajo
 
 ```python
 #Folders to ignore
@@ -67,4 +68,4 @@ nbproject
 *.sublime-project
 ```
 
-6. Edit your files to rebuild until you like what you see, then commit your changes and push to your public repository. Once you have **Sphinx** documentation in a public repository, you can start using **Read the Docs**.
+6. Edite sus archivos para reconstruir hasta que le guste lo que ve, luego confirme los cambios y envíelos a su repositorio público. Una vez que tenga la documentación de **Sphinx** en un repositorio público, puede comenzar a usar **Leer los documentos**
