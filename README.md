@@ -1,4 +1,4 @@
-:earth_africa: Read this page in [English](README.md) ∙ [Français](README_FR.md) ∙ [Español](README_ES.md) ∙ [Русский](README_RU.md) :earth_africa:
+:earth_africa: Read this page in [English](README.md) ∙ [Français](global/FR/README_FR.md) ∙ [Español](README_ES.md) ∙ [Русский](README_RU.md) :earth_africa:
 <h1> Overview </h1>
 
 Welcome to my notes on various topics related to the DevOps / SysAdmin terminology such as
