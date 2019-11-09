@@ -1,6 +1,6 @@
 :earth_africa: Lisez cette page en [English](README.md) ∙ [French](README_FR.md) ∙ [Español](README_ES.md) ∙ [Русский](README_RU.md) :earth_africa:
 
-<h1> Présentation </ h1>
+<h1> Présentation </h1>
 
 
 Bienvenue dans mes notes sur divers sujets liés à la terminologie DevOps / Ingénierie de fiabilité de site (_SRE_), tels que
