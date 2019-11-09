@@ -11,6 +11,6 @@
     
 ## Création d'une demande d'extraction
 1. Déchiffrez le référentiel et créez votre branche à partir du maître.
-2. Assurez-vous qu'un environnement [Staging](Staging.md) vous permet de tester le rendu du contenu nouvellement créé / modifié dans votre navigateur local (_par exemple, **Mozilla Firefox, Google Chrome**, etc_) afin d'éviter toute surprise par la suite.
+2. Assurez-vous qu'un environnement [Staging](Staging-FR.md) vous permet de tester le rendu du contenu nouvellement créé / modifié dans votre navigateur local (_par exemple, **Mozilla Firefox, Google Chrome**, etc_) afin d'éviter toute surprise par la suite.
 3. Assurez-vous que votre code est lisse.
 4. Créez une demande Pull avec un titre descriptif. **Remarque**: Faites des demandes de tirages **distinctes** pour chaque section ou sous-section.
