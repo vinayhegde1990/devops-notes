@@ -20,19 +20,23 @@ Welcome to my notes on various topics related to the DevOps / SRE terminology su
 
 <h2> Tools Used: </h2>
 <h3> reStructuredText (RST): </h3>
+
 - For writing .rst files to render the formatting. You can start learning via [this](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
 
-<h3> Sphinx: </h3> 
+<h3> Sphinx: </h3>
+
 - The engine generating content in HTML, LaTeX, ePub. A beginner’s guide can be found on their [page](http://www.sphinx-doc.org/en/master/index.html)
 
 <h3> GitHub: </h3> 
 - For maintaining the source code in version control.
 
-<h3> ReadTheDocs: </h3> 
+<h3> ReadTheDocs: </h3>
+
 - Hosting my documentation alongside many others. Refer this excellent [document](http://docs.readthedocs.io/en/latest/getting_started.html) to help you get up and running in no time.
 
 
 <h2> Please note: </h2>
+
 - Due to dynamic content for all topics in here, this will forever be a work in progress. Feedback, suggestions and queries are always appreciated!
-- For contributions, please read the guidelines on how to share your [Contributions](contributing.md) to this project.
+- For contributions, please read the guidelines on how to share your **[Contributions](contributing.md)** to this project.
 - At all times, please refer to the **[Code of Conduct](CODE_OF_CONDUCT.md)** guidelines on interacting with other community members in a respectful and cordial manner.
