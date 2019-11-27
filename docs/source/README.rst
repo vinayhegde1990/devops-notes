@@ -2,24 +2,21 @@
 Overview
 ========
 
-Welcome to my notes on various topics related to the DevOps terminology such as 
+Welcome to my notes on various topics related to the DevOps / SRE terminology such as -
 
 • Linux Operating Systems
 • Networking
 • Web / Email / DNS / Database Servers
 • GIT 
-• Configuration Management
-• Programming (Python, Shell Scripting)
-
-..and many more.
+• Configuration Management Tools (*Chef, Ansible, Puppet*)
+• Programming (*Python, Ruby, Shell Scripting*)..and many more
 
 Tech Stack:
 ---------------------
-
-                * **reStructuredText (RST)** - To write .rst files for the formatting. You can start learning via `this <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_
-                * **Sphinx** - The engine generating content in **HTML**, **LaTeX**, **ePub**. A beginner's guide can be found on their `page <http://www.sphinx-doc.org/en/master/index.html>`_
-                * **GitHub** - For maintaining the source code in version control, accessible via `link <https://github.com/vinayhegde1990/devops-notes/tree/master/docs/source>`_
-                * **ReadTheDocs** - Hosting my documentation along with many others. They've an excellent `document <http://docs.readthedocs.io/en/latest/getting_started.html>`_ to help you get up and running in no time.
+- **reStructuredText (RST)** - To write .rst files for the formatting. You can start learning via `this <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_
+- **Sphinx** - The engine generating content in **HTML**, **LaTeX**, **ePub**. A beginner's guide can be found on their `page <http://www.sphinx-doc.org/en/master/index.html>`_
+- **GitHub** - For maintaining the source code in version control.
+- **ReadTheDocs** - Hosting my documentation. Refer this excellent `document <http://docs.readthedocs.io/en/latest/getting_started.html>`_ to help you get up and running in no time.
 
 
 How-To-Use
@@ -32,6 +29,5 @@ How-To-Use
 Please Note:
 -------------------
 - Due to dynamic content for any topic in here, this will forever be a work in progress. Feedback, suggestions and queries are always appreciated!
-- Kindly read the guidelines on how to share your :ref:`CONTRIBUTING` to this project.
-- Feel free to contact me directly via `email <vinay.hegde30@gmail.com>`_ or `WhatsApp <https://api.whatsapp.com/send?phone=919967875270>`_ on the above.
-
+- For contributions, please read the guidelines on how to share `CONTRIBUTING`_ to this project.
+- At all times, please refer to the `CODE OF CONDUCT`_ guidelines on interacting with other community members in a respectful and cordial manner.
