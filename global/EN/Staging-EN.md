@@ -2,10 +2,10 @@
 
 <h4> This document will show you how to create a Staging environment to work with Sphinx & Read the Docs </h4>
 
-1. Assuming you have Python already, install Sphinx:
+1. Assuming you've Python already, install Sphinx. Otherwise, please follow [steps](https://realpython.com/installing-python/) tp install Python. Then do:
 
 ```bash
-sudo pip install sphinx sphinx-autobuild
+pip install sphinx sphinx-autobuild
 ```
 
 2. Create a directory inside your project to hold your docs:
