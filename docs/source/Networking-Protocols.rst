@@ -196,7 +196,9 @@ NETSTAT
 - http://www.slashroot.in/netstat-command-examples-and-its-usage
    
 - http://www.binarytides.com/linux-ss-command/
-   
+
+- https://pcarleton.com/2018/05/31/netstat-vs-ss/
+
 
 IFTOP
 #########
@@ -307,6 +309,11 @@ DHCP
 - http://www.hecticgeek.com/2012/01/command-line-ip-subnet-calculator-ubuntu-linux/
 
 - https://www.geeksforgeeks.org/how-dhcp-server-dynamically-assigns-ip-address-to-a-host/
+
+
+VPN
+########
+- https://zero.pritunl.com
 
 
 ########################################
