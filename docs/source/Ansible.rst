@@ -80,6 +80,7 @@ NGinx Setup via Ansible
 
 - https://liquidat.wordpress.com/2016/01/26/howto-introduction-to-ansible-variables/
 
+- https://mydbops.wordpress.com/2019/04/17/jinja2-for-better-ansible/
 
 
 ##################

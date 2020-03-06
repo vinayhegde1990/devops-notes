@@ -48,6 +48,8 @@ SSH key-based logins
 
 - https://www.ssh.com/ssh/config/
 
+- https://stackoverflow.com/questions/10197559/ssh-configuration-override-the-default-username/10197697#10197697
+
 
 ################################   
 Tuning & Hardening
@@ -139,6 +141,7 @@ Some useful links to cover the working of TMux.
 - http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 
 - https://github.com/rothgar/awesome-tmux
+
 
 ################################   
 Troubleshooting & Log Parsing

@@ -186,7 +186,8 @@ Why sudo cd <path-to-dir> doesn't work
     :width: 749px
     :align: center
     :height: 903px
-        
+
+- https://askubuntu.com/questions/468901/how-to-show-only-hidden-files-in-terminal/468902#468902
 
 Sudoers
 *************
