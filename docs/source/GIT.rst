@@ -88,6 +88,8 @@ Configuration
 - https://rtcamp.com/tutorials/git/ 
    
 - https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
+- https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
    
 - Update multiple git repos : https://github.com/earwig/git-repo-updater
    
@@ -209,6 +211,10 @@ Better GIT Workflow
 - https://dev.to/_darrenburns/8-productivity-tips-for-github-44kn
 
 - https://scotch.io/tutorials/using-git-hooks-in-your-development-workflow
+
+- https://stackoverflow.com/questions/3651860/which-characters-are-illegal-within-a-branch-name/3651867#3651867
+
+- https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages/3580764#3580764
 
 
 ################
