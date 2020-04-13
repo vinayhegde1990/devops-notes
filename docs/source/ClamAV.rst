@@ -2,7 +2,7 @@
 ClamAV
 ************
 
-*Some useful links to cover the basics of ClamAV*
+*Some useful links to explain the concepts of ClamAV*
 
 ########
 Concepts

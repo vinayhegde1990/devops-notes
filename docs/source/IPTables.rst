@@ -2,7 +2,7 @@
 IPTables
 ************
 
-*Some useful links to cover the basics of IPTables*
+*Some useful links to explain the concepts of IPTables*
 
 ########
 Concepts

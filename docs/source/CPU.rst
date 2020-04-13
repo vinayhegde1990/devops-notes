@@ -2,7 +2,7 @@
 CPU
 ************
 
-*Some useful links to cover the basics of CPU processing*
+*Some useful links to explain the concepts of CPU processing*
 
 ########
 Concepts

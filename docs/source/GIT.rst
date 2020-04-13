@@ -2,7 +2,7 @@
 GIT
 ************
 
-*Some useful links to cover the basics of GIT*
+*Some useful links to explain the concepts of GIT*
 
 ########
 Concepts

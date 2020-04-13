@@ -2,7 +2,7 @@
 Logging
 ************
 
-*Some useful links to cover the basics of Logging*
+*Some useful links to explain the concepts of Logging*
 
 ########
 Concepts
@@ -69,7 +69,7 @@ Troubleshooting & Log Parsing
 ELK Stack
 ###############
 
-*Some useful links to cover the basics of the ELK stack - ElasticSearch, Logstash and Kibana*
+*Some useful links to explain the concepts of the ELK stack - ElasticSearch, Logstash and Kibana*
 
 - http://logz.io/learn/complete-guide-elk-stack/
    

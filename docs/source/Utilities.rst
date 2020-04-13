@@ -6,7 +6,7 @@ Utilities
 Environment Variables {ENV}
 ################################
 
-*Some useful links to cover the basics of Environment Variables*
+*Some useful links to explain the concepts of Environment Variables*
 
 - https://www.guru99.com/linux-environment-variables.html
 

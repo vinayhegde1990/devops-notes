@@ -2,7 +2,7 @@
 Postfix
 ***********
 
-*Some useful links to cover the basics of Postfix*
+*Some useful links to explain the concepts of Postfix*
 
 ########
 Concepts

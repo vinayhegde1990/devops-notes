@@ -1,7 +1,7 @@
 Fundamentals
 *******************
 
-*Some useful links to cover the basics of Web-Servers*
+*Some useful links to explain the concepts of Web-Servers*
 
 ##########
 Concepts

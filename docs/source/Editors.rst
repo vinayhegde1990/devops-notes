@@ -2,7 +2,7 @@
 Editors
 ************
 
-*Some useful links to cover the basics of Editors*
+*Some useful links to explain the concepts of Editors*
 
 VIM Basics
 ###############

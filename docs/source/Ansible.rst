@@ -2,7 +2,7 @@
 Ansible
 **********
 
-*Some useful links to cover the basics of Ansible*
+*Some useful links to explain the concepts of Ansible*
 
 #########
 Concepts

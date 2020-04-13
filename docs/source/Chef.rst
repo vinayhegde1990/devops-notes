@@ -2,7 +2,7 @@
 Chef
 **********
 
-*Some useful links to cover the basics of Chef*
+*Some useful links to explain the concepts of Chef*
 
 ########
 Concepts

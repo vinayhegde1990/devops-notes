@@ -2,7 +2,7 @@
 NoSQL
 **********
 
-*Some useful links to cover the basics of NoSQL*
+*Some useful links to explain the concepts of NoSQL*
 
 ########
 Concepts

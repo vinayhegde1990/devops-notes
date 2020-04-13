@@ -2,7 +2,7 @@
 Nginx
 ************
 
-*Some useful links to cover the basics of NGinx*
+*Some useful links to explain the concepts of NGinx*
 
 ########
 Concepts

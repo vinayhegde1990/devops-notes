@@ -2,7 +2,7 @@
 Security
 ****************
 
-*Some useful links to cover the basics of Security in Linux OS*
+*Some useful links to explain the concepts of Security in Linux OS*
 
 ########
 Concepts

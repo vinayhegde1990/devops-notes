@@ -2,7 +2,7 @@
 Graphing
 ************
 
-*Some useful links to cover the basics of Graphing*
+*Some useful links to explain the concepts of Graphing*
 
 ########
 Concepts

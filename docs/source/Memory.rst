@@ -2,7 +2,7 @@
 Memory
 ************
 
-*Some useful links to cover the basics of Memory*
+*Some useful links to explain the concepts of Memory*
 
 ########
 Concepts

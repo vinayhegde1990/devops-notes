@@ -2,7 +2,7 @@
 Puppet
 **********
 
-*Some useful links to cover the basics of Puppet*
+*Some useful links to explain the concepts of Puppet*
 
 
 ################

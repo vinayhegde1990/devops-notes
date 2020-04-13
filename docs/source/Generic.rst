@@ -2,7 +2,7 @@
 Generic
 ************
 
-*Some useful links to cover the basics of Programming*
+*Some useful links to explain the concepts of Programming*
 
 ########
 Concepts

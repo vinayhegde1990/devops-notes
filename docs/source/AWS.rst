@@ -2,7 +2,7 @@
 AWS
 ************
 
-*Some useful links to cover the basics of AWS*
+*Some useful links to explain the concepts of AWS*
 
 ##############################
 Official AWS Documentation

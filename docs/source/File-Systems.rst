@@ -2,7 +2,7 @@
 File Systems
 *******************
 
-*Some useful links to cover the basics of File Systems*
+*Some useful links to explain the concepts of File Systems*
 
 ########
 Concepts

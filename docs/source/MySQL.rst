@@ -2,7 +2,7 @@
 MySQL
 **********
 
-*Some useful links to cover the basics of MySQl*
+*Some useful links to explain the concepts of MySQl*
 
 
 ########

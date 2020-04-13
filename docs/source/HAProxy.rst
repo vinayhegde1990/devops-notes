@@ -2,7 +2,7 @@
 HAProxy
 ************
 
-*Some useful links to cover the basics of HAProxy*
+*Some useful links to explain the concepts of HAProxy*
 
 ########
 Concepts

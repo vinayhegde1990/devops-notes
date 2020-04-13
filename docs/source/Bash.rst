@@ -2,7 +2,7 @@
 Bash
 ************
 
-*Some useful links to cover the basics of Bash Scripting*
+*Some useful links to explain the concepts of Bash Scripting*
 
 ########
 Concepts

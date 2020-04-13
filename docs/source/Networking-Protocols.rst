@@ -2,7 +2,7 @@
 Networking
 *****************
 
-*Some useful links to cover the basics of Networking Protocols*
+*Some useful links to explain the concepts of Networking Protocols*
 
 ########
 Concepts

@@ -2,7 +2,7 @@
 Docker
 ************
 
-*Some useful links to cover the basics of Docker*
+*Some useful links to explain the concepts of Docker*
 
 ##############################
 Official Docker Documentation

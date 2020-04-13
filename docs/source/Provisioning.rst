@@ -2,7 +2,7 @@
 Provisioning
 **************
 
-*Some useful links to cover the basics of Cobbler / Kickstart*
+*Some useful links to explain the concepts of Cobbler / Kickstart*
 
 - https://www.ibm.com/developerworks/library/l-cobbler/
    

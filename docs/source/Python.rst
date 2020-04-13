@@ -2,7 +2,7 @@
 Python
 ************
 
-*Some useful links to cover the basics of Python*
+*Some useful links to explain the concepts of Python*
 
 ########
 Concepts

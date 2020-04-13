@@ -2,7 +2,7 @@
 Hardware
 ************
 
-*Some useful links to cover the basics of Hardware (Dell / SuperMicro)*
+*Some useful links to explain the concepts of Hardware (Dell / SuperMicro)*
 
 - http://www.thegeekstuff.com/2008/11/how-to-get-hardware-information-on-linux-using-dmidecode-command/
    

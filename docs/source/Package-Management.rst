@@ -2,7 +2,7 @@
 Package-Management
 ***********************
 
-*Some useful links to cover the basics of Package-Management*
+*Some useful links to explain the concepts of Package-Management*
 
 ########
 Concepts

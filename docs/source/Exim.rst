@@ -2,7 +2,7 @@
 Exim
 *********
 
-*Some useful links to cover the basics of Exim*
+*Some useful links to explain the concepts of Exim*
 
 ########
 Concepts

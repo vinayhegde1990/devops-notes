@@ -2,7 +2,7 @@
 SSL
 ************
 
-*Some useful links to cover the basics of SSL*
+*Some useful links to explain the concepts of SSL*
 
 ########
 Concepts

@@ -2,7 +2,7 @@
 Email
 *********
 
-*Some useful links to cover the basics of Email*
+*Some useful links to explain the concepts of Email*
 
 ########
 Concepts

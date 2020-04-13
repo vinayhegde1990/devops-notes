@@ -2,7 +2,7 @@
 Swap
 ************
 
-*Some useful links to cover the basics of Swap*
+*Some useful links to explain the concepts of Swap*
 
 ########
 Concepts
