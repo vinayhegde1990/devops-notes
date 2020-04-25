@@ -83,6 +83,7 @@ Notes - Vinay Hegde
    
    Docker
    AWS
+   Kubernetes
    
 .. toctree::
    :maxdepth: 2
