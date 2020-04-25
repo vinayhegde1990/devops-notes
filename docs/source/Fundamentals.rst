@@ -25,6 +25,9 @@ Concepts
    
 - https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236
 
+- https://dev.to/swyx/every-web-performance-test-tool-naj
+
+
 HTTP request lifecycle overview 
 #################################
 - https://dev.to/dangolant/things-i-brushed-up-on-this-week-the-http-request-lifecycle-

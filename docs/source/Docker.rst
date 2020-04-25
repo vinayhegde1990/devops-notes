@@ -21,6 +21,8 @@ Concepts
 
 - https://hackernoon.com/beginners-guide-to-microservices-explaining-it-to-a-5-year-old-4481f5aba466
 
+- https://jvns.ca/blog/2019/11/18/how-containers-work--overlayfs
+
 
 Good Explanation of Namespaces : needed for Docker
 *********************************************************************
