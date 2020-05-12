@@ -29,5 +29,5 @@ How-To-Use
 Please Note:
 -------------------
 - Due to dynamic content for any topic in here, this will forever be a work in progress. Feedback, suggestions and queries are always appreciated!
-- For contributions, please read the guidelines on how to share `CONTRIBUTING`_ to this project.
-- At all times, please refer to the `CODE OF CONDUCT`_ guidelines on interacting with other community members in a respectful and cordial manner.
+- For contributions, please read the guidelines on how to share :doc:`Contributing` to this project.
+- At all times, please refer to the :doc:`Code-of-Conduct` guidelines on interacting with other community members in a respectful and cordial manner.

@@ -1,12 +1,10 @@
-.. _STAGING:
-
 Staging
 ===========
 
 .. Note:: This document will show you how to create a Staging environment to work with Sphinx & Read the Docs.
 
 
-1. Assuming you have Python already, install Sphinx:
+1. Assuming you have Python already, install Sphinx Otherwise, please follow `steps <https://realpython.com/installing-python/>`_ to install Python. Then do:
 
 .. code-block:: python
    :linenos: 

@@ -92,7 +92,31 @@ Variables, Functions in Bash
 - https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions
 
 - https://www.shellscript.sh/functions.html
-   
+
+
+Configure Bash History Retention
+##################################
+- https://stackoverflow.com/questions/9457233/unlimited-bash-history/12234989#12234989
+
+.. image::  ../source/images/bash-histsize-histfilesize.png
+    :width: 744px
+    :align: center
+    :height: 363px
+
+- https://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows/48113#48113
+
+.. image::  ../source/images/bash-histsize-histcontrol.png
+    :width: 744px
+    :align: center
+    :height: 364px
+
+- https://askubuntu.com/questions/15926/how-to-avoid-duplicate-entries-in-bash-history/15929#15929
+
+.. image::  ../source/images/bash-histcontrol-man-page.png
+    :width: 744px
+    :align: center
+    :height: 394px
+
 
 ##################################
 Troubleshooting & Log Parsing

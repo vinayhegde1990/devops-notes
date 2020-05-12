@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = u'DevOps-Notes'
-copyright = u'2018, Vinay Hegde'
+copyright = u'2020-21, Vinay Hegde'
 author = u'Vinay Hegde'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'1.0.0'
+release = u'2.0.0'
 
 
 # -- General configuration ---------------------------------------------------
