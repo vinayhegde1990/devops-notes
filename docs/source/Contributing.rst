@@ -1,5 +1,3 @@
-.. _CONTRIBUTING:
-
 Contributions
 =================
 
@@ -17,6 +15,6 @@ Creating a Pull Request
 ##############################
 
 1. Fork the repo and create your branch from `master`.
-2. Please ensure a :ref:`STAGING` environment to test the newly created/edited content in your local browser (i.e: **Mozilla Firefox, Google Chrome etc**) to avoid any surprises later.
+2. Please ensure a :doc:`Staging` environment to test the newly created/edited content in your local browser (i.e: **Mozilla Firefox, Google Chrome etc**) to avoid any surprises later.
 3. Make sure your code lints.
 4. Issue that pull request!
