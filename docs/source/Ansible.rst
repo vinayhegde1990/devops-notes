@@ -61,6 +61,11 @@ Basic Ansible Tutorials
 - https://symfonycasts.com/screencast/ansible/handlers
 
 
+Ansible Roles
+##############
+- https://www.digitalocean.com/community/tutorials/how-to-use-ansible-roles-to-abstract-your-infrastructure-environment
+
+
 Managing Users with Ansible
 ################################
 - https://www.alibabacloud.com/blog/managing-system-users-using-ansible_593861
