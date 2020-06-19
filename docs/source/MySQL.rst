@@ -106,34 +106,36 @@ Reset forgotten MySQL password
 ##################
 Tuning & Hardening
 ##################
-• http://blog.webyog.com/2012/11/20/how-to-monitor-mysql-replication/
+- http://blog.webyog.com/2012/11/20/how-to-monitor-mysql-replication/
    
-• https://www.digitalocean.com/community/tutorials/how-to-secure-mysql-and-mariadb-databases-in-a-linux-vps
+- https://www.digitalocean.com/community/tutorials/how-to-secure-mysql-and-mariadb-databases-in-a-linux-vps
  
-• https://www.percona.com/blog/2013/04/18/rotating-mysql-slow-logs-safely/ 
+- https://www.percona.com/blog/2013/04/18/rotating-mysql-slow-logs-safely/ 
    
-• http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs
+- http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs
    
-• https://serversforhackers.com/c/mysql-network-security
+- https://serversforhackers.com/c/mysql-network-security
    
-• http://www.proxysql.com
+- http://www.proxysql.com
+
+- https://severalnines.com/resources/database-management-tutorials/mysql-load-balancing-haproxy-tutorial
 
 
 To change the value of expire_log_days without MySQL restart
 ******************************************************************
-• https://www.sebastien-han.fr/blog/2013/02/15/purge-mysql-binary-logs/
+- https://www.sebastien-han.fr/blog/2013/02/15/purge-mysql-binary-logs/
    
 To enable various logs via my.cnf or on the fly without restart
 ******************************************************************
-• http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs
+- http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs
 
 Perl script to analyses system MySQL variables & optimize accordingly
 *************************************************************************
-• https://major.io/mysqltuner/
+- https://major.io/mysqltuner/
    
 Tool to convert xls files into SQL
 ***********************************
-• https://sqlizer.io/
+- https://sqlizer.io/
 
 
 
