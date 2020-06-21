@@ -93,6 +93,8 @@ States of a TCP Connection
 
 - https://danielmiessler.com/study/tcpflags/
 
+- https://vincent.bernat.ch/en/blog/2014-tcp-time-wait-state-linux
+
 
 LIST of TCP / UDP Ports
 ********************************************
@@ -176,6 +178,8 @@ TRACEROUTE
 - http://www.mavetju.org/networking/basicnetworktroubleshooting.php
 
 - https://www.maxcdn.com/one/tutorial/how-to-read-a-traceroute/
+
+- https://archive.nanog.org/meetings/nanog47/presentations/Sunday/RAS_Traceroute_N47_Sun.pdf
 
 
 TCPDUMP
@@ -314,6 +318,8 @@ DHCP
 VPN
 ########
 - https://zero.pritunl.com
+
+- https://github.com/trailofbits/algo
 
 
 ########################################

@@ -179,20 +179,16 @@ Bind Configuration / Tweaks
 - https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
 
 
-PowerDNS Configuration / Tweaks
-********************************************
-- https://www.digitalocean.com/community/tutorials/how-to-install-powerdns-on-centos-6-3-x64
-   
-- http://www.admin-magazine.com/Articles/Speed-up-Your-Name-Server-with-a-MySQL-Back-End
-   
+Managing DNS Better
+*****************************
 - https://blog.powerdns.com/2015/03/11/introducing-dnsdist-dns-abuse-and-dos-aware-query-distribution-for-optimal-performance/
 
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-dnscontrol-on-ubuntu-18-04
 
 
-##################################   
+##################################
 Troubleshooting & Log Parsing
-##################################   
+##################################
 
 - http://www.tecmint.com/10-linux-dig-domain-information-groper-commands-to-query-dns/
    
