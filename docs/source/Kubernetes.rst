@@ -7,6 +7,9 @@ Kubernetes
 #########
 Concepts
 #########
+- https://dev.to/techworld_with_nana/kubernetes-simply-explained-for-beginners-33em
+
+- https://dev.to/aurelievache/kubernetes-sketchnotes-pods-4ib0
 
 
 #########################

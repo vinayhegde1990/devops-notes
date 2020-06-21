@@ -46,6 +46,8 @@ Online Courses
    
 - https://dev.to/jessicagarson/resources-for-learning-python-hd6
 
+- https://www.youtube.com/watch?v=_uQrJ0TkZlc
+
 
 Intermediate Python
 #########################
