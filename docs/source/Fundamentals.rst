@@ -47,6 +47,10 @@ HTTP status codes
 - http://www.restapitutorial.com/httpstatuscodes.html
    
 - https://httpstatuses.com/
+
+- https://stackoverflow.com/questions/50143518/401-unauthorized-vs-403-forbidden-which-is-the-right-status-code-for-when-the-u
+
+- https://stackoverflow.com/questions/3297048/403-forbidden-vs-401-unauthorized-http-responses
   
 - https://geekflare.com/http-status-code-infographics/
 
