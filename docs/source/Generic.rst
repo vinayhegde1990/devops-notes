@@ -8,13 +8,9 @@ Generic
 Concepts
 ########
 
-- https://akbarahmed.com/2012/06/24/uninstall-java-from-ubuntu-linux/
-
 - http://regex.learncodethehardway.org/book/
    
 - https://techdifferences.com/differenece-between-for-and-while-loop.html#KeyDifferences
-   
-- http://syndicode.co/2018/01/29/books-and-tutorials-for-learning-and-mastering-ruby-language/
    
 - https://dev.to/sandordargo/8-books-every-junior-developer-should-read--4p5h
 
@@ -31,6 +27,8 @@ Concepts
 - https://devdocs.io
 
 - https://books.goalkicker.com/
+
+- https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/
 
 
 ################

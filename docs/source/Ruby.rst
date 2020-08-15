@@ -25,6 +25,8 @@ Configuration
 
 - https://dev.to/molly_struve/how-to-setup-a-readonly-rails-console-1j1a
 
+- http://syndicode.co/2018/01/29/books-and-tutorials-for-learning-and-mastering-ruby-language
+
 
 ################################
 Troubleshooting & Log Parsing
