@@ -52,6 +52,8 @@ Configuration
 - https://www.howtoforge.com/setting-up-a-high-availability-load-balancer-with-haproxy-keepalived-on-debian-lenny
 
 - https://www.freecodecamp.org/news/how-we-fine-tuned-haproxy-to-achieve-2-000-000-concurrent-ssl-connections-d017e61a4d27
+
+- https://delta.blue/blog/haproxy-timeouts
    
 ##################
 Tuning & Hardening
