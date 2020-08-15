@@ -23,9 +23,16 @@ Concepts
    
 - http://stackoverflow.com/questions/224664/difference-between-proxy-server-and-reverse-proxy-server
    
+- https://dev.to/swyx/every-web-performance-test-tool-naj
+
+
+Load Balancing
+#####################
 - https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236
 
-- https://dev.to/swyx/every-web-performance-test-tool-naj
+- https://avinetworks.com/what-is-load-balancing
+
+- https://levelup.gitconnected.com/l4-vs-l7-load-balancing-d2012e271f56
 
 
 HTTP request lifecycle overview 
