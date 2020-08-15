@@ -93,6 +93,8 @@ Notes - Vinay Hegde
    MySQL
    PostgreSQL
    NoSQL
+   Redis
+   Kafka
 
 .. toctree::
    :maxdepth: 4
