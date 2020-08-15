@@ -11,11 +11,15 @@ Concepts
 
 - https://dev.to/aurelievache/kubernetes-sketchnotes-pods-4ib0
 
+- https://speakerdeck.com/thockin/the-ins-and-outs-of-networking-in-google-container-engine
+
 
 #########################
 Official Documentation
 #########################
 - https://kubernetes.io/docs/home
+
+- https://kubectl.docs.kubernetes.io
 
 
 ##################
@@ -26,6 +30,8 @@ Configuration
 - https://nikgrozev.com/2019/10/03/switch-between-multiple-kubernetes-clusters-with-ease/
 
 - https://sysdig.com/blog/kubernetes-limits-requests/
+
+- https://speakerdeck.com/thockin/bringing-traffic-into-your-kubernetes-cluster
 
 
 ##################
