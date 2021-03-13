@@ -380,13 +380,13 @@ SysCTL
 
 *Some useful links to cover the working of SysCTL*
 
-- http://go2linux.garron.me/linux/2011/02/introduction-and-how-sysctl-linux-900/
+- https://rtcamp.com/tutorials/linux/sysctl-conf
    
-- http://www.slashroot.in/linux-network-tcp-performance-tuning-sysctl
-   
+- https://www.cyberciti.biz/faq/linux-kernel-etcsysctl-conf-security-hardening
+
+- https://www.slashroot.in/linux-network-tcp-performance-tuning-sysctl
+
 - https://www.linux.com/news/kernel-tuning-sysctl
-   
-- https://www.cyberciti.biz/faq/linux-kernel-etcsysctl-conf-security-hardening/
 
 
 #######
