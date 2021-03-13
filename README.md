@@ -13,9 +13,8 @@ Welcome to my notes on various topics related to the DevOps / SRE terminology su
 - ...You can read the complete documentation **[here](https://rebrand.ly/VH-notes-RTD)**
 
 
+![DevOps Roadmap](https://roadmap.sh/roadmaps/devops.png) <p align="center">Image Courtesy: ![DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap#devops-roadmap)
 
-![Quick Preview](https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/master/images/devops.png)
-&copy; https://github.com/kamranahmedse/developer-roadmap#devops-roadmap
 
 <h2> Tools Used: </h2>
 
