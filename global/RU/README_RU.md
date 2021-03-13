@@ -12,11 +12,7 @@
 - Программирование (_Python, Ruby, Shell Scripting_) .. и многое другое. 
 
 
-
-
-![Quick Preview](https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/master/images/devops.png)
-&copy; https://github.com/kamranahmedse/developer-roadmap#devops-roadmap
-
+![DevOps Roadmap](https://roadmap.sh/roadmaps/devops.png) <p align="center">Image Courtesy: ![DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap#devops-roadmap)
 
 
 <h2> Используемые инструменты: </h2>

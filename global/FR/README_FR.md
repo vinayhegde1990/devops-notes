@@ -13,9 +13,7 @@ Bienvenue dans mes notes sur divers sujets liés à la terminologie DevOps / Ing
 
 Vous pouvez lire la ocumentation complète **[ici](https://rebrand.ly/VH-notes-RTD)**
 
-![Quick Preview](https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/master/images/devops.png)
-&copy; https://github.com/kamranahmedse/developer-roadmap#devops-roadmap
-
+![DevOps Roadmap](https://roadmap.sh/roadmaps/devops.png) <p align="center">Image Courtesy: ![DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap#devops-roadmap)
 
 
 <h2> Outils utilisés: </h2>

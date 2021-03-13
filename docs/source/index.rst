@@ -12,14 +12,14 @@ Notes - Vinay Hegde
    CPU
    Memory
    Swap
-   SSH
-   Utilities
-   Editors
-   Hardware
-   Provisioning
    Storage
    File-Systems
+   Provisioning
    Package-Management
+   Hardware
+   SSH
+   Editors
+   Utilities
 
 .. toctree::
    :maxdepth: 2
@@ -72,9 +72,9 @@ Notes - Vinay Hegde
    :caption: Configuration Management
    :hidden:
 
+   Ansible
    Puppet
    Chef
-   Ansible
 
 .. toctree::
    :maxdepth: 2
@@ -82,8 +82,8 @@ Notes - Vinay Hegde
    :hidden:
    
    Docker
-   AWS
    Kubernetes
+   AWS
    
 .. toctree::
    :maxdepth: 2
