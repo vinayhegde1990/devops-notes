@@ -12,8 +12,7 @@ Bienvenido a mis notas sobre varios temas relacionados con la terminología de D
 
 
 
-![Quick Preview](https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/master/images/devops.png)
-&copy; https://github.com/kamranahmedse/developer-roadmap#devops-roadmap
+![DevOps Roadmap](https://roadmap.sh/roadmaps/devops.png) <p align="center">Image Courtesy: ![DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap#devops-roadmap)
 
 
 <h2> Herramientas utilizadas: </h2>
