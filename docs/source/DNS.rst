@@ -102,8 +102,6 @@ Types of DNS Servers
 - **Caching** : 
                 * `It handles recursive queries from clients which handles queries received from the OS stub resolver (/etc/hosts).`
                 
-                
-- https://muchbits.com/soa-dns-records.html
 
 - https://gitlearning.wordpress.com/2015/06/23/dns-server/
 
@@ -134,12 +132,6 @@ Types of DNS Servers
 - http://www.menandmice.com/support-training/support-center/knowledgehub/dns-glossary/
    
 - http://computer.howstuffworks.com/dns.htm
-   
-- http://thejimmahknows.com/creating-a-public-dns-server-advertising-an-authoritative-domain/
-   
-- http://swift.siphos.be/aglara/dnsserver.html
-   
-- https://geekflare.com/understanding-dns-terminology/
 
 - https://en.wikipedia.org/wiki/Wildcard_DNS_record
         
@@ -152,20 +144,7 @@ Why are there are only 13-root DNS servers
 
 - https://techiemaster.wordpress.com/2016/06/09/why-only-13-root-dns/amp/
 
-- https://miek.nl/2013/November/10/why-13-dns-root-servers/
-
 - https://www.lifewire.com/dns-root-name-servers-3971336
-
-
-AnyCasting in DNS
-**********************
-- http://ddiguru.com/blog/45/118
-   
-- http://ddiguru.com/blog/45/119
-    
-- http://ddiguru.com/blog/45/120
-    
-- http://ddiguru.com/blog/45/121
 
 
 ################
@@ -207,7 +186,7 @@ Check DNS Propagation Issues
 ************************************************************
 - https://intodns.com/
    
-- http://www.solvedns.com/
+- https://www.nslookup.io/
    
 - https://www.site24x7.com/dns-lookup.html
 
