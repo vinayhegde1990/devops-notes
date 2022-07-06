@@ -1,7 +1,7 @@
 :earth_africa: Lee esta página en [English](../../README.md) ∙ [French](../../global/FR/README_FR.md) ∙ [Español](../../global/ES/README_ES.md) ∙ [Русский](../../global/RU/README_RU.md) :earth_africa:
 
 <h1> Descripción general </h1>
-Bienvenido a mis notas sobre varios temas relacionados con la terminología de DevOps / Ingeniería de confiabilidad del sitio, como - Puede leer la documentación completa **[aquí](https://rebrand.ly/VH-notes-RTD)**
+Bienvenido a mis notas sobre varios temas relacionados con la terminología de DevOps / Ingeniería de confiabilidad del sitio, como - Puede leer la documentación completa **[aquí](https://devops-notes.readthedocs.io/en/latest)**
 
 - Sistemas operativos Linux
 - Redes

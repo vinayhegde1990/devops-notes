@@ -11,7 +11,7 @@ Bienvenue dans mes notes sur divers sujets liés à la terminologie DevOps / Ing
 - Programmation (_Python, Ruby, Shell Scripting_) .. et bien d’autres.
 
 
-Vous pouvez lire la ocumentation complète **[ici](https://rebrand.ly/VH-notes-RTD)**
+Vous pouvez lire la ocumentation complète **[ici](https://devops-notes.readthedocs.io/en/latest)**
 
 ![DevOps Roadmap](https://roadmap.sh/roadmaps/devops.png) <p align="center">Image Courtesy: ![DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap#devops-roadmap)
 

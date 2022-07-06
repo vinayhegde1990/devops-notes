@@ -1,4 +1,4 @@
-:earth_africa: Read this page in [English](README.md) ∙ [Français](global/FR/README_FR.md) ∙ [Español](global/ES/README_ES.md) ∙ [Русский](global/RU/README_RU.md) :earth_africa:
+:earth_africa: Read this page in [English](README.md) ∙ [Marathi](global/MR/README_MR.md) ∙ [Hindi](global/HI/README_HI.md) ∙ [Kannada](global/KN/README_KN.md) ∙ [Français](global/FR/README_FR.md) ∙ [Español](global/ES/README_ES.md) ∙ [Русский](global/RU/README_RU.md) :earth_africa:
 
 <h1> Overview </h1>
 
@@ -10,7 +10,7 @@ Welcome to my notes on various topics related to the DevOps / SRE terminology su
 - GIT
 - Configuration Management Tools (_Chef, Ansible, Puppet_)
 - Programming (_Python, Ruby, Shell Scripting_)..and many more.
-- ...You can read the complete documentation **[here](https://rebrand.ly/VH-notes-RTD)**
+- ...You can read the complete documentation **[here](https://devops-notes.readthedocs.io/en/latest)**
 
 
 ![DevOps Roadmap](https://roadmap.sh/roadmaps/devops.png) <p align="center">Image Courtesy: ![DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap#devops-roadmap)
