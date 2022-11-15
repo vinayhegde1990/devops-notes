@@ -1,4 +1,4 @@
-:earth_africa: ಹೇ ಪೃಷ್ಠ [ಇಂಗ್ರೇಜಿ](../../README.md) ∙ [ಹಿಂದಿ](../../global/HI/README_HI.md) ∙ [ಕನ್](../../global/KN/README_KN.md) ∙ [ಫ್ರೆಂಚ್](../../global/FR/README_FR.md) ∙ [ಸ್ಪ್ಯಾನಿಶ್](../../global/ES/README_ES.md) ∙ [ರಶಿಯನ್](../../global/RU/README_RU.md) ಈ ಪುಟಗಳು
+:earth_africa: ಹೇ ಪೃಷ್ಠ [ಇಂಗ್ರೇಜಿ](../../README.md) ∙ [ಹಿಂದಿ](../../global/HI/README_HI.md) ∙ [ಕನ್ನಡ](../../global/KN/README_KN.md) ∙ [ಮರಾಠಿ](../../global/MR/README_MR.md) ∙ [ಫ್ರೆಂಚ್](../../global/FR/README_FR.md) ∙ [ಸ್ಪ್ಯಾನಿಶ್](../../global/ES/README_ES.md) ∙ [ರಶಿಯನ್](../../global/RU/README_RU.md) ಈ ಪುಟಗಳು
 
 <h1> ಅವಲೋಕನ </h1>
 
