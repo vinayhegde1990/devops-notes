@@ -20,13 +20,11 @@
 # -- Project information -----------------------------------------------------
 
 project = u'DevOps-Notes'
-copyright = u'2021-2022, Vinay Hegde'
+copyright = u'2022-2023, Vinay Hegde'
 author = u'Vinay Hegde'
 
-# The short X.Y version
-version = u''
 # The full version, including alpha/beta/rc tags
-release = u'2.0.2'
+release = u'2.0.23'
 
 
 # -- General configuration ---------------------------------------------------
@@ -61,7 +59,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
