@@ -7,12 +7,10 @@ DevOps/SRE शब्दावलीशी संबंधित विविध 
 - लिनक्स ऑपरेटिंग सिस्टम्स
 - नेटवर्किंग
 - वेब/ईमेल/DNS/डेटाबेस सर्व्हर
-- जीआयटी
-- कॉन्फिगरेशन व्यवस्थापन साधने (शेफ, उत्तरदायी, कठपुतळी)
+- Git
+- कॉन्फिगरेशन व्यवस्थापन साधने (शेफ, आन्सीबल, पप्पेट)
 - प्रोग्रामिंग (_Python, Ruby, Shell Scripting_)..आणि बरेच काही.
-- ...तुम्ही येथे संपूर्ण कागदपत्रे वाचू शकता
-
-आपण **[येथे](https://devops-notes.readthedocs.io/en/latest)** संपूर्ण कागदपत्रे वाचू शकता
+- ...आपण **[येथे](https://devops-notes.readthedocs.io/en/latest)** संपूर्ण कागदपत्रे वाचू शकता
 
 ![DevOps Roadmap](https://roadmap.sh/roadmaps/devops.png) <p align="center">Image Courtesy: ![DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap#devops-roadmap)
 
@@ -25,7 +23,7 @@ DevOps/SRE शब्दावलीशी संबंधित विविध 
 
 <h3> Sphinx: </h3>
 
-- HTML, LaTeX, ePub मध्ये सामग्री निर्माण करणारे इंजिन. नवशिक्याचे मार्गदर्शक त्यांच्या [पृष्ठ](http://www.sphinx-doc.org/en/master/index.html) वर आढळू शकतात.
+- HTML, LaTeX, ePub मध्ये सामग्री निर्माण करणारे इंजिन. नवशिक्याचे मार्गदर्शक त्यांच्या [पृष्ठ](https://www.sphinx-doc.org/en/master/index.html) वर आढळू शकतात.
 
 <h3> GitHub: </h3>
 
@@ -33,7 +31,7 @@ DevOps/SRE शब्दावलीशी संबंधित विविध 
 
 <h3> ReadTheDocs: </h3>
 
-- माझे दस्तऐवज होस्ट करत आहे. या उत्कृष्ट [दस्तऐवज](http://docs.readthedocs.io/en/latest/getting_started.html) चा संदर्भ घ्या जेणेकरुन तुम्हाला वेळेत उठून धावण्यास मदत होईल.
+- माझे कागदपत्र होस्ट करत आहे. या उत्कृष्ट [कागदपत्र](https://docs.readthedocs.io/en/latest/getting_started.html) चा संदर्भ घ्या जेणेकरुन तुम्हाला वेळेत उठून धावण्यास मदत होईल.
 
 
 <h2> कृपया लक्षात ठेवा: </h2>
