@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'DevOps-Notes'
-copyright = u'2022-2023, Vinay Hegde'
+copyright = u'2023-2024, Vinay Hegde'
 author = u'Vinay Hegde'
 
 # The full version, including alpha/beta/rc tags
