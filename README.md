@@ -24,7 +24,7 @@ Welcome to my notes on various topics related to the DevOps / SRE terminology su
 
 <h3> Sphinx: </h3>
 
-- The engine generating content in HTML, LaTeX, ePub. A beginner’s guide can be found on their [page](http://www.sphinx-doc.org/en/master/index.html)
+- The engine generating content in HTML, LaTeX, ePub. A beginner’s guide can be found on their [page](https://www.sphinx-doc.org/en/master/index.html)
 
 <h3> GitHub: </h3>
 
@@ -32,7 +32,7 @@ Welcome to my notes on various topics related to the DevOps / SRE terminology su
 
 <h3> ReadTheDocs: </h3>
 
-- Hosting my documentation. Refer this excellent [document](http://docs.readthedocs.io/en/latest/getting_started.html) to help you get up and running in no time.
+- Hosting my documentation. Refer this excellent [document](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html) to help you get up and running in no time.
 
 
 <h2> Please note: </h2>
