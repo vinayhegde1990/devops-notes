@@ -4,7 +4,7 @@
 1. En supposant que vous ayez déjà Python, installez Sphinx:
 
 ```bash
-sudo pip install sphinx sphinx-autobuild
+pip3 install sphinx sphinx-autobuild
 ```
 
 2. Créez un répertoire dans votre projet pour contenir vos documents:
@@ -14,7 +14,7 @@ cd /path/to/project
 mkdir docs
 ```
 
-3. Exécuter sphinx-quickstart là-bas:
+3. Exécuter `sphinx-quickstart` là-bas:
 
 ```bash
 cd docs
@@ -29,7 +29,7 @@ make html
 
 **Remarque:** *Vous pouvez utiliser sphinx-autobuild pour recharger automatiquement vos documents. Exécutez sphinx-autobuild. _build / html à la place.*
 
-5. Pour publier uniquement les fichiers de code pertinents, mais PAS les répertoires build, _static & _templates, veuillez ajouter un .gitignore dans le répertoire racine. Un échantillon est ci-dessous
+5. Pour publier uniquement les fichiers de code pertinents, mais PAS les répertoires `build`, `_static` & `_templates`, veuillez ajouter un .gitignore dans le répertoire racine. Un échantillon est ci-dessous
 
 ```python
 #Folders to ignore

@@ -5,7 +5,7 @@
 1. Assuming you've Python already, install Sphinx. Otherwise, please follow [steps](https://realpython.com/installing-python/) to install Python. Then do:
 
 ```bash
-pip install sphinx sphinx-autobuild
+pip3 install sphinx sphinx-autobuild
 ```
 
 2. Create a directory inside your project to hold your docs:
@@ -15,7 +15,7 @@ cd /path/to/project
 mkdir docs
 ```
 
-3. Run sphinx-quickstart in there:
+3. Run `sphinx-quickstart` in there:
 
 ```bash
 cd docs
@@ -30,7 +30,7 @@ make html
 
 **Note:** *You can use sphinx-autobuild to auto-reload your docs. Run sphinx-autobuild . _build/html instead.*
 
-5. To publish only relevant code files but NOT build, _static & _templates directories - please add a `.gitignore` in the root directory. A sample is below
+5. To publish only relevant code files but NOT `build`, `_static` & `_templates` directories - please add a `.gitignore` in the root directory. A sample is below
 
 ```python
 #Folders to ignore

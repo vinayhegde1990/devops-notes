@@ -5,7 +5,7 @@
 1. ನೀವು ಈಗಾಗಲೇ ಪೈಥಾನ್ ಹೊಂದಿದ್ದೀರಿ ಎಂದು ಊಹಿಸಿ, ಸಿಂಹನಾರಿ ಅನ್ನು ಸ್ಥಾಪಿಸಿ. ಇಲ್ಲದಿದ್ದರೆ, ದಯವಿಟ್ಟು [ಸ್ಟೆಪ್ಸ್](https://realpython.com/installing-python/) ಅನುಸರಿಸಿ tp ಪೈಥಾನ್ ಅನ್ನು ಸ್ಥಾಪಿಸಿ. ನಂತರ ಮಾಡಿ:
 
 ```bash
-pip install sphinx sphinx-autobuild
+pip3 install sphinx sphinx-autobuild
 ```
 
 2. ನಿಮ್ಮ ಡಾಕ್ಸ್ ಅನ್ನು ಹಿಡಿದಿಡಲು ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಡೈರೆಕ್ಟರಿಯನ್ನು ರಚಿಸಿ:
