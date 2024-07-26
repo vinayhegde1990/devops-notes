@@ -24,7 +24,7 @@ copyright = u'2024-2025, Vinay Hegde'
 author = u'Vinay Hegde'
 
 # The full version, including alpha/beta/rc tags
-release = u'3.0.24'
+release = u'3.0.7-20240726'
 
 # -- General configuration ---------------------------------------------------
 
@@ -85,7 +85,6 @@ html_theme = 'sphinx_book_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -101,7 +100,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'DevOps-Notesdoc'
+htmlhelp_basename = 'DevOps-Notes-doc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
