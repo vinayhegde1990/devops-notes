@@ -148,7 +148,12 @@ User Management
 File Permissions
 ################
 
-*Some useful links to cover the working of File Permissions*
+.. image::  ../source/images/linux-file-permissions.jpg
+    :width: 800px
+    :align: center
+    :height: 696px
+    :alt: Credits to ByteByteGo
+
 
 - https://www.linux.com/learn/getting-know-linux-file-permissions
    
