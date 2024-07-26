@@ -63,6 +63,13 @@ ULimit
 
 Directory Structures
 **********************
+
+.. image::  ../source/images/linux-filesystems.gif
+    :width: 800px
+    :align: center
+    :height: 1040px
+    :alt: Credits to ByteByteGo
+
 - http://askubuntu.com/questions/34880/use-of-opt-and-usr-local-directories-in-the-context-of-a-pc
    
 - http://www.ghacks.net/2009/04/04/get-to-know-linux-the-etcinitd-directory/
