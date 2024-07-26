@@ -8,6 +8,13 @@ Boot Process
 Concepts
 ########
 
+.. image::  ../source/images/linux-boot-process.gif
+    :width: 800px
+    :align: center
+    :height: 1040px
+    :alt: Credits to ByteByteGo
+
+
 Overview of the Linux Boot process
 ***************************************
 - https://www.ibm.com/developerworks/library/l-linuxboot/
@@ -26,8 +33,8 @@ Overview of the Linux Boot process
    
 - http://bencane.com/2013/09/16/understanding-a-little-more-about-etcprofile-and-etcbashrc/
 
-Difference between commands for bringing down a linux server
-******************************************************************************
+Difference between commands for stopping a linux server
+***************************************************************
 
 - http://unix.stackexchange.com/questions/195898/what-is-the-difference-between-these-commands-for-bringing-down-a-linux-server/
 
