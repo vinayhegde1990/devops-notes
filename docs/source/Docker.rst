@@ -24,6 +24,13 @@ Concepts
 - https://jvns.ca/blog/2019/11/18/how-containers-work--overlayfs
 
 
+.. image::  ../source/images/docker-concepts.gif
+    :width: 800px
+    :align: center
+    :height: 821px
+    :alt: Credits to ByteByteGo
+
+
 Good Explanation of Namespaces : needed for Docker
 *********************************************************************
 - https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces
