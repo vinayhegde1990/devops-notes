@@ -142,6 +142,8 @@ Why are there are only 13-root DNS servers
 **********************************************
 - https://www.netnod.se/i-root/what-are-root-name-servers
 
+- https://www.netnod.se/dns/dns-root-server-faq
+
 - https://techiemaster.wordpress.com/2016/06/09/why-only-13-root-dns/amp/
 
 - https://www.lifewire.com/dns-root-name-servers-3971336

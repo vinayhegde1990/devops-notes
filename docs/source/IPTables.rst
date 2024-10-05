@@ -18,6 +18,8 @@ Concepts
    
 - https://wiki.centos.org/HowTos/Network/IPTables
 
+- https://iximiuz.com/en/posts/laymans-iptables-101/
+
 
 ####################
  Configuration

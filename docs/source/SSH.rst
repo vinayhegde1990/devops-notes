@@ -65,8 +65,6 @@ Tuning & Hardening
 
 - https://security.stackexchange.com/questions/150540/is-it-completely-safe-to-publish-an-ssh-public-key
 
-- https://hackerific.net/2017/04/23/ssh-audit---a-tool-for-checking-ssh-server-security/
-
 - https://superuser.com/questions/868998/how-can-i-find-a-list-of-macs-ciphers-and-kexalgorithms-that-my-openssh-client
 
 .. image::  ../source/images/ssh-keys-ciphers-kex.png
@@ -147,3 +145,9 @@ Some useful links to cover the working of TMux.
 Troubleshooting & Log Parsing
 ################################
 
+- https://iximiuz.com/en/posts/ssh-tunnels/
+
+.. image::  ../source/images/ssh-tunnels.png
+    :width: 1200px
+    :align: center
+    :height: 740px
