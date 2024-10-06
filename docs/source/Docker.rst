@@ -13,7 +13,6 @@ Official Docker Documentation
 ########
 Concepts
 ########
-- https://docker.zeef.com/lim
    
 - https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b
 
@@ -30,6 +29,10 @@ Concepts
     :height: 821px
     :alt: Credits to ByteByteGo
 
+- https://labs.iximiuz.com/tutorials/container-networking-from-scratch
+
+- https://labs.iximiuz.com/tutorials/container-networking-from-scratch
+
 
 Good Explanation of Namespaces : needed for Docker
 *********************************************************************
@@ -42,7 +45,7 @@ Difference between containers and VMs
 .. image::  ../source/images/docker-architecture-diagram.png
     :width: 928px
     :align: center
-    :height: 832px
+    :height: 640px
 
 
 Docker Image Layers : Easy Explanation
@@ -57,8 +60,6 @@ Docker Swarm Working
 #########################
 Configuration
 #########################
-- http://bencane.com/2015/12/01/getting-started-with-docker-by-dockerizing-this-blog/
-
 - https://docs.docker.com/config/containers/resource_constraints/
 
 - https://stackoverflow.com/questions/29480099/docker-compose-vs-dockerfile-which-is-better
@@ -72,6 +73,12 @@ Configuration
 
 - https://blog.codeship.com/orchestrate-containers-for-development-with-docker-compose/
 
+- https://iximiuz.com/en/posts/multiple-containers-same-port-reverse-proxy/
+
+- https://vsupalov.com/docker-arg-env-variable-guide/
+
+- https://pythonspeed.com/articles/docker-build-secrets
+
 
 ################################
 Troubleshooting & Log Parsing
@@ -80,7 +87,7 @@ Troubleshooting & Log Parsing
 
 - https://stackoverflow.com/questions/24481564/how-can-i-find-a-docker-image-with-a-specific-tag-in-docker-registry-on-the-dock/32622147
 
-- https://codefresh.io/docker-tutorial/not-ignore-dockerignore/
+- https://codefresh.io/blog/not-ignore-dockerignore-2/
 
 
 ################################
@@ -89,6 +96,8 @@ Tuning & Hardening
 - https://cloudvedas.com/how-to-cap-or-limit-memory-usage-of-a-docker-container/
 
 - https://56k.cloud/blog/put-the-brakes-on-docker-containers/
+
+- https://bluelight.co/blog/how-to-choose-a-container-registry
 
 
 #########################
