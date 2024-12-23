@@ -17,15 +17,18 @@ Environment Variables {ENV}
 - https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
 
 
-#############
-Crontab
-#############
+################
+Schedulers
+################
 
-*Some useful links to cover the working of Crontab*
+*Some useful links to cover the working of Crontab and Systemd Timers*
 
-- http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/
+Cron Tab
+*************
 
-- http://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/
+- https://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/
+
+- https://www.cyberciti.biz/faq/linux-show-what-cron-jobs-are-setup/
 
 - https://www.pantz.org/software/cron/croninfo.html
 
@@ -34,25 +37,33 @@ Crontab
     :align: center
     :height: 183px
         
-- http://corntab.com/crontab_syntax
 
 .. image::  ../source/images/utilities-cron-syntax-2.png
     :width: 1180px
     :align: center
     :height: 1953px
 
+
+Systemd Timers
+*********************
+
+- https://opensource.com/article/20/7/systemd-timers
+
+- https://www.neteye-blog.com/2022/12/start-using-systemd-timers-instead-of-cron-anacron/
+
+- https://dev.to/bowmanjd/schedule-jobs-with-systemd-timers-a-cron-alternative-15l8
+
+- https://unix.stackexchange.com/questions/278564/cron-vs-systemd-timers
+
+- https://www.reddit.com/r/linuxadmin/comments/k8l272/systemdtimers_vs_cron/
+
+- https://akashrajpurohit.com/blog/systemd-timers-vs-cron-jobs/
+
    
 Online Utilities to generate crons
 ***********************************
-- http://cronchecker.net/
    
-- http://crontab-generator.org/
-   
-- http://www.cronmaker.com/
-   
-- http://htmlminifiers.com/cron-maker.php
-   
-- http://blog.endpoint.com/2008/12/best-practices-for-cron.html
+- https://crontab-generator.org/
 
 
 ########
@@ -61,15 +72,13 @@ GREP
 
 *Some useful links to cover the working of Grep*
 
-- https://www.linode.com/docs/tools-reference/search-and-filter-text-with-grep
+- https://thevaluable.dev/grep-cli-guide-examples/
+
+- https://www.linode.com/docs/guides/how-to-use-grep-command/
    
-- https://danielmiessler.com/study/grep/
+- https://www.cyberciti.biz/faq/searching-multiple-words-string-using-grep/
    
-- http://www.cyberciti.biz/faq/searching-multiple-words-string-using-grep/
-   
-- http://www.thegeekstuff.com/2011/10/grep-or-and-not-operators/
-   
-- http://xmodulo.com/how-to-grep-multiple-terms-or-strings.html
+- https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators/
    
 - https://www.digitalocean.com/community/tutorials/using-grep-regular-expressions-to-search-for-text-patterns-in-linux
 
@@ -101,13 +110,13 @@ FIND
 
 *Some useful links to cover the working of Find*
 
-- https://danielmiessler.com/study/find/
-   
+- https://thevaluable.dev/find-cli-guide-examples/
+
 - https://www.digitalocean.com/community/tutorials/how-to-use-find-and-locate-to-search-for-files-on-a-linux-vps
    
-- http://tecadmin.net/delete-files-older-x-days/
+- https://tecadmin.net/delete-files-older-x-days/
    
-- http://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/
+- https://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/
    
 - https://www.linode.com/docs/tools-reference/tools/find-files-in-linux-using-the-command-line
 
@@ -157,17 +166,17 @@ File Permissions
 
 - https://www.linux.com/learn/getting-know-linux-file-permissions
    
-- http://www.penguintutor.com/linux/file-permissions-reference
+- https://www.penguintutor.com/linux/file-permissions-reference
    
 - https://www.linux.com/learn/understanding-linux-file-permissions
    
-- http://www.linuxnix.com/chmod-command-explained-linuxunix/
+- https://www.linuxnix.com/chmod-command-explained-linuxunix/
    
 - https://unix.stackexchange.com/questions/21251/execute-vs-read-bit-how-do-directory-permissions-in-linux-work
    
-- http://www.grymoire.com/Unix/Permissions.html
+- https://www.grymoire.com/Unix/Permissions.html
    
-- http://www.thegeekstuff.com/2010/06/chmod-command-examples/
+- https://www.thegeekstuff.com/2010/06/chmod-command-examples/
    
 - https://danielmiessler.com/study/unixlinux_permissions/
 
@@ -196,13 +205,11 @@ Why sudo cd <path-to-dir> doesn't work
 
 Sudoers
 *************
-- http://cavepopo.hd.free.fr/wordpress/linux/sudo-command-sudoers-file-concepts-and-practical-examples/
-   
-- http://serverfault.com/questions/364334/test-whether-a-user-has-sudo-privileges-without-requiring-user-input
+- https://serverfault.com/questions/364334/test-whether-a-user-has-sudo-privileges-without-requiring-user-input
   
 - https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps
    
-- http://www.thegeekstuff.com/2010/09/sudo-command-examples/
+- https://www.thegeekstuff.com/2010/09/sudo-command-examples/
    
 - https://www.garron.me/en/linux/visudo-command-sudoers-file-sudo-default-editor.html
    
@@ -225,28 +232,28 @@ Sudoers
    
 UserMod Command
 **************************
-- http://www.tecmint.com/usermod-command-examples/
+- https://www.tecmint.com/usermod-command-examples/
    
 - http://linoxide.com/linux-command/linux-usermod-command-to-modify-user-details/
    
-- http://crybit.com/15-switches-of-usermod-command-with-example-unixlinux/
+- https://www.crybit.com/15-switches-of-usermod-command-with-example-unixlinux/
    
 - https://muffinresearch.co.uk/linux-changing-uids-and-gids-for-user/
    
-- http://www.htpcbeginner.com/safely-change-primary-group-group-in-linux/
+- https://www.smarthomebeginner.com/safely-change-primary-group-group-in-linux/
    
-- http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
+- https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
 
 
 SetUID and SetGID
 **************************
-- http://www.tutonics.com/2012/12/linux-file-permissions-chmod-umask.html
+- https://tutonics.com/articles/linux-file-permissions-chmod-umask/
    
 - https://www.slashroot.in/suid-and-sgid-linux-explained-examples
 
 - https://www.thegeekstuff.com/2013/02/sticky-bit/
 
-- http://www.linuxnix.com/suid-set-suid-linuxunix/
+- https://www.linuxnix.com/suid-set-suid-linuxunix/
 
 - https://unix.stackexchange.com/questions/28363/whats-the-difference-between-s-and-s-in-ls-la
    
@@ -260,7 +267,7 @@ UMask Values
    
 - https://www.computerhope.com/unix/uumask.htm
 
-- http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html
+- https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html
 
 - https://www.digitalocean.com/community/tutorials/linux-permissions-basics-and-how-to-use-umask-on-a-vps
 
@@ -271,15 +278,13 @@ SymLinks
 
 *Some useful links to cover the working of SymLinks*
 
-- http://www.cyberciti.biz/tips/understanding-unixlinux-symbolic-soft-and-hard-links.html
+- https://www.cyberciti.biz/tips/understanding-unixlinux-symbolic-soft-and-hard-links.html
    
-- http://www.thegeekstuff.com/2010/10/linux-ln-command-examples/
-   
-- http://bencane.com/2013/10/10/symlinks-vs-hardlinks-and-how-to-create-them/
+- https://www.thegeekstuff.com/2010/10/linux-ln-command-examples/
 
-- http://geek-university.com/linux/symbolic-links/
+- https://geek-university.com/symbolic-links/
    
-- http://geek-university.com/linux/hard-links/
+- https://geek-university.com/hard-links/
 
 
 ##########
@@ -289,12 +294,8 @@ Others
 
 XArgs vs Exec
 *********************
-
-- http://unix.worldiswelcome.com/what-is-the-difference-between-exec-and-xargs
    
 - https://danielmiessler.com/blog/linux-xargs-vs-exec/
-   
-- http://www.differencebetween.co.in/technology/difference-between-xargs-and-exec/
 
 - https://stackoverflow.com/questions/16758525/make-xargs-handle-filenames-that-contain-spaces
 
@@ -315,7 +316,7 @@ XArgs vs Exec
 
 NTP
 **************
-- http://support.ntp.org/bin/view/Support/TroubleshootingNTP
+- https://support.ntp.org/Support/TroubleshootingNTP
    
 - https://support.rackspace.com/how-to/using-ntp-to-sync-time/
    
@@ -324,13 +325,11 @@ NTP
 
 Renaming / Deleting multiple files
 ******************************************
-- http://www.cyberciti.biz/tips/renaming-multiple-files-at-a-shell-prompt.html
-   
-- http://tips.webdesign10.com/how-to-bulk-rename-files-in-linux-in-the-terminal
+- https://www.cyberciti.biz/tips/renaming-multiple-files-at-a-shell-prompt.html
    
 - https://www.linux.com/blog/linux-shell-tip-remove-files-names-contains-spaces-and-special-characters-such
 
-- http://www.cyberciti.biz/faq/linux-bash-delete-all-files-in-directory-except-few/
+- https://www.cyberciti.biz/faq/linux-bash-delete-all-files-in-directory-except-few/
    
 - https://www.tecmint.com/delete-all-files-in-directory-except-one-few-file-extensions/
    
@@ -347,30 +346,19 @@ Rename multiple files with different extensions
     :width: 755px
     :align: center
     :height: 409px
-        
-
-Command Prompt Tweaks
-****************************
-- http://computers.tutsplus.com/tutorials/speed-up-your-terminal-workflow-with-command-aliases-and-profile--mac-30515
-
-- http://blog.taylormcgann.com/2012/06/13/customize-your-shell-command-prompt/
 
 
 Random Tools
 ******************
-- http://aarvik.dk/blacklist-check-unix-linux-utility/
+- https://aarvik.dk/blacklist-check-unix-linux-utility/
 
-- http://www.tecmint.com/progress-monitor-check-progress-of-linux-commands/
+- https://www.tecmint.com/show-progress-linux-commands/
 
-- http://www.tecmint.com/screen-command-examples-to-manage-linux-terminals/
+- https://www.tecmint.com/screen-command-examples-to-manage-linux-terminals/
    
-- http://www.thegeekstuff.com/2009/04/chage-linux-password-expiration-and-aging/
-   
-- https://danielmiessler.com/study/tar/
-   
-- https://danielmiessler.com/blog/collection-of-less-commonly-used-unix-commands/
+- https://www.thegeekstuff.com/2009/04/chage-linux-password-expiration-and-aging/
 
-- http://www.commandlinefu.com/commands/browse
+- https://www.commandlinefu.com/commands/browse
 
 - https://distrochooser.de/en
 
@@ -400,11 +388,9 @@ LSOF
 
 - https://danielmiessler.com/study/lsof/
    
-- http://www.catonmat.net/blog/unix-utilities-lsof/
+- https://catonmat.net/unix-utilities-lsof
    
-- http://www.thegeekstuff.com/2012/08/lsof-command-examples/
-   
-- https://www.ibm.com/developerworks/aix/library/au-lsof.html
+- https://www.thegeekstuff.com/2012/08/lsof-command-examples/
 
 - https://unix.stackexchange.com/questions/253321/how-to-display-size-human-readable-in-lsof-grep-var
 
@@ -416,6 +402,4 @@ DIFF
 
 Comparing difference between files / directories on 2 servers
 **********************************************************************
-- http://xmodulo.com/how-to-diff-remote-files-over-ssh.html
-   
-- http://zuhaiblog.com/2011/02/14/using-diff-to-compare-folders-over-ssh-on-two-different-servers/
+- https://www.xmodulo.com/how-to-diff-remote-files-over-ssh.html
