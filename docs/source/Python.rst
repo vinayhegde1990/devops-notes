@@ -8,19 +8,10 @@ Python
 Concepts
 ########
 
-- http://www.codeconquest.com/blog/the-50-best-websites-to-learn-python/
-   
-- http://simeonfranklin.com/python-fundamentals/
-   
-- https://python.zeef.com/yakup.keskindag
-   
-- https://www.tutorialspoint.com/python/index.htm 
-
 
 Official Python Documentation
 ####################################
-- https://docs.python.org/2/index.html
-   
+
 - https://docs.python.org/
 
 
@@ -39,10 +30,6 @@ Online Courses
 - https://www.codecademy.com/learn/python
    
 - https://www.udacity.com/course/programming-foundations-with-python--ud036
-   
-- http://campus.codeschool.com/courses/try-python/level/1/section/1/video/1
-   
-- https://www.coursera.org/learn/python
    
 - https://dev.to/jessicagarson/resources-for-learning-python-hd6
 
@@ -66,7 +53,7 @@ Solving Python Problems to Learn Concepts
 #########################
 Configuration
 #########################
-- http://aarvik.dk/python-for-system-administration/
+- https://aarvik.dk/python-for-system-administration/
    
 - https://github.com/h2oai/h2o-2/wiki/installing-python-2.7-on-centos-6.3.-follow-this-sequence-exactly-for-centos-machine-only
 
@@ -89,9 +76,9 @@ Configuration
 - https://stackoverflow.com/questions/24205624/how-do-i-resolve-not-fully-installed-package-python3-setuptools
 
 - https://stackoverflow.com/questions/38132755/importerror-no-module-named-encodings
+
+- https://github.com/locustio/locust
    
-Visual IDE for Python
-#######################
-- http://pythontutor.com/
-   
-- http://www.skulpt.org/
+IDE for Python
+################
+- https://realpython.com/advanced-visual-studio-code-python/
