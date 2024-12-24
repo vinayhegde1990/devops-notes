@@ -10,27 +10,29 @@ Concepts
 
 - https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms
    
-- https://www.nginx.com/resources/wiki/start/
-   
 - https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts
    
 - https://www.linode.com/docs/websites/nginx/how-to-configure-nginx
    
 - https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching
-   
-- https://www.atulhost.com/nginx
+
+
+##############################
+Official NGinx Documentation
+##############################
+
+- https://docs.nginx.com/
+
+- https://nginx.org/en/docs/
+
+- https://devdocs.io/nginx/
+
 
 ################
 Configuration
 ################
-
-- http://fideloper.com/ubuntu-12-04-lemp-nginx-setup
    
 - https://blog.serverdensity.com/monitor-nginx/
-   
-- http://devdocs.io/nginx/
-   
-- http://nginx.org/en/docs/
    
 - https://rtcamp.com/tutorials/nginx/
    
@@ -62,7 +64,7 @@ Visual Editor for NGinx Config
 - https://nginxconfig.io
 
 
-################################   
+################################
 Tuning & Hardening
 ################################
 
@@ -88,8 +90,10 @@ Tuning & Hardening
    
 - https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration
 
+- https://www.f5.com/company/blog/nginx/introduction-to-microservices
 
-################################   
+
+################################
 Troubleshooting & Log Parsing
 ################################
 - http://logz.io/blog/nginx-log-analysis/

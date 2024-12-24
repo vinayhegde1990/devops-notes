@@ -8,7 +8,7 @@ SSL
 Concepts
 ########
 
-- https://tls.ulfheim.net
+- https://tls12.xargs.org/
 
 - https://www.digitalocean.com/community/tutorials/a-comparison-of-let-s-encrypt-commercial-and-private-certificate-authorities-and-self-signed-ssl-certificates
 
@@ -32,8 +32,6 @@ FAQs on SSL
 #############
 
 - https://timnash.co.uk/guessing-ssl-questions/
-
-- https://dzone.com/articles/introduction-to-ssl-for-managers
    
 - https://www.nutsandboltsmedia.com/does-your-website-really-need-ssl/
 
@@ -78,7 +76,7 @@ Switching from HTTP to HTTPs
 ##############################
 - https://www.smashingmagazine.com/2017/06/guide-switching-http-https/
    
-- http://searchengineland.com/http-https-seos-guide-securing-website-246940
+- https://searchengineland.com/http-https-seos-guide-securing-website-246940
    
 - https://yoast.com/moving-your-website-to-https-ssl-tips-tricks/
 

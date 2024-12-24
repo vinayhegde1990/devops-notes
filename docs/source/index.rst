@@ -26,7 +26,7 @@ Notes - Vinay Hegde
    :caption: Web Servers
    :hidden:
 
-   Fundamentals
+   Web-Servers
    Apache
    NGinx
    HAProxy

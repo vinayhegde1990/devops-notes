@@ -39,8 +39,6 @@ Category Cables
 ####################
 - https://www.networkcablingdirectory.com/articles/structured-network-cabling-id_1151.htm
    
-- http://35.154.102.183/ethernet-cable-cat5-vs-cat6-vs-cat6a-vs-cat7-vs-cat8/amp/
-   
 - https://planetechusa.com/blog/ethernet-different-ethernet-categories-cat3-vs-cat5e-vs-cat6-vs-cat6a-vs-cat7-vs-cat8/
 
 MAC Addresses : Explained
@@ -122,6 +120,9 @@ VLAN
 Simple Overview
 ********************
 - https://www.lifewire.com/virtual-local-area-network-817357
+
+- https://labs.iximiuz.com/courses/computer-networking-fundamentals/from-lan-to-vxlan#lan
+
 
 Conceptual Overview
 ********************************************

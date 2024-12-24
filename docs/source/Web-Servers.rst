@@ -1,4 +1,4 @@
-Fundamentals
+Web-Servers
 *******************
 
 *Some useful links to explain the concepts of Web-Servers*
@@ -7,7 +7,7 @@ Fundamentals
 Concepts
 ##########
 
-- http://computer.howstuffworks.com/web-server2.htm
+- https://computer.howstuffworks.com/web-server2.htm
  
 - https://serversforhackers.com/hosting-web-applications
    
@@ -21,18 +21,17 @@ Concepts
    
 - https://dev.to/pratikaambani/explain-http-verbs-like-im-five-b10
    
-- http://stackoverflow.com/questions/224664/difference-between-proxy-server-and-reverse-proxy-server
+- https://stackoverflow.com/questions/224664/whats-the-difference-between-a-proxy-server-and-a-reverse-proxy-server
    
 - https://dev.to/swyx/every-web-performance-test-tool-naj
-
 
 Load Balancing
 #####################
 - https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236
 
-- https://avinetworks.com/what-is-load-balancing
-
 - https://levelup.gitconnected.com/l4-vs-l7-load-balancing-d2012e271f56
+
+- https://www.designgurus.io/course-play/grokking-system-design-fundamentals/doc/load-balancing-algorithms
 
 
 HTTP request lifecycle overview 
@@ -42,7 +41,7 @@ HTTP request lifecycle overview
 
 Difference between ``http 443 and https 80``
 ##############################################
-- http://serverfault.com/questions/705197/http-over-port-443-vs-https-over-port-80
+- https://serverfault.com/questions/705197/http-over-port-443-vs-https-over-port-80
 
 .. image::  ../source/images/web-servers-diff-port-80-443.png
     :width: 759px
@@ -51,9 +50,9 @@ Difference between ``http 443 and https 80``
         
 HTTP status codes
 ########################
-- http://www.restapitutorial.com/httpstatuscodes.html
-   
-- https://httpstatuses.com/
+- https://www.restapitutorial.com/httpstatuscodes
+
+- https://www.webfx.com/web-development/glossary/http-status-codes/
 
 - https://stackoverflow.com/questions/50143518/401-unauthorized-vs-403-forbidden-which-is-the-right-status-code-for-when-the-u
 
@@ -74,19 +73,16 @@ Check website-availability issues - Tools
    
 - https://httpstatus.io/
         
-        
-#######   
+
+#######
 cURL
 #######
-- http://www.thegeekstuff.com/2012/04/curl-examples/
+
+- https://www.thegeekstuff.com/2012/04/curl-examples/
    
-- http://www.slashroot.in/curl-command-tutorial-linux-example-usage
+- https://www.slashroot.in/curl-command-tutorial-linux-example-usage
    
-- https://curl.haxx.se/docs/httpscripting.html
-   
-- https://ec.haxx.se/curl.html
-   
-- http://www.codediesel.com/tools/6-essential-curl-commands/
+- https://ec.haxx.se/index.html
    
 - https://robots.thoughtbot.com/back-to-basics-http-requests
    
@@ -94,19 +90,16 @@ cURL
 
 - https://stackoverflow.com/questions/46362284/run-multiple-curl-commands-in-parallel
 
-- http://http-prompt.com/
+- https://http-prompt.com/
 
 
 #######
 wGET
 #######
-- http://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/
+- https://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/
    
-- http://www.tecmint.com/10-wget-command-examples-in-linux/
+- https://www.tecmint.com/10-wget-command-examples-in-linux/
    
-- http://www.labnol.org/software/wget-command-examples/28750/
-   
-- http://www.linuxtechi.com/wget-command-practical-examples/
+- https://www.linuxtechi.com/wget-command-practical-examples/
    
 - https://alvinalexander.com/linux-unix/how-to-make-offline-mirror-copy-website-with-wget
-
