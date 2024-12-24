@@ -18,6 +18,8 @@ Concepts
 - https://dev.to/helenanders26/aws-series-aws-from-a-to-z-45b1
 
 - https://start.jcolemorrison.com/aws-iam-policies-in-a-nutshell/
+
+- https://blog.gitguardian.com/aws-iam-security-best-practices/
    
 
 #########################

@@ -8,12 +8,11 @@ Security
 Concepts
 ########
 
-- https://www.thefanclub.co.za/how-to/how-secure-ubuntu-1604-lts-server-part-1-basics
-
 - https://github.com/imthenachoman/How-To-Secure-A-Linux-Server
 
 - https://dev.to/danlebrero/kerberos-explained-in-pictures
 
+- https://technically.substack.com/p/how-does-authentication-work
 
 
 Rootkits
@@ -21,9 +20,9 @@ Rootkits
 
 - https://www.digitalocean.com/community/tutorials/how-to-use-rkhunter-to-guard-against-rootkits-on-an-ubuntu-vps
    
-- http://www.woktron.com/secure/knowledgebase/79/Installation-Rootkit-Hunter-rkhunter-on-CentOS-5-and-6.html
+- https://www.woktron.com/secure/knowledgebase/79/Installation-Rootkit-Hunter-rkhunter-on-CentOS-5-and-6.html
    
-- http://www.tecmint.com/install-rootkit-hunter-scan-for-rootkits-backdoors-in-linux/
+- https://www.tecmint.com/install-rootkit-hunter-scan-for-rootkits-backdoors-in-linux/
 
 
 
@@ -33,34 +32,37 @@ Fail2Ban
  
 - https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server
   
-- http://www.tecmint.com/install-fail2ban-on-rhel-centos-fedora/
+- https://www.tecmint.com/use-fail2ban-to-secure-linux-server/
    
-- http://www.the-art-of-web.com/system/fail2ban-log/
+- https://www.the-art-of-web.com/system/fail2ban-log/
    
-- http://www.dghost.com/techno/internet/the-power-of-fail2ban
+- https://www.dghost.com/techno/internet/the-power-of-fail2ban
    
-- http://www.fail2ban.org/wiki/index.php/MANUAL_0_8
+- https://github.com/fail2ban/fail2ban
    
-- http://aarvik.dk/prevent-intrusion-with-fail2ban/
+- https://aarvik.dk/prevent-intrusion-with-fail2ban/
 
 
 TCP Wrappers
 ##################
    
-- https://jamalahmed.wordpress.com/2010/03/19/using-etchosts-allow-and-etchosts-deny-to-secure-unix/
+- https://static.closedsrc.org/articles/dn-articles/hosts_allow.html
    
-- http://static.closedsrc.org/articles/dn-articles/hosts_allow.html
+- https://www.tecmint.com/secure-linux-tcp-wrappers-hosts-allow-deny-restrict-access/
    
-- http://www.tecmint.com/secure-linux-tcp-wrappers-hosts-allow-deny-restrict-access/
+- https://www.cyberciti.biz/faq/tcp-wrappers-hosts-allow-deny-tutorial/
    
-- http://www.aboutlinux.info/2005/10/using-tcp-wrappers-to-secure-linux.html 
-   
-- http://www.cyberciti.biz/faq/tcp-wrappers-hosts-allow-deny-tutorial/
-  
-- http://bastille-linux.sourceforge.net/
-   
-- https://grsecurity.net/index.php
+- https://grsecurity.net/index
  
+
+GPG
+#######
+
+- https://yanhan.github.io/posts/2017-09-27-how-to-use-gpg-to-encrypt-stuff/
+
+- https://inspirezone.tech/using-gpg-keys-on-github/
+
+- https://smarttech101.com/how-to-encrypt-and-sign-your-files-using-gpg/
 
 
 SELinux
@@ -69,16 +71,14 @@ SELinux
 Concepts of SELinux
 ****************************
 - https://www.digitalocean.com/community/tutorial_series/an-introduction-to-selinux-on-centos-7
-
-- http://www.linuxpathfinder.com/how-to-disable-selinux-temporarily-or-permanently
    
-- http://www.revsys.com/writings/quicktips/turn-off-selinux.html
+- https://www.revsys.com/writings/quicktips/turn-off-selinux.html
  
 
 DDoS
 #########
 
-- http://www.digitalattackmap.com/understanding-ddos/
+- https://www.digitalattackmap.com/understanding-ddos/
  
 - https://blog.cloudflare.com/the-ddos-that-almost-broke-the-internet/
  
@@ -88,17 +88,15 @@ DDoS
 ################
 Configuration
 ################
-
-- http://bencane.com/2013/01/14/mitigating-dos-attacks-with-a-null-or-blackhole-route-on-linux/
  
-- http://www.mkyong.com/linux/how-to-block-attackers-ip-with-null-route-command/
+- https://mkyong.com/linux/how-to-block-attackers-ip-with-null-route-command/
  
-- http://www.opensourceforu.com/2011/04/securing-apache-part-8-dos-ddos-attacks/
+- https://www.opensourceforu.com/2011/04/securing-apache-part-8-dos-ddos-attacks/
  
 - https://developers.google.com/speed/public-dns/docs/security#introduction-dns-security-threats-and-mitigations
 
 - http://www.tldp.org/HOWTO/Firewall-Piercing/index.html
    
-- http://www.ubuntufree.com/how-to-stop-a-ddos-attack-on-ubuntu/
-   
-- http://ubtutorials.com/tutorial/1139/how-stop-small-ddos-attacks-ubuntu
+- https://www.ubuntufree.com/how-to-stop-a-ddos-attack-on-ubuntu/
+
+- https://github.com/aquasecurity/trivy

@@ -100,9 +100,11 @@ Tuning & Hardening
 - https://thehackernews.com/2014/04/heartbleed-bug-explained-10-most.html
    
 - https://security.stackexchange.com/questions/8210/what-vulnerabilities-could-be-caused-by-a-wildcard-ssl-cert
+
+- https://smallstep.com/blog/everything-pki/
    
 
-Hardening Your Web Server’s SSL Ciphers
+Hardening Your Web Server SSL Ciphers
 #############################################
 - https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/
 
