@@ -75,6 +75,7 @@ Notes - Vinay Hegde
    Ansible
    Puppet
    Chef
+   Terraform
 
 .. toctree::
    :maxdepth: 2
