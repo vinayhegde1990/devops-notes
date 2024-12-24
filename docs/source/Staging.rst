@@ -1,3 +1,5 @@
+:orphan:
+
 Staging
 ===========
 
@@ -9,7 +11,7 @@ Staging
 .. code-block:: python
    :linenos: 
    
-   sudo pip install sphinx sphinx-autobuild
+   pip3 install sphinx sphinx-autobuild
         
 
 2. Create a directory inside your project to hold your docs:
