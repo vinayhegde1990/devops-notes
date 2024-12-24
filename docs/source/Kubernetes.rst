@@ -2,7 +2,7 @@
 Kubernetes
 ***************
 
-*Some useful links to explain the concepts of Kubenetes*
+*Some useful links to explain the concepts of Kubernetes*
 
 #########
 Concepts
@@ -13,6 +13,17 @@ Concepts
 
 - https://speakerdeck.com/thockin/the-ins-and-outs-of-networking-in-google-container-engine
 
+- https://jvns.ca/blog/2017/06/04/learning-about-kubernetes
+
+- https://www.jeremyjordan.me/kubernetes
+
+- https://ubuntu.com/kubernetes/what-is-kubernetes
+
+- https://iximiuz.com/en/posts/kubernetes-api-structure-and-terminology/
+
+- https://jvns.ca/blog/2017/06/04/learning-about-kubernetes/
+
+
 
 #########################
 Official Documentation
@@ -20,6 +31,29 @@ Official Documentation
 - https://kubernetes.io/docs/home
 
 - https://kubectl.docs.kubernetes.io
+
+- https://kubernetes.io/docs/reference/glossary/?all=true
+
+.. image::  ../source/images/k8s-components.png
+    :width: 1024px
+    :align: center
+    :height: 640px
+
+
+####################################
+Kubernetes Components Explained
+####################################
+
+ETCd
+******
+- https://learnk8s.io/etcd-kubernetes
+
+- https://rafay.co/the-kubernetes-current/etcd-kubernetes-what-you-should-know/
+
+
+ReplicaSet
+****************
+- https://www.learnsteps.com/basics-on-kubernetes-what-exactly-is-a-replicaset/
 
 
 ##################
@@ -33,10 +67,23 @@ Configuration
 
 - https://speakerdeck.com/thockin/bringing-traffic-into-your-kubernetes-cluster
 
+- https://devopscube.com/kubernetes-tutorials-beginners/
+
+- https://www.asykim.com/blog/deep-dive-into-kubernetes-external-traffic-policies
+
+- https://collabnix.github.io/kubelabs/
+
 
 ##################
 Tuning & Hardening
 ##################
+
+- https://learnk8s.io/how-many-clusters
+
+- https://learnk8s.io/production-best-practices
+
+- https://learnk8s.io/kubernetes-instance-calculator
+
 - https://github.com/derailed/popeye
 
 
