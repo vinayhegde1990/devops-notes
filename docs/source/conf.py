@@ -24,7 +24,7 @@ copyright = u'2024-2025, Vinay Hegde'
 author = u'Vinay Hegde'
 
 # The full version, including alpha/beta/rc tags
-release = u'3.0.12-20241224'
+release = u'3.0.12-20241226'
 
 # -- General configuration ---------------------------------------------------
 

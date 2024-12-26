@@ -20,7 +20,7 @@ Welcome to my notes on various topics related to the DevOps / SRE terminology su
 
 <h3> reStructuredText (RST): </h3>
 
-- For writing .rst files to render the formatting. You can start learning via [this](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+- For writing .rst files to render the formatting. You can start learning via [this](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
 
 <h3> Sphinx: </h3>
 

@@ -100,3 +100,5 @@ Configuration
 - https://www.ubuntufree.com/how-to-stop-a-ddos-attack-on-ubuntu/
 
 - https://github.com/aquasecurity/trivy
+
+- https://www.checkov.io/

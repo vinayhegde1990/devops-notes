@@ -90,6 +90,8 @@ GREP
 
 - https://stackoverflow.com/questions/25853722/how-to-suppress-binary-file-matching-results-in-grep
 
+- https://stackoverflow.com/questions/10346816/using-grep-to-search-for-a-string-that-has-a-dot-in-it
+
 
 Grepping ps output without showing the grep process
 ***************************************************************
@@ -233,8 +235,6 @@ Sudoers
 UserMod Command
 **************************
 - https://www.tecmint.com/usermod-command-examples/
-   
-- http://linoxide.com/linux-command/linux-usermod-command-to-modify-user-details/
    
 - https://www.crybit.com/15-switches-of-usermod-command-with-example-unixlinux/
    

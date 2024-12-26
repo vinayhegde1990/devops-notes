@@ -13,7 +13,7 @@ Welcome to my notes on various topics related to the DevOps / SRE terminology su
 
 Tech Stack:
 ---------------------
-- **reStructuredText (RST)** - To write .rst files for the formatting. You can start learning via `this <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_
+- **reStructuredText (RST)** - To write .rst files for the formatting. You can start learning via `this <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 - **Sphinx** - The engine generating content in **HTML**, **LaTeX**, **ePub**. A beginner's guide can be found on their `page <https://www.sphinx-doc.org/en/master/index.html>`_
 - **GitHub** - For maintaining the source code in version control.
 - **ReadTheDocs** - Hosting my documentation. Refer this excellent `document <https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html>`_ to help you get up and running in no time.
