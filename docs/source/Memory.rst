@@ -8,9 +8,11 @@ Memory
 Concepts
 ########
 
-- http://blog.ioflood.com/2015/03/27/making-sense-of-linux-memory-usage-part-1-how-to-read-top-in-centos/
+- https://ioflood.com/blog/making-sense-of-linux-memory-usage-part-1-how-to-read-top-in-centos/
  
 - https://www.reddit.com/r/linux/comments/1hk5ow/free_buffer_swap_dirty_procmeminfo_explained/
+
+- https://samwho.dev/memory-allocation/
 
 
 ##########
@@ -19,32 +21,29 @@ Commands
 
 Free Command - Explained
 ********************************************
-- http://corlewsolutions.com/articles/article-6-understanding-the-free-command-in-ubuntu-and-linux
 
-- http://www.linuxatemyram.com/
+- https://www.linuxatemyram.com/
 
-- http://www.cloudibee.com/know-about-procmeminfo/
-
-- http://www.linuxnix.com/find-ram-details-in-linuxunix/
+- https://cloudibee.com/2008/02/14/know-about-procmeminfo/
 
 Other Commands
 *********************
    
-- http://www.thegeekstuff.com/2010/08/ipcs-command-examples/
+- https://www.thegeekstuff.com/2010/08/ipcs-command-examples/
 
 .. image::  ../source/images/memory-semaphores-ipcs.png
     :width: 763px
     :align: center
     :height: 228px
    
-- http://www.tecmint.com/dstat-monitor-linux-server-performance-process-memory-network/
+- https://www.tecmint.com/dool-monitor-linux-server-performance-process-memory-network/
 
 
 ################
 Configuration
 ################
 
-- http://github.com/pixelb/scripts/commits/master/scripts/ps_mem.py
+- https://github.com/pixelb/ps_mem/
 
 Create a RAM Disk
 ********************************************
@@ -52,7 +51,6 @@ Create a RAM Disk
   
 
 
-################################   
+################################
 Troubleshooting & Log Parsing
 ################################
-

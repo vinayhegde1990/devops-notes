@@ -33,6 +33,8 @@ Load Balancing
 
 - https://www.designgurus.io/course-play/grokking-system-design-fundamentals/doc/load-balancing-algorithms
 
+- https://samwho.dev/load-balancing/
+
 
 HTTP request lifecycle overview 
 #################################

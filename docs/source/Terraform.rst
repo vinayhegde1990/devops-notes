@@ -28,6 +28,8 @@ Configuration
 
 - https://medium.com/spacelift/terraform-best-practices-for-better-infrastructure-management-49e0859b5537
 
+- https://masterpoint.io/updates/terralith-monolithic-terraform-architecture/
+
 
 ##################
 Tuning & Hardening
