@@ -8,7 +8,7 @@ Generic
 Concepts
 ########
 
-- http://regex.learncodethehardway.org/book/
+- https://learncodethehardway.org/regex/
    
 - https://techdifferences.com/differenece-between-for-and-while-loop.html#KeyDifferences
    
@@ -29,6 +29,8 @@ Concepts
 - https://books.goalkicker.com/
 
 - https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/
+
+- https://blog.levelupcoding.com/p/luc-62-cicd-demystified-build-test-deploy-repeat
 
 
 ################
@@ -51,38 +53,24 @@ DevOps
     :height: 1717px
 
 
-- https://devops.zeef.com/christian.peper
-
-- https://dev-ops-tools.zeef.com/richard.kraayenhagen
-
-- https://dev.to/
-
-- https://xebialabs.com/glossary/
+- https://digital.ai/glossary/
 
 - https://xebialabs.com/the-ultimate-devops-tool-chest/
-
-- https://xebialabs.com/periodic-table-of-devops-tools/
 
 - https://zachholman.com/posts/deploying-software
 
 - https://www.ibm.com/developerworks/learn/devops/
 
-- https://learn-anything.xyz/programming/software-development/devops
-
-- http://itrevolution.com/devops-blog/
+- https://learn-anything.xyz/devops
 
 - https://continuousdelivery.com
 
-- http://dev2ops.org
-
 - https://codeascraft.com
 
-- http://www.devopsbookmarks.com
+- https://www.devopsbookmarks.org/
 
 - https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592
 
 - https://increment.com/on-call/
 
 - https://medium.com/cleartax-engineering/cleartaxs-requirements-from-a-deployment-pipeline-1b77a55ba08c
-
-- http://www.humanops.com/

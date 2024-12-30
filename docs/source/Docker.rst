@@ -31,7 +31,7 @@ Concepts
 
 - https://labs.iximiuz.com/tutorials/container-networking-from-scratch
 
-- https://labs.iximiuz.com/tutorials/container-networking-from-scratch
+- https://michalpitr.substack.com/p/linux-container-from-scratch
 
 
 Good Explanation of Namespaces : needed for Docker
@@ -47,10 +47,12 @@ Difference between containers and VMs
     :align: center
     :height: 640px
 
+- https://www.admin-magazine.com/Archive/2022/71/Goodbye-virtual-machines-hello-microVMs
+
 
 Docker Image Layers : Easy Explanation
 **********************************************
-- http://tuhrig.de/layering-of-docker-images/ 
+- https://tuhrig.de/layering-of-docker-images/
    
 Docker Swarm Working
 **********************************************
@@ -78,6 +80,8 @@ Configuration
 - https://vsupalov.com/docker-arg-env-variable-guide/
 
 - https://pythonspeed.com/articles/docker-build-secrets
+
+- https://www.baeldung.com/ops/dockerfile-run-cmd-entrypoint
 
 
 ################################

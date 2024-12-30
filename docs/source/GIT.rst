@@ -16,6 +16,8 @@ Concepts
 
 - https://launchschool.com/books/git/read/introduction
 
+- https://www.gitops.tech/
+
 
 ########################
 Official Documentation
