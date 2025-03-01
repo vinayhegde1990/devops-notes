@@ -15,23 +15,18 @@ Exemples de comportements contribuant à créer un environnement positif
 comprendre:
 
 - Utiliser un langage accueillant et inclusif
-* Être respectueux des points de vue et des expériences différents
-* Accepter gracieusement les critiques constructives
-* Se concentrer sur ce qu'il y a de mieux pour la communauté
-* Faire preuve d'empathie envers les autres membres de la communauté
-
-
+- Être respectueux des points de vue et des expériences différents
+- Accepter gracieusement les critiques constructives
+- Se concentrer sur ce qu'il y a de mieux pour la communauté
+- Faire preuve d'empathie envers les autres membres de la communauté
 
 Les exemples de comportement inacceptable des participants incluent:
 
-* L’utilisation d’un langage ou d’images imagés et d’une attention sexuelle importune ou
- avances
-* Trolling, commentaires insultants / dérogatoires et attaques personnelles ou politiques
-* Harcèlement public ou privé
-* Publication des informations privées d'autres personnes, telles que des informations physiques ou électroniques
- adresse, sans permission explicite
-* Autre comportement qui pourrait raisonnablement être considéré comme inapproprié dans un
- cadre professionnel
+- L’utilisation d’un langage ou d’images imagés et d’une attention sexuelle importune ou avances
+- Trolling, commentaires insultants / dérogatoires et attaques personnelles ou politiques
+- Harcèlement public ou privé
+- Publication des informations privées d'autres personnes, telles que des informations physiques ou électroniques adresse, sans permission explicite
+- Autre comportement qui pourrait raisonnablement être considéré comme inapproprié dans un cadre professionnel
 
 ## Nos responsabilités
 
@@ -71,6 +66,4 @@ membres de la direction du projet.
 
 Ce code de conduite est adapté de la page d'accueil de [Convention de collaboration](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html), version 1.4 - disponible à l'adresse 
 
-
-Pour obtenir des réponses aux questions courantes sur ce code de conduite, voir
-https://www.contributor-covenant.org/faq
+Pour obtenir des réponses aux questions courantes sur ce code de conduite, voir https://www.contributor-covenant.org/faq
